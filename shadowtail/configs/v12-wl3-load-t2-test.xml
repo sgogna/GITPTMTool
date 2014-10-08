@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="properties">
+			<props>
+				<prop key="config.id">v12-wl3-load-t2</prop>
+				<prop key="target.host">sswhli474</prop>
+				<prop key="target.port">9007</prop>
+				<!--<prop key="target.catalina.manager.webapp.name">Catalina:type=Manager,path=/SSW2010.server,host=localhost</prop>-->
+				<!--<prop key="target.catalina.threadpool.http.name">Catalina:type=ThreadPool,name=http-8082</prop>-->
+
+                <!--<prop key="target.catalina.manager.webapp.name">Catalina:type=Manager,context=/SSW2010.server,host=localhost</prop>-->
+                <!--<prop key="target.catalina.threadpool.http.name">Catalina:type=ThreadPool,name="http-bio-8082"</prop>-->
+			</props>
+		</property>
+	</bean>
+
+	<import resource="jvm.xml" />
+	<import resource="catalina-T2-test.xml" />
+	<import resource="ibe-T2-V12-community.xml" />
+	
+	<import resource="default.xml" />
+
+
+</beans>

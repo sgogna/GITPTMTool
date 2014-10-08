@@ -1,0 +1,154 @@
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd">
+
+	<util:properties id="validation.criteria.wsxml.sabre" location="config/validation/criteria-wsxml-sabre.properties" />
+
+	<bean id="validation.wsxml.sabre.common.validators.list" class="com.eb2.util.ListMergeFactory" factory-method="mergeListsToLinkedList" scope="prototype">
+		<constructor-arg>
+			<list>
+				<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+					<constructor-arg value="SabreCommandLLSPortType Validator" />
+					<constructor-arg ref="matcher.wsxml.sabre.sabreCommand" />
+					<constructor-arg>
+						<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+							<constructor-arg ref="validation.criteria.wsxml.sabre" />
+							<constructor-arg value="validation.criteria.wsxml.sabreCommandLLSPortType.sabreCommandLLSRQ." />
+						</bean>
+					</constructor-arg>
+				</bean>
+				<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+					<constructor-arg value="IgnoreTransactionPortType.ignoreTransactionRQ Validator" />
+					<constructor-arg ref="matcher.wsxml.sabre.ignoreTx" />
+					<constructor-arg>
+						<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+							<constructor-arg ref="validation.criteria.wsxml.sabre" />
+							<constructor-arg value="validation.criteria.wsxml.sabre.IgnoreTransactionPortType.ignoreTransactionRQ." />
+						</bean>
+					</constructor-arg>
+				</bean>
+				<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+					<constructor-arg value="EndTransactionPortType.endTransactionRQ Validator" />
+					<constructor-arg ref="matcher.wsxml.sabre.endTx" />
+					<constructor-arg>
+						<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+							<constructor-arg ref="validation.criteria.wsxml.sabre" />
+							<constructor-arg value="validation.criteria.wsxml.sabre.EndTransactionPortType.endTransactionRQ." />
+						</bean>
+					</constructor-arg>
+				</bean>
+				<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+					<constructor-arg value="EPSProfileReadPortType.epsProfileReadRQ Validator" />
+					<constructor-arg ref="matcher.wsxml.sabre.epsProfileRead" />
+					<constructor-arg>
+						<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+							<constructor-arg ref="validation.criteria.wsxml.sabre" />
+							<constructor-arg value="validation.criteria.wsxml.sabre.EPSProfileReadPortType.epsProfileReadRQ." />
+						</bean>
+					</constructor-arg>
+				</bean>
+				<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+					<constructor-arg value="TravelItineraryReadPortType.travelItineraryReadRQ Validator" />
+					<constructor-arg ref="matcher.wsxml.sabre.travelItinRead" />
+					<constructor-arg>
+						<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+							<constructor-arg ref="validation.criteria.wsxml.sabre" />
+							<constructor-arg value="validation.criteria.wsxml.sabre.TravelItineraryReadPortType.travelItineraryReadRQ." />
+						</bean>
+					</constructor-arg>
+				</bean>
+				<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+					<constructor-arg value="RedemptionService.getAccountBalance Validator" />
+					<constructor-arg ref="matcher.wsxml.sabre.redemptionGetBalance" />
+					<constructor-arg>
+						<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+							<constructor-arg ref="validation.criteria.wsxml.sabre" />
+							<constructor-arg value="validation.criteria.wsxml.sabre.RedemptionService.getAccountBalance." />
+						</bean>
+					</constructor-arg>
+				</bean>
+				<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+					<constructor-arg value="AddRemarkPortType.addRemarkRQ Validator" />
+					<constructor-arg ref="matcher.wsxml.sabre.redemptionGetBalance" />
+					<constructor-arg>
+						<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+							<constructor-arg ref="validation.criteria.wsxml.sabre" />
+							<constructor-arg value="validation.criteria.wsxml.sabre.AddRemarkPortType.addRemarkRQ." />
+						</bean>
+					</constructor-arg>
+				</bean>
+				<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+					<constructor-arg value="ChangeAAAPortType.changeAAARQ Validator" />
+					<constructor-arg ref="matcher.wsxml.sabre.changeAAA" />
+					<constructor-arg>
+						<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+							<constructor-arg ref="validation.criteria.wsxml.sabre" />
+							<constructor-arg value="validation.criteria.wsxml.sabre.ChangeAAAPortType.changeAAARQ." />
+						</bean>
+					</constructor-arg>
+				</bean>
+				<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+					<constructor-arg value="OTAAirBookPortType.otaAirBookRQ Validator" />
+					<constructor-arg ref="matcher.wsxml.sabre.otaAirBook" />
+					<constructor-arg>
+						<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+							<constructor-arg ref="validation.criteria.wsxml.sabre" />
+							<constructor-arg value="validation.criteria.wsxml.sabre.OTAAirBookPortType.otaAirBookRQ." />
+						</bean>
+					</constructor-arg>
+				</bean>
+				<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+					<constructor-arg value="IMAPAirSeatMapPortType.imapAirSeatMapRQ Validator" />
+					<constructor-arg ref="matcher.wsxml.sabre.imapAirSeatMap" />
+					<constructor-arg>
+						<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+							<constructor-arg ref="validation.criteria.wsxml.sabre" />
+							<constructor-arg value="validation.criteria.wsxml.sabre.IMAPAirSeatMapPortType.imapAirSeatMapRQ." />
+						</bean>
+					</constructor-arg>
+				</bean>
+				<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+					<constructor-arg value="MTSTravelExtrasShopPortType.mtsTravelExtrasShopRQ Validator" />
+					<constructor-arg ref="matcher.wsxml.sabre.mtsTravelExtrasShop" />
+					<constructor-arg>
+						<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+							<constructor-arg ref="validation.criteria.wsxml.sabre" />
+							<constructor-arg value="validation.criteria.wsxml.sabre.MTSTravelExtrasShopPortType.mtsTravelExtrasShopRQ." />
+						</bean>
+					</constructor-arg>
+				</bean>
+				<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+					<constructor-arg value="Sabre Command WPM (Price) Validator" />
+					<constructor-arg ref="matcher.wsxml.sabre.priceCmdWPM" />
+					<constructor-arg>
+						<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+							<constructor-arg ref="validation.criteria.wsxml.sabre" />
+							<constructor-arg value="validation.criteria.wsxml.sabre.sabreCommannd.WPM." />
+						</bean>
+					</constructor-arg>
+				</bean>
+				<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+					<constructor-arg value="Sabre Command displayPNR Validator" />
+					<constructor-arg ref="matcher.wsxml.sabre.displayPNR" />
+					<constructor-arg>
+						<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+							<constructor-arg ref="validation.criteria.wsxml.sabre" />
+							<constructor-arg value="validation.criteria.wsxml.sabre.sabreCommannd.displayPNR." />
+						</bean>
+					</constructor-arg>
+				</bean>
+				<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+					<constructor-arg value="Sabre SSSAdvShopPortType.sssAdvShopRQ Validator" />
+					<constructor-arg ref="matcher.wsxml.sabre.SSSAdvShop" />
+					<constructor-arg>
+						<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+							<constructor-arg ref="validation.criteria.wsxml.sabre" />
+							<constructor-arg value="validation.criteria.wsxml.sabre.SSSAdvShopPortType.sssAdvShopRQ." />
+						</bean>
+					</constructor-arg>
+				</bean>
+			</list>
+		</constructor-arg>
+	</bean>
+</beans>

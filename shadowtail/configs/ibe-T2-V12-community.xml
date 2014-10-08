@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+	<bean id="gdsPoolNumActive" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+		<property name="name" value="GDS Pool NumActive" />
+		<property name="connection" ref="clientConnector" />
+		<property name="objectName" value="qtrip:path=SSW2010.server,name=sabrePoolOperations" />
+		<property name="attributeName" value="NumActive" />
+	</bean>
+	
+<bean id="dbPoolNumActive-2P" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+                <property name="name" value="DB Pool NumActive 2P" />
+                <property name="connection" ref="clientConnector" />
+                <property name="objectName" value="qtrip:path=SSW2010.server,name=multiAirlineDataSource" />
+                <property name="attributeName" value="NumActive2P" />
+        </bean>
+
+		<bean id="dbPoolNumActive-7F" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+                <property name="name" value="DB Pool NumActive 7F" />
+                <property name="connection" ref="clientConnector" />
+                <property name="objectName" value="qtrip:path=SSW2010.server,name=multiAirlineDataSource" />
+                <property name="attributeName" value="NumActive7F" />
+        </bean>
+		
+		<bean id="dbPoolNumActive-7H" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+                <property name="name" value="DB Pool NumActive 7H" />
+                <property name="connection" ref="clientConnector" />
+                <property name="objectName" value="qtrip:path=SSW2010.server,name=multiAirlineDataSource" />
+                <property name="attributeName" value="NumActive7H" />
+        </bean>
+		
+		<bean id="dbPoolNumActive-9M" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+                <property name="name" value="DB Pool NumActive 9M" />
+                <property name="connection" ref="clientConnector" />
+                <property name="objectName" value="qtrip:path=SSW2010.server,name=multiAirlineDataSource" />
+                <property name="attributeName" value="NumActive9M" />
+        </bean>
+		<bean id="dbPoolNumActive-9V" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+                <property name="name" value="DB Pool NumActive 9V" />
+                <property name="connection" ref="clientConnector" />
+                <property name="objectName" value="qtrip:path=SSW2010.server,name=multiAirlineDataSource" />
+                <property name="attributeName" value="NumActive9V" />
+        </bean>
+		<bean id="dbPoolNumActive-CY" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+                <property name="name" value="DB Pool NumActive CY" />
+                <property name="connection" ref="clientConnector" />
+                <property name="objectName" value="qtrip:path=SSW2010.server,name=multiAirlineDataSource" />
+                <property name="attributeName" value="NumActiveCY" />
+        </bean>
+		<bean id="dbPoolNumActive-ET" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+                <property name="name" value="DB Pool NumActive ET" />
+                <property name="connection" ref="clientConnector" />
+                <property name="objectName" value="qtrip:path=SSW2010.server,name=multiAirlineDataSource" />
+                <property name="attributeName" value="NumActiveET" />
+        </bean>
+		
+		<bean id="dbPoolNumActive-EY" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+                <property name="name" value="DB Pool NumActive EY" />
+                <property name="connection" ref="clientConnector" />
+                <property name="objectName" value="qtrip:path=SSW2010.server,name=multiAirlineDataSource" />
+                <property name="attributeName" value="NumActiveEY" />
+        </bean>
+		
+	<bean id="dbPoolNumActive-F7" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+                <property name="name" value="DB Pool NumActive F7" />
+                <property name="connection" ref="clientConnector" />
+                <property name="objectName" value="qtrip:path=SSW2010.server,name=multiAirlineDataSource" />
+                <property name="attributeName" value="NumActiveF7" />
+        </bean>
+		
+		<bean id="dbPoolNumActive-KX" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+                <property name="name" value="DB Pool NumActive KX" />
+                <property name="connection" ref="clientConnector" />
+                <property name="objectName" value="qtrip:path=SSW2010.server,name=multiAirlineDataSource" />
+                <property name="attributeName" value="NumActiveKX" />
+        </bean>
+		
+		<bean id="dbPoolNumActive-KS" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+                <property name="name" value="DB Pool NumActive KS" />
+                <property name="connection" ref="clientConnector" />
+                <property name="objectName" value="qtrip:path=SSW2010.server,name=multiAirlineDataSource" />
+                <property name="attributeName" value="NumActiveKS" />
+        </bean>
+		
+		<bean id="dbPoolNumActive-MN" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+                <property name="name" value="DB Pool NumActive MN" />
+                <property name="connection" ref="clientConnector" />
+                <property name="objectName" value="qtrip:path=SSW2010.server,name=multiAirlineDataSource" />
+                <property name="attributeName" value="NumActiveMN" />
+        </bean>
+		<bean id="dbPoolNumActive-PG" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+                <property name="name" value="DB Pool NumActive PG" />
+                <property name="connection" ref="clientConnector" />
+                <property name="objectName" value="qtrip:path=SSW2010.server,name=multiAirlineDataSource" />
+                <property name="attributeName" value="NumActivePG" />
+        </bean>
+		<bean id="dbPoolNumActive-SU" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+                <property name="name" value="DB Pool NumActive SU" />
+                <property name="connection" ref="clientConnector" />
+                <property name="objectName" value="qtrip:path=SSW2010.server,name=multiAirlineDataSource" />
+                <property name="attributeName" value="NumActiveSU" />
+        </bean>
+		<bean id="dbPoolNumActive-VA" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+                <property name="name" value="DB Pool NumActive VA" />
+                <property name="connection" ref="clientConnector" />
+                <property name="objectName" value="qtrip:path=SSW2010.server,name=multiAirlineDataSource" />
+                <property name="attributeName" value="NumActiveVA" />
+        </bean>
+		<bean id="dbPoolNumActive-VN" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+                <property name="name" value="DB Pool NumActive VN" />
+                <property name="connection" ref="clientConnector" />
+                <property name="objectName" value="qtrip:path=SSW2010.server,name=multiAirlineDataSource" />
+                <property name="attributeName" value="NumActiveVN" />
+        </bean>
+		<bean id="dbPoolNumActive-WY" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+                <property name="name" value="DB Pool NumActive WY" />
+                <property name="connection" ref="clientConnector" />
+                <property name="objectName" value="qtrip:path=SSW2010.server,name=multiAirlineDataSource" />
+                <property name="attributeName" value="NumActiveWY" />
+        </bean>
+		<bean id="dbPoolNumActive-YV" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+                <property name="name" value="DB Pool NumActive YV" />
+                <property name="connection" ref="clientConnector" />
+                <property name="objectName" value="qtrip:path=SSW2010.server,name=multiAirlineDataSource" />
+                <property name="attributeName" value="NumActiveVA" />
+        </bean>
+        <bean id="ibeStatisticsList" class="org.springframework.beans.factory.config.ListFactoryBean" >
+                <property name="sourceList">
+                        <list>
+                                <ref bean="gdsPoolNumActive" />
+								<ref bean="dbPoolNumActive-2P" />
+								<ref bean="dbPoolNumActive-7F" />
+								<ref bean="dbPoolNumActive-7H" />
+								<ref bean="dbPoolNumActive-9M" />
+								<ref bean="dbPoolNumActive-9V" />
+								<ref bean="dbPoolNumActive-CY" />
+								<ref bean="dbPoolNumActive-ET" />
+								<ref bean="dbPoolNumActive-EY" />
+								<ref bean="dbPoolNumActive-F7" />
+								<ref bean="dbPoolNumActive-KS" />
+								<ref bean="dbPoolNumActive-KX" />
+								<ref bean="dbPoolNumActive-MN" />
+								<ref bean="dbPoolNumActive-PG" />
+								<ref bean="dbPoolNumActive-SU" />
+								<ref bean="dbPoolNumActive-VA" />
+                                				<ref bean="dbPoolNumActive-VN" />
+								<ref bean="dbPoolNumActive-WY" />
+								<ref bean="dbPoolNumActive-YV" />
+                        </list>
+                </property>
+	</bean>
+</beans>

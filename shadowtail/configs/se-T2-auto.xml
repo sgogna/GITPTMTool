@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+    <bean id="GDSfactory" class="com.nameresolver.dbpools.GDSfactory" init-method="init">
+        <property name="connection" ref="clientConnector" />
+        <property name="domain" value="SE" />
+        <property name="type" value="server" />
+        <property name="beanName"  value="sabrePoolOperations" />
+    </bean>
+
+    <bean id="DBfactory" class="com.nameresolver.dbpools.DBfactory" init-method="init">
+        <property name="connection" ref="clientConnector" />
+        <property name="domain" value="SE" />
+        <property name="type" value="server" />
+        <property name="beanName"  value="pool" />
+    </bean>
+
+    <bean id="GDSpool" factory-bean="GDSfactory" factory-method="createGDSpoolInstance">
+    </bean>
+
+    <bean id="DBpool" factory-bean="DBfactory" factory-method="createDBpoolInstance">
+    </bean>
+
+    <bean id="dataPoolList" class="com.nameresolver.dbpools.DataPoolList">
+        <property name="connection" ref="clientConnector" />
+        <property name="db" ref="DBpool" />
+        <property name="gds" ref="GDSpool" />
+    </bean>
+
+    <bean id="ibeStatisticsList" class="org.springframework.beans.factory.config.ListFactoryBean" >
+        <property name="sourceList" value="#{dataPoolList.getPoolList()}"/>
+    </bean>
+</beans>

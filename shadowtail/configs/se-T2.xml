@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+	<bean id="dbPoolNumActive-EY" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+                <property name="name" value="DB Pool NumActive EY" />
+                <property name="connection" ref="clientConnector" />
+                <property name="objectName" value="SE:path=server,category=dataSource,subcategory=EY,name=pool" />
+                <property name="attributeName" value="NumActive" />
+        </bean>
+		
+	<bean id="dbPoolNumActive-PG" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+                <property name="name" value="DB Pool NumActive PG" />
+                <property name="connection" ref="clientConnector" />
+                <property name="objectName" value="SE:path=server,category=dataSource,subcategory=PG,name=pool" />
+                <property name="attributeName" value="NumActive" />
+        </bean>
+
+	 <bean id="dbPoolNumActive-3M" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+                <property name="name" value="DB Pool NumActive 3M" />
+                <property name="connection" ref="clientConnector" />
+                <property name="objectName" value="SE:path=server,category=dataSource,subcategory=3M,name=pool" />
+                <property name="attributeName" value="NumActive" />
+        </bean>
+
+	<bean id="dbPoolNumActive-SU" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+                <property name="name" value="DB Pool NumActive SU" />
+                <property name="connection" ref="clientConnector" />
+                <property name="objectName" value="SE:path=server,category=dataSource,subcategory=SU,name=pool" />
+                <property name="attributeName" value="NumActive" />
+        </bean>
+
+		
+	<bean id="gdsPoolNumActive" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+                <property name="name" value="GDS Pool NumActive" />
+                <property name="connection" ref="clientConnector" />
+                <property name="objectName" value="SE:path=server,name=usg.pool.jmx" />
+                <property name="attributeName" value="NumActive" />
+        </bean>
+		
+        <bean id="ibeStatisticsList" class="org.springframework.beans.factory.config.ListFactoryBean" >
+                <property name="sourceList">
+                        <list>
+                            <ref bean="dbPoolNumActive-EY" />
+                                                            <ref bean="dbPoolNumActive-PG" />
+                            <ref bean="dbPoolNumActive-3M" />
+                                                            <ref bean="dbPoolNumActive-SU" />
+                                <ref bean="gdsPoolNumActive" />
+                        </list>
+                </property>
+	</bean>
+</beans>

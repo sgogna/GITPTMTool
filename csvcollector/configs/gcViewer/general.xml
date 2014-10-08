@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+	<bean id="Preparer" class="com.csvcollector.Preparer">
+		<property name="leadingHeaders">
+			<set>
+				<value>Filename</value>
+			</set>
+		</property>
+
+		<property name="nameToMetricMap">
+			<map>
+				<!--<entry key="gcLogFile" value="noMetric" /> -->
+				<!--<entry key="footprint" value="noMetric" /> -->
+				<!--<entry key="avgfootprintAfterFullGC" value="noMetric" /> -->
+				<!--<entry key="avgfootprintAfterFullGC?" value="noMetric" /> -->
+				<!--<entry key="avgfootprintAfterFullGCisSig" value="noMetric" /> -->
+				<!--<entry key="avgFreedMemoryByFullGC" value="noMetric" /> -->
+				<!--<entry key="avgFreedMemoryByFullGC?" value="noMetric" /> -->
+				<!--<entry key="avgFreedMemoryByFullGCisSig" value="noMetric" /> -->
+				<!--<entry key="slopeAfterFullGC" value="noMetric" /> -->
+				<!--<entry key="avgfootprintAfterGC" value="noMetric" /> -->
+				<!--<entry key="avgfootprintAfterGC?" value="noMetric" /> -->
+				<!--<entry key="avgfootprintAfterGCisSig" value="noMetric" /> -->
+				<!--<entry key="slopeAfterGC" value="noMetric" /> -->
+				<!--<entry key="avgRelativePostGCInc" value="noMetric" /> -->
+				<!--<entry key="freedMemoryByGC" value="noMetric" /> -->
+				<!--<entry key="freedMemoryByGCpc" value="noMetric" /> -->
+				<!--<entry key="avgFreedMemoryByGC" value="noMetric" /> -->
+				<!--<entry key="avgFreedMemoryByGC?" value="noMetric" /> -->
+				<!--<entry key="avgFreedMemoryByGCisSig" value="noMetric" /> -->
+				<!--<entry key="freedMemory" value="noMetric" /> -->
+				<!--<entry key="avgPauseIsSig" value="noMetric" /> -->
+				<!--<entry key="avgPause" value="noMetric" /> -->
+				<!--<entry key="avgPause?" value="noMetric" /> -->
+				<!--<entry key="minPause" value="noMetric" /> -->
+				<!--<entry key="maxPause" value="noMetric" /> -->
+				<!--<entry key="avgGCPauseIsSig" value="noMetric" /> -->
+				<!--<entry key="avgGCPause" value="noMetric" /> -->
+				<!--<entry key="avgGCPause?" value="noMetric" /> -->
+				<!--<entry key="avgFullGCPauseIsSig" value="noMetric" /> -->
+				<!--<entry key="avgFullGCPause" value="noMetric" /> -->
+				<!--<entry key="avgFullGCPause?" value="noMetric" /> -->
+				<!--<entry key="fullGCPauseCount" value="noMetric" /> -->
+				<!--<entry key="accumPause" value="noMetric" /> -->
+				<!--<entry key="fullGCPause" value="noMetric" /> -->
+				<!--<entry key="fullGCPausePc" value="noMetric" /> -->
+				<!--<entry key="gcPause" value="noMetric" /> -->
+				<!--<entry key="gcPausePc" value="noMetric" /> -->
+				<!--<entry key="footprint" value="noMetric" /> -->
+				<!--<entry key="freedMemory" value="noMetric" /> -->
+				<!--<entry key="throughput" value="noMetric" /> -->
+				<!--<entry key="totalTime" value="noMetric" /> -->
+				<!--<entry key="freedMemoryPerMin" value="noMetric" /> -->
+				<!--<entry key="gcPerformance" value="noMetric" /> -->
+				<!--<entry key="fullGCPerformance" value="noMetric" /> -->
+			</map>
+		</property>
+
+		<property name="genericNameToMetricMap">
+			<map>
+				<entry key="freed" value="noMetric" />
+				<entry key="avg" value="noMetric" />
+				<entry key="gc" value="noMetric" />
+				<entry key="fullGC" value="noMetric" />
+				<entry key="accum" value="noMetric" />
+				<entry key="footprint" value="noMetric" />
+				<entry key="throughput" value="noMetric" />
+				<entry key="slope" value="noMetric" />
+				<entry key="min" value="noMetric" />
+				<entry key="max" value="noMetric" />
+				<entry key="total" value="noMetric" />
+				<entry key="date" value="noMetric" />
+			</map>
+		</property>
+
+		<property name="predefinedHeaders">
+			<set>
+				<value>totalTime</value>
+				<value>dateTimeBegin</value>
+				<value>dateTimeEnd</value>
+				<value>totalTime</value>
+				<value>throughput</value>
+				<value>freedMemoryPerMin</value>
+				
+				<value>avgPauseInterval</value>
+				<value>avgPause</value>
+				<value>maxPause</value>
+				<value>avgFullGCPause</value>
+				
+				
+				<value>avgPromotion</value>
+				<value>avgfootprintAfterGC</value>
+				
+				<value>fullGCPause</value>
+				<value>fullGCPauseCount</value>
+				<value>fullGCPausePc</value>
+				
+				
+				<value>avgGCPause</value>
+				<value>avgGCPauseσ</value>
+				<value>gcPause</value>
+				<value>gcPausePc</value>
+
+				
+				
+				<value>avgFreedMemoryByGC</value>
+				<value>avgFreedMemoryByGCσ</value>
+				
+				<value>accumPause</value>
+				<value>footprint</value>
+			</set>
+		</property>
+
+		<property name="excludedHeaders">
+			<set>
+			</set>
+		</property>
+
+		<property name="csvProcessor" ref="fileProcessor" />
+	</bean>
+
+</beans>

@@ -1,0 +1,493 @@
+2013-08-20 14:36:30 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:36:30 UTC 2013]; root of context hierarchy
+2013-08-20 14:36:30 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:36:30 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:36:30 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5010ad7c: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:00 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6143c610: startup date [Tue Aug 20 14:37:00 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:00 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:00 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:00 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5010ad7c: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:00 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:00 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:00 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:00 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:00 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:01 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:01 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:01 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:01 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:01 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:02 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:02 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:02 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:02 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:02 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:02 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:02 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:02 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:03 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:03 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:03 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:03 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:03 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:03 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:37:03 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:04 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:04 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6143c610: startup date [Tue Aug 20 14:37:04 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:05 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:05 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:05 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:05 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:05 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5010ad7c: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:05 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:05 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:05 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:06 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:06 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5010ad7c: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:06 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:06 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:06 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:06 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:06 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:07 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:07 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:07 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:07 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:07 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:07 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6143c610: startup date [Tue Aug 20 14:37:07 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:07 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:07 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:08 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5010ad7c: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:08 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:08 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:08 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:08 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:08 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:09 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:09 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:09 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:09 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:09 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:09 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:09 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:09 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:09 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:10 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5010ad7c: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:10 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:10 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:10 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:10 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:10 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:11 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:37:11 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:11 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:11 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:11 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:11 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:37:11 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:11 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:12 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:12 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:12 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:12 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:12 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:12 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:12 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:13 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:37:13 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:13 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:13 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:13 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:13 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:37:13 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:13 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:14 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:14 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:14 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:37:14 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:14 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:14 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:14 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5010ad7c: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:15 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:15 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:15 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:15 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:15 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:15 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:37:15 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:15 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:16 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:16 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5010ad7c: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:16 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:16 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:16 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:16 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:16 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:17 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:17 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:17 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:17 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:17 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:17 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:17 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:17 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:17 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:18 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:18 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:18 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:18 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:18 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:18 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:18 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:18 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:18 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:18 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5010ad7c: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:20 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:20 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:20 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:20 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:20 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:21 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:21 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:22 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:22 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:22 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:22 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:22 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:22 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:23 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:23 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5010ad7c: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:23 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:23 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:23 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:23 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:23 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:24 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:24 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:24 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:24 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:24 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:24 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:24 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:24 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:24 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:25 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5010ad7c: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:25 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:25 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:25 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:25 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:25 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:25 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:25 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:25 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:26 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:26 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:26 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:26 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:26 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:26 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:26 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:27 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:37:27 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:27 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:27 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:27 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@63be573d: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:27 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:27 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:27 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:27 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:27 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:28 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:37:28 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:28 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:28 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:28 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@63be573d: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:29 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:37:29 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:29 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:29 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:29 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:30 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:37:30 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:30 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:30 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:30 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@63be573d: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:30 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:37:30 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:30 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:30 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:31 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:31 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6143c610: startup date [Tue Aug 20 14:37:31 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:31 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:31 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:31 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5010ad7c: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:32 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:32 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:32 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:32 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:32 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:32 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:32 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:32 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:32 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:32 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5010ad7c: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:33 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6143c610: startup date [Tue Aug 20 14:37:33 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:33 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:33 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:33 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5010ad7c: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:33 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:37:33 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:33 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:33 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:34 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:34 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6143c610: startup date [Tue Aug 20 14:37:34 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:34 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:34 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:34 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5010ad7c: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:35 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:37:34 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:35 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:35 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:35 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@63be573d: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:35 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:35 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:35 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:35 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:35 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5010ad7c: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:36 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:36 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:36 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:36 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:36 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:36 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:37:36 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:36 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:36 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:36 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5010ad7c: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:37 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:37 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:37 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:37 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:37 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:37 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:37 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:37 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:38 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:38 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:38 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:38 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:38 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:38 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:38 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:39 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:37:39 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:39 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:39 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:39 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@63be573d: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:39 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:37:39 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:39 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:40 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:40 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@63be573d: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:40 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:40 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:40 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:40 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:40 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:41 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:41 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:41 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:41 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:41 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:41 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:37:41 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:41 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:41 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:41 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5010ad7c: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:42 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:37:42 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:42 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:42 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:42 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@63be573d: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:42 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:37:42 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:43 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:43 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:43 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5010ad7c: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:43 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:43 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:43 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:43 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:43 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:44 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:44 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:44 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:44 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:44 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5010ad7c: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:45 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:37:45 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:45 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:45 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:45 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@63be573d: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:45 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:45 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:45 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:45 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:45 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:46 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:46 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:46 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:46 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:46 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:46 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:46 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:46 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:47 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:47 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5010ad7c: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:47 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:47 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:47 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:47 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:47 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5010ad7c: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:48 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:48 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:48 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:48 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:48 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:48 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:37:48 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:48 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:48 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:48 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:49 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:49 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:49 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:49 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:49 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:50 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:37:50 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:50 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:50 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:50 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@63be573d: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:50 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:50 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:50 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:50 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:50 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:51 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:51 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:51 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:51 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:51 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:51 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:37:51 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:51 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:52 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:52 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@63be573d: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:52 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:37:52 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:52 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:52 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:52 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:53 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:37:53 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:53 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:53 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:53 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@63be573d: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:53 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:37:53 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:53 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:54 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:54 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@63be573d: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:54 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:54 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:54 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:54 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:54 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:55 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:55 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:55 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:55 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:55 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5010ad7c: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:55 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6143c610: startup date [Tue Aug 20 14:37:55 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:55 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:55 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:55 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5010ad7c: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:56 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:56 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:56 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:56 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:56 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:56 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:56 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:56 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:57 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:57 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:57 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:57 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:57 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:57 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:57 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:58 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:37:58 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:58 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:58 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:58 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:58 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:37:58 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:58 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:59 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:59 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@63be573d: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:37:59 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:37:59 UTC 2013]; root of context hierarchy
+2013-08-20 14:37:59 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:37:59 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:37:59 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:38:00 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:38:00 UTC 2013]; root of context hierarchy
+2013-08-20 14:38:00 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:38:00 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:38:00 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@63be573d: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:38:00 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:38:00 UTC 2013]; root of context hierarchy
+2013-08-20 14:38:00 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:38:00 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:38:00 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:38:01 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:38:01 UTC 2013]; root of context hierarchy
+2013-08-20 14:38:01 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:38:01 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:38:01 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@63be573d: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:38:02 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:38:02 UTC 2013]; root of context hierarchy
+2013-08-20 14:38:02 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:38:02 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:38:02 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:38:02 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:38:02 UTC 2013]; root of context hierarchy
+2013-08-20 14:38:02 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:38:03 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:38:03 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@63be573d: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:38:03 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4ae1b0db: startup date [Tue Aug 20 14:38:03 UTC 2013]; root of context hierarchy
+2013-08-20 14:38:03 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:38:03 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:38:03 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@10ce7a49: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:38:04 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:38:04 UTC 2013]; root of context hierarchy
+2013-08-20 14:38:04 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:38:04 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:38:04 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@63be573d: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:38:04 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:38:04 UTC 2013]; root of context hierarchy
+2013-08-20 14:38:05 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:38:05 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:38:05 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@63be573d: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:38:05 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:38:05 UTC 2013]; root of context hierarchy
+2013-08-20 14:38:05 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:38:05 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:38:05 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@63be573d: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:38:06 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:38:06 UTC 2013]; root of context hierarchy
+2013-08-20 14:38:06 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:38:06 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:38:06 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@63be573d: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:38:06 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:38:06 UTC 2013]; root of context hierarchy
+2013-08-20 14:38:06 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:38:07 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:38:07 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@63be573d: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:38:07 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:38:07 UTC 2013]; root of context hierarchy
+2013-08-20 14:38:07 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:38:07 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:38:07 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:38:08 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:38:08 UTC 2013]; root of context hierarchy
+2013-08-20 14:38:08 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:38:08 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:38:08 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@63be573d: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:38:08 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:38:08 UTC 2013]; root of context hierarchy
+2013-08-20 14:38:08 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:38:08 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:38:09 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:38:09 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:38:09 UTC 2013]; root of context hierarchy
+2013-08-20 14:38:09 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:38:09 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:38:09 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@63be573d: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:38:09 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:38:09 UTC 2013]; root of context hierarchy
+2013-08-20 14:38:10 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:38:10 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:38:10 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:38:10 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:38:10 UTC 2013]; root of context hierarchy
+2013-08-20 14:38:10 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:38:10 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:38:11 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:38:11 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:38:11 UTC 2013]; root of context hierarchy
+2013-08-20 14:38:11 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:38:11 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:38:11 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5010ad7c: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:38:11 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4ae1b0db: startup date [Tue Aug 20 14:38:11 UTC 2013]; root of context hierarchy
+2013-08-20 14:38:12 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:38:12 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:38:12 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@10ce7a49: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:38:12 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:38:12 UTC 2013]; root of context hierarchy
+2013-08-20 14:38:12 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:38:12 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:38:12 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:39:02 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:39:02 UTC 2013]; root of context hierarchy
+2013-08-20 14:39:02 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:39:03 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:39:03 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:39:03 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:39:03 UTC 2013]; root of context hierarchy
+2013-08-20 14:39:03 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:39:03 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:39:03 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5010ad7c: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:39:04 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:39:04 UTC 2013]; root of context hierarchy
+2013-08-20 14:39:04 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:39:04 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:39:04 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:39:04 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:39:04 UTC 2013]; root of context hierarchy
+2013-08-20 14:39:04 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:39:04 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:39:04 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:39:05 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:39:05 UTC 2013]; root of context hierarchy
+2013-08-20 14:39:05 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:39:05 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:39:05 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:39:06 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:39:06 UTC 2013]; root of context hierarchy
+2013-08-20 14:39:06 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:39:06 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:39:06 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:39:06 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:39:06 UTC 2013]; root of context hierarchy
+2013-08-20 14:39:06 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:39:06 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:39:06 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:39:07 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6143c610: startup date [Tue Aug 20 14:39:07 UTC 2013]; root of context hierarchy
+2013-08-20 14:39:07 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:39:07 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:39:07 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5010ad7c: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:39:07 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:39:07 UTC 2013]; root of context hierarchy
+2013-08-20 14:39:07 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:39:09 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:39:09 UTC 2013]; root of context hierarchy
+2013-08-20 14:39:09 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:39:09 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:39:09 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:40:59 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:40:59 UTC 2013]; root of context hierarchy
+2013-08-20 14:40:59 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:40:59 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:40:59 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:41:10 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:41:10 UTC 2013]; root of context hierarchy
+2013-08-20 14:41:10 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:41:10 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:41:10 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:41:24 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Aug 20 14:41:24 UTC 2013]; root of context hierarchy
+2013-08-20 14:41:24 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:41:24 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:41:24 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-20 14:42:04 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Aug 20 14:42:04 UTC 2013]; root of context hierarchy
+2013-08-20 14:42:04 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/builder.xml]
+2013-08-20 14:42:05 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2013-08-20 14:42:05 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@655198f3: defining beans [fileProcessor,Preparer]; root of factory hierarchy

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd ">
+
+	<bean id="JMXAttributeAspectBean" class="pl.com.rupert.shadowtail.JMXAttributeAspect"></bean>
+
+	<aop:config>
+		<aop:pointcut id="jmxAttributeGetValuePointcut" expression="execution(public * uk.co.blackpepper.shadowtail.data.Statistic.getValue())" />
+		<aop:pointcut id="jmxAttributeGetValueAsStringPointcut" expression="execution(public * uk.co.blackpepper.shadowtail.data.Statistic.getValueAsString())" />
+		<aop:aspect id="jmxAttributeAspectDef" ref="JMXAttributeAspectBean">
+			<aop:around pointcut-ref="jmxAttributeGetValuePointcut" method="getJMXAttrValue" />
+			<aop:around pointcut-ref="jmxAttributeGetValueAsStringPointcut" method="getJMXAttrString" />
+		</aop:aspect>
+	</aop:config>
+
+	<bean id="credentials" class="uk.co.blackpepper.shadowtail.util.EnvironmentMap" init-method="init">
+
+		<!-- ********** change the values myusername and mypassword *********** -->
+		<property name="username" value="tomcatRW" />
+		<property name="password" value="tomcat01" />
+
+	</bean>
+	
+	<!-- tomcat connection including the URL for JMX -->
+	<bean id="clientConnector" class="org.springframework.jmx.support.MBeanServerConnectionFactoryBean">
+		<property name="serviceUrl" value="service:jmx:rmi:///jndi/rmi://${target.host}:${target.port}/jmxrmi" />
+		<property name="environmentMap" ref="credentials" />
+		<property name="connectOnStartup" value="false" />
+	</bean>
+
+	<!-- timestamp statistic -->
+	<bean id="timestamp" class="uk.co.blackpepper.shadowtail.data.support.TimeStampStatistic" init-method="init">
+		<property name="time" ref="timeServer" />
+		<property name="name" value="Timestamp" />
+	</bean>
+
+	<bean id="dateTime" class="pl.com.rupert.shadowtail.DateTimeStatistic" init-method="init">
+		<property name="name" value="Date Time" />
+		<property name="format" value="yyyy-MM-dd_HH-mm-ss" />
+	</bean>
+
+	<bean id="date" class="pl.com.rupert.shadowtail.DateTimeStatistic" init-method="init">
+		<property name="name" value="Date" />
+		<property name="format" value="yyyy-MM-dd" />
+	</bean>
+
+	<bean id="time" class="pl.com.rupert.shadowtail.DateTimeStatistic" init-method="init">
+		<property name="name" value="Time" />
+		<property name="format" value="HH:mm:ss" />
+	</bean>
+
+	<bean id="timeServer" class="uk.co.blackpepper.util.date.support.DefaultTimeServer" />
+
+
+	<bean id="timeStatisticsList" class="org.springframework.beans.factory.config.ListFactoryBean">
+		<property name="sourceList">
+			<list>
+				<ref bean="date" />
+				<ref bean="time" />
+				<!--<ref bean="timestamp" /> -->
+			</list>
+		</property>
+	</bean>
+
+	<bean id="fileFactory" class="uk.co.blackpepper.shadowtail.output.file.DateDrivenFileFactory">
+		<property name="datePattern" value="yyyy-MM-dd" />
+		<property name="timeServer" ref="timeServer" />
+		<property name="statisticGroup" ref="group" />
+		<property name="baseDirectory" ref="baseDir" />
+		<property name="prefix" value="${config.id}" />
+		<property name="suffix" value="-#{systemProperties['config.tag']}.log" />
+
+		<property name="rollEnabled" value="false" />
+	</bean>
+
+	<bean id="baseDir" class="java.io.File">
+		<constructor-arg type="java.lang.String" value="../artifacts/${ptm.env}/shadowtail" />
+	</bean>
+
+	<bean id="statisticsList" class="pl.com.rupert.shadowtail.ListFactoryMerger">
+		<property name="lists">
+			<list>
+				<ref bean="timeStatisticsList" />
+				<ref bean="jvmStatisticsList" />
+				<ref bean="catalinaStatisticsList" />
+				<ref bean="ibeStatisticsList" />
+			</list>
+		</property>
+	</bean>
+
+	<bean id="group" class="uk.co.blackpepper.shadowtail.data.support.ManagedStatisticGroup">
+		<property name="name" value="${config.id}" />
+		<property name="description" value="JMX statistics" />
+		<property name="statistics" ref="statisticsList" />
+	</bean>
+
+	<bean id="statLogger" class="uk.co.blackpepper.shadowtail.output.file.FileLogger">
+		<property name="fileFactory" ref="fileFactory" />
+		<property name="group" ref="group" />
+	</bean>
+
+	<bean id="logTask" class="org.springframework.scheduling.timer.MethodInvokingTimerTaskFactoryBean">
+		<property name="targetObject" ref="statLogger" />
+		<property name="targetMethod" value="log" />
+	</bean>
+
+	<bean id="scheduledTask" class="org.springframework.scheduling.timer.ScheduledTimerTask">
+		<property name="delay" value="1" />
+		<property name="period" value="10000" />
+		<property name="timerTask" ref="logTask" />
+	</bean>
+
+	<bean id="timerFactory" class="org.springframework.scheduling.timer.TimerFactoryBean" lazy-init="true">
+		<property name="scheduledTimerTasks">
+			<list>
+				<ref local="scheduledTask" />
+			</list>
+		</property>
+	</bean>
+
+
+
+</beans>

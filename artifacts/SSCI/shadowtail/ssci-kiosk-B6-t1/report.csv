@@ -1,0 +1,2 @@
+Filename,Begin-time,End-time,Duration-time,Process-Cpu-Utilization,Server-Load,Throughput,Throughput-5sec,JVM-Thread-Count,Heap-Memory-Used,Loaded-Class-Count,Unloaded-Class-Count,GC-CMS-Count,GC-CMS-Time,GC-ParNew-Count,GC-ParNew-Time,http-Threads-Busy,http-Threads-Count,GC-PS-MarkSweep-Count,GC-PS-MarkSweep-Time,GC-PS-Scavenge-Count,GC-PS-Scavenge-Time
+ssci-kiosk-B6-t1-2014-04-07-0-Test1.log,2014-04-07 16:35:03,2014-04-07 16:35:53,0,0.01,0.16,100,100,112,235117112,4962,56,,,,,0,60,3,883,550,10545

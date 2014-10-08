@@ -1,0 +1,16 @@
+2013-08-23 09:16:47 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Fri Aug 23 09:16:47 UTC 2013]; root of context hierarchy
+2013-08-23 09:16:47 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/builder.xml]
+2013-08-23 09:16:47 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/general.xml]
+2013-08-23 09:16:47 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@177fee56: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-23 09:21:05 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Fri Aug 23 09:21:05 UTC 2013]; root of context hierarchy
+2013-08-23 09:21:05 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/builder.xml]
+2013-08-23 09:21:06 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/general.xml]
+2013-08-23 09:21:06 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@151ec697: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-23 09:22:02 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Fri Aug 23 09:22:02 UTC 2013]; root of context hierarchy
+2013-08-23 09:22:02 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/builder.xml]
+2013-08-23 09:22:03 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/general.xml]
+2013-08-23 09:22:03 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@151ec697: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-08-23 09:28:47 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Fri Aug 23 09:28:47 UTC 2013]; root of context hierarchy
+2013-08-23 09:28:47 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/builder.xml]
+2013-08-23 09:28:47 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/general.xml]
+2013-08-23 09:28:47 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@177fee56: defining beans [fileProcessor,Preparer]; root of factory hierarchy

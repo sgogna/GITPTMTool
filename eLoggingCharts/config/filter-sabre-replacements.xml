@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	   					   http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="sabreCommandsReplacements" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="^\*[A-Z]{6}$" />
+					<constructor-arg value="displayPNR" />
+				</bean>
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^G/)(.*)" />
+					<constructor-arg value="G-slash" />
+				</bean>
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^G\?)(.*)" />
+					<constructor-arg value="G-question" />
+				</bean>
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^G\*)(.*)" />
+					<constructor-arg value="G-display" />
+				</bean>
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^GC*)(.*)" />
+					<constructor-arg value="$1" />
+				</bean>
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^V\*)(.*)" />
+					<constructor-arg value="$1" />
+				</bean>
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^4OTH)(.*)" />
+					<constructor-arg value="$1" />
+				</bean>
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^2B)(.*)" />
+					<constructor-arg value="$1" />
+				</bean>
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^4G\*)(.*)" />
+					<constructor-arg value="$1" />
+				</bean>
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^A\*)(.*)" />
+					<constructor-arg value="$1" />
+				</bean>
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^GB-)(.*)" />
+					<constructor-arg value="$1" />
+				</bean>
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^GRB)(.*)" />
+					<constructor-arg value="$1" />
+				</bean>
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^JX PNR\*)(.*)" />
+					<constructor-arg value="$1" />
+				</bean>
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^VCR\*)(.*)" />
+					<constructor-arg value="$1" />
+				</bean>
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^REQ/)(.*)" />
+					<constructor-arg value="$1" />
+				</bean>
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^23M)(.*)" />
+					<constructor-arg value="$1" />
+				</bean>
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^T\*)([A-Z]{3})" />
+					<constructor-arg value="$1" />
+				</bean>
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^-1)(.*)" />
+					<constructor-arg value="$1" />
+				</bean>	
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^0IN)(.*)" />
+					<constructor-arg value="$1" />
+				</bean>
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^3DOCS)(.*)" />
+					<constructor-arg value="$1" />
+				</bean>
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^4DOCS)(.*)" />
+					<constructor-arg value="$1" />
+				</bean>
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^4APAY)(.*)" />
+					<constructor-arg value="$1" />
+				</bean>
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^4G)(.*)" />
+					<constructor-arg value="$1" />
+				</bean>
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^4SPDX)(.*)" />
+					<constructor-arg value="$1" />
+				</bean>	
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^8TL)(.*)" />
+					<constructor-arg value="$1" />
+				</bean>		
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^CK\*)(.*)" />
+					<constructor-arg value="$1" />
+				</bean>					
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^PI/)(.*)" />
+					<constructor-arg value="$1" />
+				</bean>
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^W\*2A)(.*)" />
+					<constructor-arg value="$1" />
+				</bean>
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^WPM)(.*)" />
+					<constructor-arg value="$1" />
+				</bean>
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^W.F\*[A-Z]{2})(.*)" />
+					<constructor-arg value="$1" />
+				</bean>
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^MI&lt;)(.*)" />
+					<constructor-arg value="$1" />
+				</bean>
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^PE)(.*)" />
+					<constructor-arg value="$1" />
+				</bean>
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^CC\*)(.*)" />
+					<constructor-arg value="$1" />
+				</bean>
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^WPR)(.*)" />
+					<constructor-arg value="$1" />
+				</bean>
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^WPN)(.*)" />
+					<constructor-arg value="$1" />
+				</bean>
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^5H-)(.*)" />
+					<constructor-arg value="$1" />
+				</bean>
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^5-TBM)(.*)" />
+					<constructor-arg value="$1" />
+				</bean>
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^4PBG)(.*)" />
+					<constructor-arg value="$1" />
+				</bean>	
+				<bean class="com.eb2.elogging.model.StringReplacement">
+					<constructor-arg value="(^8)(.*)" />
+					<constructor-arg value="$1" />
+				</bean>	
+			</list>
+			
+		</constructor-arg>
+	</bean>
+</beans>

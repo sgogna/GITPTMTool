@@ -1,0 +1,13 @@
+24917 / 131
+heap smaller than 1500
+completed, iteration: 1, size: 131
+capturing PID: 24917
+Dumping heap to /ssci-kiosk-B6-t1.20140219_172710.sandy_test.hprof ...
+Permission denied
+chmod: cannot access `/ssci-kiosk-B6-t1.20140219_172710.sandy_test.hprof': No such file or directory
+ls: /ssci-kiosk-B6-t1.20140219_172710.sandy_test.hprof: No such file or directory
+compressing ...
+gzip: /ssci-kiosk-B6-t1.20140219_172710.sandy_test.hprof: No such file or directory
+ls: /ssci-kiosk-B6-t1.20140219_172710.sandy_test.hprof.gz: No such file or directory
+heap dump capture complete
+ls: /ssci-kiosk-B6-t1.20140219_172710.sandy_test.hprof.gz: No such file or directory

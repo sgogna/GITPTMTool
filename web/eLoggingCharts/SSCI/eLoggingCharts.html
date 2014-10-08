@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>eLogging Charts</title>
+<!--[if IE]><script language="javascript" type="text/javascript" src="js/jquery/excanvas.min.js"></script><![endif]-->
+
+<link rel="stylesheet" type="text/css" href="js/jquery/jqplot/jquery.jqplot.css" />
+<link rel="stylesheet" type="text/css" href="js/jquery/examples.css" />
+<link rel="stylesheet" type="text/css" href="css/eLoggingCharts.css" />
+
+<link rel="stylesheet" type="text/css" href="css/demo_table.css" />
+<link rel="stylesheet" type="text/css" href="css/demo_table_jui.css" />
+<link rel="stylesheet" type="text/css" href="css/demo_page.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.8.11.custom.css" />
+
+<script language="javascript" type="text/javascript" src="js/jquery/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="js/jquery/jqplot/jquery.jqplot.js"></script>
+ 
+<script language="javascript" type="text/javascript" src="js/jquery/jqplot/plugins/jqplot.logAxisRenderer.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/jquery/jqplot/plugins/jqplot.BezierCurveRenderer.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/jquery/jqplot/plugins/jqplot.barRenderer.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/jquery/jqplot/plugins/jqplot.canvasTextRenderer.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/jquery/jqplot/plugins/jqplot.canvasAxisTickRenderer.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/jquery/jqplot/plugins/jqplot.dateAxisRenderer.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/jquery/jqplot/plugins/jqplot.highlighter.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/jquery/jqplot/plugins/jqplot.pieRenderer.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/jquery/jqplot/plugins/jqplot.cursor.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/jquery/jquery.dataTables.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/jquery-ui-1.8.11.custom.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/jquery/jquery.csv-0.71.min.js"></script>
+
+<script language="javascript" type="text/javascript" src="js/eLogging/charts.js"></script>
+<script language="javascript" type="text/javascript" src="js/yui/yui/yui-debug.js"></script>
+
+<script language="javascript" type="text/javascript">
+	var yuiConfig = {
+		base : 'js/yui/',
+		loadOptional : true
+	};
+	YUI3 = null;
+	eLoggingCharts.testsRootFolder="/artifacts/SSCI/eLoggingCharts/SSCI/";
+
+	YUI(yuiConfig).use('node', function(Y) {
+		YUI3 = Y;
+		Y.on("load", eLoggingCharts.initialize);
+	});
+
+
+
+</script>
+
+</head>
+<body>
+<div id="eloggingChartsContainer"></div>
+</body>
+</html>

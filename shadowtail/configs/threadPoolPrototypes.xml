@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+
+	<bean id="threadPool-Size" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init" scope="prototype">
+		<property name="name" value="LatchThreadPool RunningTasks" />
+		<property name="connection" ref="clientConnector" />
+		<property name="attributeName" value="PoolSize" />
+	</bean>
+
+	<bean id="threadPool-Active" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init" scope="prototype">
+		<property name="name" value="LatchThreadPool RunningTasks" />
+		<property name="connection" ref="clientConnector" />
+		<property name="attributeName" value="RunningTasks" />
+	</bean>
+	<bean id="threadPool-Queue" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init" scope="prototype">
+		<property name="name" value="LatchThreadPool RunningTasks" />
+		<property name="connection" ref="clientConnector" />
+		<property name="attributeName" value="ExecutorQueueSize" />
+	</bean>
+
+	<bean id="threadPool-Rejected" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init" scope="prototype">
+		<property name="name" value="LatchThreadPool RunningTasks" />
+		<property name="connection" ref="clientConnector" />
+		<property name="attributeName" value="RejectedCount" />
+	</bean>
+
+	<bean id="threadPool-Cancelled" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init" scope="prototype">
+		<property name="name" value="LatchThreadPool RunningTasks" />
+		<property name="connection" ref="clientConnector" />
+		<property name="attributeName" value="RejectedCount" />
+	</bean>
+
+</beans>

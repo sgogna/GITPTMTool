@@ -1,0 +1,56 @@
+2013-09-24 07:28:06 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3174a615: startup date [Tue Sep 24 07:28:06 UTC 2013]; root of context hierarchy
+2013-09-24 07:28:06 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/builder.xml]
+2013-09-24 07:28:06 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/general.xml]
+2013-09-24 07:28:06 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@177fee56: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-09-24 07:28:20 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Sep 24 07:28:20 UTC 2013]; root of context hierarchy
+2013-09-24 07:28:20 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/builder.xml]
+2013-09-24 07:28:20 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/general.xml]
+2013-09-24 07:28:20 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@177fee56: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-09-24 07:37:11 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Sep 24 07:37:11 UTC 2013]; root of context hierarchy
+2013-09-24 07:37:11 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/builder.xml]
+2013-09-24 07:37:11 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/general.xml]
+2013-09-24 07:37:11 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@151ec697: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-09-24 07:37:11 ShadowtailLogAggregator [INFO] Processing file: /ssw2/sabre/cert/performance/tools/shadowtail/logs/start-stop.log
+2013-09-24 07:37:11 ShadowtailLogAggregator [ERROR] Faile to process File: /ssw2/sabre/cert/performance/tools/shadowtail/logs/start-stop.log. PArsing line failed: [2012-12-11_08-46-11] started shadowtail sswhlc2711, pid: 16579
+2013-09-24 07:39:00 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27222045: startup date [Tue Sep 24 07:39:00 UTC 2013]; root of context hierarchy
+2013-09-24 07:39:00 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/builder.xml]
+2013-09-24 07:39:00 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/general.xml]
+2013-09-24 07:39:00 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@151ec697: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-09-24 07:39:00 ShadowtailLogAggregator [INFO] Processing file: /ssw2/sabre/cert/performance/tools/shadowtail/logs/start-stop.log
+2013-09-24 07:39:00 ShadowtailLogAggregator [ERROR] Faile to process File: /ssw2/sabre/cert/performance/tools/shadowtail/logs/start-stop.log. PArsing line failed: [2012-12-11_08-46-11] started shadowtail sswhlc2711, pid: 16579
+2013-09-24 07:42:52 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6143c610: startup date [Tue Sep 24 07:42:52 UTC 2013]; root of context hierarchy
+2013-09-24 07:42:52 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/builder.xml]
+2013-09-24 07:42:52 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/general.xml]
+2013-09-24 07:42:52 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3a6a2d75: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-09-24 07:42:52 ShadowtailLogAggregator [INFO] Processing file: /ssw2/sabre/cert/performance/tools/shadowtail/logs/start-stop.log
+2013-09-24 07:42:52 ShadowtailLogAggregator [ERROR] Faile to process File: /ssw2/sabre/cert/performance/tools/shadowtail/logs/start-stop.log. PArsing line failed: [2012-12-11_08-46-11] started shadowtail sswhlc2711, pid: 16579
+2013-09-24 07:43:17 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6143c610: startup date [Tue Sep 24 07:43:17 UTC 2013]; root of context hierarchy
+2013-09-24 07:43:17 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/builder.xml]
+2013-09-24 07:43:18 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/general.xml]
+2013-09-24 07:43:18 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4ff85c27: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-09-24 07:43:18 ShadowtailLogAggregator [INFO] Processing file: /ssw2/sabre/cert/performance/tools/shadowtail/logs/start-stop.log
+2013-09-24 07:43:18 ShadowtailLogAggregator [ERROR] Faile to process File: /ssw2/sabre/cert/performance/tools/shadowtail/logs/start-stop.log. PArsing line failed: [2012-12-11_08-46-11] started shadowtail sswhlc2711, pid: 16579
+2013-09-24 07:45:02 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6143c610: startup date [Tue Sep 24 07:45:02 UTC 2013]; root of context hierarchy
+2013-09-24 07:45:02 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/builder.xml]
+2013-09-24 07:45:02 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/general.xml]
+2013-09-24 07:45:02 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4ff85c27: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-09-24 07:45:02 ShadowtailLogAggregator [INFO] Processing file: /ssw2/sabre/cert/performance/tools/shadowtail/logs/start-stop.log
+2013-09-24 07:45:02 ShadowtailLogAggregator [ERROR] Faile to process File: /ssw2/sabre/cert/performance/tools/shadowtail/logs/start-stop.log. PArsing line failed: [2012-12-11_08-46-11] started shadowtail sswhlc2711, pid: 16579
+2013-09-24 07:47:14 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@28807653: startup date [Tue Sep 24 07:47:14 UTC 2013]; root of context hierarchy
+2013-09-24 07:47:14 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/builder.xml]
+2013-09-24 07:47:14 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/general.xml]
+2013-09-24 07:47:14 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3a6a2d75: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-09-24 07:47:14 ShadowtailLogAggregator [INFO] Processing file: /ssw2/sabre/cert/performance/tools/shadowtail/logs/start-stop.log
+2013-09-24 07:47:14 ShadowtailLogAggregator [ERROR] Faile to process File: /ssw2/sabre/cert/performance/tools/shadowtail/logs/start-stop.log. PArsing line failed: [2012-12-11_08-46-11] started shadowtail sswhlc2711, pid: 16579
+2013-09-24 07:48:05 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@28807653: startup date [Tue Sep 24 07:48:05 UTC 2013]; root of context hierarchy
+2013-09-24 07:48:05 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/builder.xml]
+2013-09-24 07:48:05 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/general.xml]
+2013-09-24 07:48:05 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@10ce7a49: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-09-24 07:48:05 ShadowtailLogAggregator [INFO] Processing file: /ssw2/sabre/cert/performance/tools/shadowtail/logs/start-stop.log
+2013-09-24 07:48:05 ShadowtailLogAggregator [ERROR] Faile to process File: /ssw2/sabre/cert/performance/tools/shadowtail/logs/start-stop.log. PArsing line failed: [2012-12-11_08-46-11] started shadowtail sswhlc2711, pid: 16579
+2013-09-24 07:48:45 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6143c610: startup date [Tue Sep 24 07:48:45 UTC 2013]; root of context hierarchy
+2013-09-24 07:48:45 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/builder.xml]
+2013-09-24 07:48:45 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/general.xml]
+2013-09-24 07:48:45 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3a6a2d75: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2013-09-24 07:48:45 ShadowtailLogAggregator [INFO] Processing file: /ssw2/sabre/cert/performance/tools/shadowtail/logs/start-stop.log
+2013-09-24 07:48:46 ShadowtailLogAggregator [ERROR] Faile to process File: /ssw2/sabre/cert/performance/tools/shadowtail/logs/start-stop.log. PArsing line failed: [2012-12-11_08-46-11] started shadowtail sswhlc2711, pid: 16579

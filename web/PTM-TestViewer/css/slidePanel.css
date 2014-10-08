@@ -1,0 +1,99 @@
+body {
+	color:#333;
+	width:600px;
+	font-size:14px;
+	font-family:Verdana, Geneva, sans-serif;
+	margin:0 auto;
+	padding:0 100px;
+}
+a:focus {
+outline: none;
+}
+
+.panel {
+	color:#CCC;
+	position: absolute;
+	display: none;
+	background: #000000;
+	/*width: 300px;*/
+	width: auto;
+	height: auto;
+	z-index:1;
+}
+.panel.left {
+	left: 0;
+}
+
+.panel p {
+	font-size:11px;
+}
+
+/* form configuration */
+
+.myform{
+    margin: 0 auto;
+    width: 600px;
+    height: 500px;
+    padding: 14px;
+
+    font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+    font-size:12px;
+}
+
+#stylized{
+    border:solid 2px #dddddd;
+    background:#000000;
+    padding: 5px 25px;
+}
+#stylized h1 {
+    font-size:14px;
+    font-weight:bold;
+    margin: 0;
+    padding: 0;
+}
+#stylized p{
+    font-size:11px;
+    color:#666666;
+    margin: 0 0 15px;
+}
+#stylized label{
+    display:block;
+    font-weight:bold;
+    text-align:right;
+    width:140px;
+    float:left;
+}
+#stylized .small{
+    color:#666666;
+    display:block;
+    font-size:11px;
+    font-weight:normal;
+    text-align:right;
+    width:140px;
+}
+#stylized input, #stylized textarea {
+    float:left;
+    font-size:12px;
+    padding:4px 2px;
+    border:solid 1px #aacfe4;
+    width: 400px;
+    margin: 2px 0 20px 10px;
+}
+
+#stylized textarea {
+    height: 250px;
+}
+
+#stylized button{
+    clear: both;
+    margin-left:150px;
+    text-align:center;
+    line-height:25px;
+    color: #000000;
+    font-size:11px;
+    font-weight:bold;
+}
+
+#stylized #reset {
+    margin: 0;
+}

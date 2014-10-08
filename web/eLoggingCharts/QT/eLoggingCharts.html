@@ -1,0 +1,83 @@
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>eLogging Charts</title>
+        <!--[if IE]><script language="javascript" type="text/javascript" src="/web-common-static/js/jquery/excanvas.min.js"></script><![endif]-->
+
+        <link rel="stylesheet" type="text/css" href="/web-common-static/js/jquery/jqplot/jquery.jqplot.css" />
+        <link rel="stylesheet" type="text/css" href="/web-common-static/js/jquery/examples.css" />
+        <link rel="stylesheet" type="text/css" href="/web-common-static/css/eLoggingCharts.css" />
+
+        <link rel="stylesheet" type="text/css" href="/web-common-static/css/slidePanel.css" />
+        <link rel="stylesheet" type="text/css" href="/web-common-static/css/demo_table.css" />
+        <link rel="stylesheet" type="text/css" href="/web-common-static/css/demo_table_jui.css" />
+        <link rel="stylesheet" type="text/css" href="/web-common-static/css/demo_page.css" />
+        <link rel="stylesheet" type="text/css" href="/web-common-static/css/jquery-ui-1.8.11.custom.css" />
+
+        <script language="javascript" type="text/javascript" src="/web-common-static/js/jquery/jquery.js"></script>
+        <script language="javascript" type="text/javascript" src="/web-common-static/js/jquery/jqplot/jquery.jqplot.js"></script>
+
+        <script language="javascript" type="text/javascript" src="/web-common-static/js/jquery/jqplot/plugins/jqplot.logxisRenderer.min.js"></script>
+        <script language="javascript" type="text/javascript" src="/web-common-static/js/jquery/jqplot/plugins/jqplot.BezierCurveRenderer.min.js"></script>
+        <script language="javascript" type="text/javascript" src="/web-common-static/js/jquery/jqplot/plugins/jqplot.barRenderer.min.js"></script>
+        <script language="javascript" type="text/javascript" src="/web-common-static/js/jquery/jqplot/plugins/jqplot.canvasTextRenderer.min.js"></script>
+        <script language="javascript" type="text/javascript" src="/web-common-static/js/jquery/jqplot/plugins/jqplot.canvasAxisTickRenderer.min.js"></script>
+        <script language="javascript" type="text/javascript" src="/web-common-static/js/jquery/jqplot/plugins/jqplot.dateAxisRenderer.min.js"></script>
+        <script language="javascript" type="text/javascript" src="/web-common-static/js/jquery/jqplot/plugins/jqplot.highlighter.min.js"></script>
+        <script language="javascript" type="text/javascript" src="/web-common-static/js/jquery/jqplot/plugins/jqplot.pieRenderer.min.js"></script>
+        <script language="javascript" type="text/javascript" src="/web-common-static/js/jquery/jqplot/plugins/jqplot.cursor.min.js"></script>
+        <script language="javascript" type="text/javascript" src="/web-common-static/js/jquery/jquery.dataTables.min.js"></script>
+        <script language="javascript" type="text/javascript" src="/web-common-static/js/jquery-ui-1.8.11.custom.min.js"></script>
+        <script language="javascript" type="text/javascript" src="/web-common-static/js/jquery/jquery.csv-0.71.min.js"></script>
+        <script language="javascript" type="text/javascript" src="/web-common-static/js/jquery/jquery.slidePanel.js"></script>
+
+        <script language="javascript" type="text/javascript" src="/web-common-static/js/eLoggingCharts/charts.js"></script>
+        <script language="javascript" type="text/javascript" src="/web-common-static/js/yui/yui/yui-debug.js"></script>
+
+        <script language="javascript" type="text/javascript">
+            var yuiConfig = {
+                base : '/web-common-static/js/yui/',
+                loadOptional : true
+            };
+         
+    	    eLoggingCharts.testsRootFolder="/artifacts/eLoggingCharts/QT/";
+                YUI(yuiConfig).use('node', function(Y) {
+                    YUI3 = Y;
+                    Y.on("load", eLoggingCharts.initialize);
+                });
+                
+        </script>
+    </head>
+    <body>
+        <div id="panel1" class="panel left">
+            <div id="stylized" class="myform">
+                <form id="form" name="form">
+                    <h1>Report form</h1>
+                    <p>You can add a comment and save current configuration.</p>
+
+                    <label>Owner
+                        <span class="small">Add your name</span>
+                    </label>
+                    <input type="text" name="name" id="name" />
+
+                    <label>Email
+                        <span class="small">Add a valid address</span>
+                    </label>
+                    <input type="text" name="email" id="email" />
+
+                    <label>Description
+                        <span class="small">Add your comment</span>
+                    </label>
+                    <textarea id="desc"></textarea>
+
+                    <button id="send">Submit</button>
+                    <button id="update">Update</button>
+                    <button type="reset" id="reset">Reset form</button>
+
+                </form>
+            </div>
+        </div>
+
+        <div id="eloggingChartsContainer"></div>
+    </body>
+</html>

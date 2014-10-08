@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="eLoggingCharts-webapp" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" version="2.4">
+	<display-name>eLoggingCharts-webapp</display-name>
+	<servlet>
+		<servlet-name>listTests</servlet-name>
+		<servlet-class>com.sabre.ListFilesServlet</servlet-class>
+		<init-param>
+			<param-name>path</param-name>
+			<param-value>../../artifacts/SSCI/eLoggingCharts/SSCI/</param-value>
+		</init-param>
+		<init-param>
+			<param-name>dirs</param-name>
+			<param-value>true</param-value>
+		</init-param>
+		<init-param>
+			<param-name>files</param-name>
+			<param-value>false</param-value>
+		</init-param>
+	</servlet>
+
+    <servlet>
+        <servlet-name>serializer</servlet-name>
+        <servlet-class>com.sabre.SerializeServlet</servlet-class>
+    </servlet>
+
+	<servlet-mapping>
+		<servlet-name>listTests</servlet-name>
+		<url-pattern>/testsList</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>serializer</servlet-name>
+        <url-pattern>/serializer</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>eLoggingCharts.html</welcome-file>
+	</welcome-file-list>
+</web-app>
+

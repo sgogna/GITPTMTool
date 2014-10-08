@@ -1,0 +1,19 @@
+kiosk / 
+Calling wait
+/project/plab/performance/newtools/heapDumpCapture/../scripts/getTomcatPID.sh: line 2: /opt/mw/java/jdk1.7.0_06/bin/jps: No such file or directory
+/project/plab/performance/newtools/heapDumpCapture/calculateHeapSize.sh: line 2: /../config/getProperty.sh: No such file or directory
+/project/plab/performance/newtools/heapDumpCapture/calculateHeapSize.sh: line 3: /bin/jstat: No such file or directory
+ / 0
+heap smaller than 1500
+completed, iteration: 1, size: 0
+INSIDE CAPTURE METOD
+capturing PID: /ssci-kiosk-B6-t1d.20140320_211002.Ignore_Sameer_run2.hprof
+Attaching to remote server /ssci-kiosk-B6-t1d.20140320_211002.Ignore_Sameer_run2.hprof, please wait...
+Error attaching to remote server: java.rmi.ConnectException: Connection refused to host: 10.14.5.168; nested exception is: 
+	java.net.ConnectException: Connection refused
+chmod: cannot access `sebastian.puzon@sabre.com;Sandeep.Gogna.ctr@sabre.com;Ramon.Resma@sabre.com;Prashant.Hegde@sabre.com;Joe.Francis@sabre.com;ya-ching.tang@sabre.com;Saajan.Nagendra@sabre.com;Li.zhou@sabre.com;SameerAhmed.Mohammed.ctr@sabre.com;ssw.performance.engineers@sabre.com': File name too long
+ls: sebastian.puzon@sabre.com;Sandeep.Gogna.ctr@sabre.com;Ramon.Resma@sabre.com;Prashant.Hegde@sabre.com;Joe.Francis@sabre.com;ya-ching.tang@sabre.com;Saajan.Nagendra@sabre.com;Li.zhou@sabre.com;SameerAhmed.Mohammed.ctr@sabre.com;ssw.performance.engineers@sabre.com: File name too long
+compressing ...
+gzip: sebastian.puzon@sabre.com;Sandeep.Gogna.ctr@sabre.com;Ramon.Resma@sabre.com;Prashant.Hegde@sabre.com;Joe.Francis@sabre.com;ya-ching.tang@sabre.com;Saajan.Nagendra@sabre.com;Li.zhou@sabre.com;SameerAhmed.Mohammed.ctr@sabre.com;ssw.performance.engineers@sabre.com: File name too long
+ls: sebastian.puzon@sabre.com;Sandeep.Gogna.ctr@sabre.com;Ramon.Resma@sabre.com;Prashant.Hegde@sabre.com;Joe.Francis@sabre.com;ya-ching.tang@sabre.com;Saajan.Nagendra@sabre.com;Li.zhou@sabre.com;SameerAhmed.Mohammed.ctr@sabre.com;ssw.performance.engineers@sabre.com.gz: File name too long
+heap dump capture complete

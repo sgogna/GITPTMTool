@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+	<!--<bean id="http-ThreadsBusy" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">-->
+		<!--<property name="name" value="http Threads Busy" />-->
+		<!--<property name="connection" ref="clientConnector" />-->
+		<!--&lt;!&ndash;<property name="objectName" value="${target.catalina.threadpool.http.name}" />&ndash;&gt;-->
+        <!--&lt;!&ndash;<property name="objectName" value="#{nameResolverT2.getThreadPoolBeanName()}" />&ndash;&gt;-->
+		<!--<property name="attributeName" value="currentThreadsBusy" />-->
+	<!--</bean>-->
+
+	<!--<bean id="http-ThreadsCount" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">-->
+		<!--<property name="name" value="http Threads Count" />-->
+		<!--<property name="connection" ref="clientConnector" />-->
+		<!--&lt;!&ndash;<property name="objectName" value="${target.catalina.threadpool.http.name}" />&ndash;&gt;-->
+        <!--&lt;!&ndash;<property name="objectName" value="#{nameResolverT2.getThreadPoolBeanName()}" />&ndash;&gt;-->
+		<!--<property name="attributeName" value="currentThreadCount" />-->
+	<!--</bean>-->
+
+    <bean id="MBeanFactory" class="pl.com.nameresolver.MBeanFactory" init-method="init">
+        <constructor-arg value="org.apache.catalina.mbeans.ConnectorMBean" />
+        <constructor-arg ref="clientConnector"  />
+    </bean>
+
+    <bean id="httpMBean" factory-bean="MBeanFactory" factory-method="createHttpInstance">
+        <property name="httpMBeansListWrapper">
+            <list>
+                <ref bean="http-ThreadsBusy" />
+                <ref bean="http-ThreadsCount" />
+            </list>
+        </property>
+    </bean>
+
+    <bean id="http-ThreadsBusy" class="pl.com.nameresolver.JMXAtributeStatisticWrapper">
+        <property name="name" value="http Threads Busy" />
+        <property name="connection" ref="clientConnector" />
+        <property name="attributeName" value="currentThreadsBusy" />
+    </bean>
+
+    <bean id="http-ThreadsCount" class="pl.com.nameresolver.JMXAtributeStatisticWrapper">
+        <property name="name" value="http Threads Count" />
+        <property name="connection" ref="clientConnector" />
+        <property name="attributeName" value="currentThreadCount" />
+    </bean>
+
+
+	<bean id="catalina-http-StatisticsList" class="org.springframework.beans.factory.config.ListFactoryBean">
+
+        <property name="sourceList" value="#{httpMBean.getHttpMBeansList()}"/>
+
+		<!--<property name="sourceList">-->
+			<!--<list>-->
+				<!--<ref bean="http-ThreadsBusy" />-->
+				<!--<ref bean="http-ThreadsCount" />-->
+			<!--</list>-->
+		<!--</property>-->
+	</bean>
+
+</beans>

@@ -1,0 +1,37 @@
+/ssw2/sabre/cert/performance/tools/eLoggingCharts
+qt-gf-prod
+2013-10-10
+GF_PROD
+
+./generateCharts_mel.sh
+qt-gf-prod b6-load b6-prod v12-wl1-load v12-wl2-load v12-wl3-load v12-wl4-load se1-load se2-load qt-sn-prod s7-prod v12-va-prod v12-com-prod wci-wl1-load qt-sn-testb
+
+ELOG_PATTERN= /tier1_nas1/logs/prod/GF/sswhlp1201/inst6/eLoggingWeb_GF.
+/tier1_nas1/logs/prod/GF/sswhlp1201/inst6/eLoggingWeb_GF.GF_PROD.log.gz;/tier1_nas1/logs/prod/GF/sswhlp1201/inst6/eLoggingWeb_GF..log.gz
+Date filter: -DstartDate=GF_PROD -DendDate=
+-Xms1510m -Xmx1512m -XX:+UseConcMarkSweepGC -Xloggc:gc.log -verbose:gc -XX:+PrintGCDateStamps -XX:+PrintGCDetails -XX:NewRatio=1 -XX:NewSize=700m -Dconfig.xml.file=config/QT-t1-web.xml -DsrcTestName=QT_GF_PROD_qt-gf-prod_t1_web_2013-10-10 -DsrcFile=/tier1_nas1/logs/prod/GF/sswhlp1201/inst6/eLoggingWeb_GF.GF_PROD.log.gz;/tier1_nas1/logs/prod/GF/sswhlp1201/inst6/eLoggingWeb_GF..log.gz -DstartDate=GF_PROD -DendDate= -Dconfig.allTestsDirectory=/ssw2/sabre/cert/performance/tools/eLoggingCharts/web/QT/js/eLogging/tests -Dconfig.javascriptConfigDirectory=/ssw2/sabre/cert/performance/tools/eLoggingCharts/web/QT/js/eLogging -classpath /ssw2/sabre/cert/performance/tools/eLoggingCharts/lib/commons-logging.jar:/ssw2/sabre/cert/performance/tools/eLoggingCharts/lib/commons-math3-3.1.1.jar:/ssw2/sabre/cert/performance/tools/eLoggingCharts/lib/eLoggingParser-1.7.5.jar:/ssw2/sabre/cert/performance/tools/eLoggingCharts/lib/spring-asm-3.0.0.RELEASE.jar:/ssw2/sabre/cert/performance/tools/eLoggingCharts/lib/spring-beans-3.0.0.RELEASE.jar:/ssw2/sabre/cert/performance/tools/eLoggingCharts/lib/spring-context-3.0.0.RELEASE.jar:/ssw2/sabre/cert/performance/tools/eLoggingCharts/lib/spring-core-3.0.0.RELEASE.jar:/ssw2/sabre/cert/performance/tools/eLoggingCharts/lib/spring-expression-3.0.0.RELEASE.jar:/ssw2/sabre/cert/performance/tools/eLoggingCharts com.eb2.elogging.EloggingParser
+Running 1.7.5
+xml config file: config/QT-t1-web.xml
+
+ELOG_PATTERN= /tier1_nas1/logs/prod/GF/sswhlp1202/inst6/eLoggingAdmin_GF.
+/tier1_nas1/logs/prod/GF/sswhlp1202/inst6/eLoggingAdmin_GF.GF_PROD.log.gz;/tier1_nas1/logs/prod/GF/sswhlp1202/inst6/eLoggingAdmin_GF..log.gz
+Date filter: -DstartDate=GF_PROD -DendDate=
+-Xms1510m -Xmx1512m -XX:+UseConcMarkSweepGC -Xloggc:gc.log -verbose:gc -XX:+PrintGCDateStamps -XX:+PrintGCDetails -XX:NewRatio=1 -XX:NewSize=700m -Dconfig.xml.file=config/QT-t1-admin.xml -DsrcTestName=QT_GF_PROD_qt-gf-prod_t1_admin_2013-10-10 -DsrcFile=/tier1_nas1/logs/prod/GF/sswhlp1202/inst6/eLoggingAdmin_GF.GF_PROD.log.gz;/tier1_nas1/logs/prod/GF/sswhlp1202/inst6/eLoggingAdmin_GF..log.gz -DstartDate=GF_PROD -DendDate= -Dconfig.allTestsDirectory=/ssw2/sabre/cert/performance/tools/eLoggingCharts/web/QT/js/eLogging/tests -Dconfig.javascriptConfigDirectory=/ssw2/sabre/cert/performance/tools/eLoggingCharts/web/QT/js/eLogging -classpath /ssw2/sabre/cert/performance/tools/eLoggingCharts/lib/commons-logging.jar:/ssw2/sabre/cert/performance/tools/eLoggingCharts/lib/commons-math3-3.1.1.jar:/ssw2/sabre/cert/performance/tools/eLoggingCharts/lib/eLoggingParser-1.7.5.jar:/ssw2/sabre/cert/performance/tools/eLoggingCharts/lib/spring-asm-3.0.0.RELEASE.jar:/ssw2/sabre/cert/performance/tools/eLoggingCharts/lib/spring-beans-3.0.0.RELEASE.jar:/ssw2/sabre/cert/performance/tools/eLoggingCharts/lib/spring-context-3.0.0.RELEASE.jar:/ssw2/sabre/cert/performance/tools/eLoggingCharts/lib/spring-core-3.0.0.RELEASE.jar:/ssw2/sabre/cert/performance/tools/eLoggingCharts/lib/spring-expression-3.0.0.RELEASE.jar:/ssw2/sabre/cert/performance/tools/eLoggingCharts com.eb2.elogging.EloggingParser
+Running 1.7.5
+xml config file: config/QT-t1-admin.xml
+
+ELOG_PATTERN= /tier1_nas1/logs/prod/GF/sswhlp1202/inst6/eLoggingWeb_SNX.
+/tier1_nas1/logs/prod/GF/sswhlp1202/inst6/eLoggingWeb_SNX.GF_PROD.log.gz;/tier1_nas1/logs/prod/GF/sswhlp1202/inst6/eLoggingWeb_SNX..log.gz
+Date filter: -DstartDate=GF_PROD -DendDate=
+-Xms1510m -Xmx1512m -XX:+UseConcMarkSweepGC -Xloggc:gc.log -verbose:gc -XX:+PrintGCDateStamps -XX:+PrintGCDetails -XX:NewRatio=1 -XX:NewSize=700m -Dconfig.xml.file=config/QT-t1-myb.xml -DsrcTestName=QT_GF_PROD_qt-gf-prod_t1_myb_2013-10-10 -DsrcFile=/tier1_nas1/logs/prod/GF/sswhlp1202/inst6/eLoggingWeb_SNX.GF_PROD.log.gz;/tier1_nas1/logs/prod/GF/sswhlp1202/inst6/eLoggingWeb_SNX..log.gz -DstartDate=GF_PROD -DendDate= -Dconfig.allTestsDirectory=/ssw2/sabre/cert/performance/tools/eLoggingCharts/web/QT/js/eLogging/tests -Dconfig.javascriptConfigDirectory=/ssw2/sabre/cert/performance/tools/eLoggingCharts/web/QT/js/eLogging -classpath /ssw2/sabre/cert/performance/tools/eLoggingCharts/lib/commons-logging.jar:/ssw2/sabre/cert/performance/tools/eLoggingCharts/lib/commons-math3-3.1.1.jar:/ssw2/sabre/cert/performance/tools/eLoggingCharts/lib/eLoggingParser-1.7.5.jar:/ssw2/sabre/cert/performance/tools/eLoggingCharts/lib/spring-asm-3.0.0.RELEASE.jar:/ssw2/sabre/cert/performance/tools/eLoggingCharts/lib/spring-beans-3.0.0.RELEASE.jar:/ssw2/sabre/cert/performance/tools/eLoggingCharts/lib/spring-context-3.0.0.RELEASE.jar:/ssw2/sabre/cert/performance/tools/eLoggingCharts/lib/spring-core-3.0.0.RELEASE.jar:/ssw2/sabre/cert/performance/tools/eLoggingCharts/lib/spring-expression-3.0.0.RELEASE.jar:/ssw2/sabre/cert/performance/tools/eLoggingCharts com.eb2.elogging.EloggingParser
+Running 1.7.5
+xml config file: config/QT-t1-myb.xml
+
+
+ELOG_PATTERN= /tier2_nas1/logs/prod/GF/sswhlp1323/inst6/eLoggingServer_GF.
+/tier2_nas1/logs/prod/GF/sswhlp1323/inst6/eLoggingServer_GF.GF_PROD.log.gz;/tier2_nas1/logs/prod/GF/sswhlp1323/inst6/eLoggingServer_GF..log.gz
+Date filter: -DstartDate=GF_PROD -DendDate=
+-Xms1510m -Xmx1512m -XX:+UseConcMarkSweepGC -Xloggc:gc.log -verbose:gc -XX:+PrintGCDateStamps -XX:+PrintGCDetails -XX:NewRatio=1 -XX:NewSize=700m -Dconfig.xml.file=config/QT-t2-server.xml -DsrcTestName=QT_GF_PROD_qt-gf-prod_t2_server_2013-10-10 -DsrcFile=/tier2_nas1/logs/prod/GF/sswhlp1323/inst6/eLoggingServer_GF.GF_PROD.log.gz;/tier2_nas1/logs/prod/GF/sswhlp1323/inst6/eLoggingServer_GF..log.gz -DstartDate=GF_PROD -DendDate= -Dconfig.allTestsDirectory=/ssw2/sabre/cert/performance/tools/eLoggingCharts/web/QT/js/eLogging/tests -Dconfig.javascriptConfigDirectory=/ssw2/sabre/cert/performance/tools/eLoggingCharts/web/QT/js/eLogging -classpath /ssw2/sabre/cert/performance/tools/eLoggingCharts/lib/commons-logging.jar:/ssw2/sabre/cert/performance/tools/eLoggingCharts/lib/commons-math3-3.1.1.jar:/ssw2/sabre/cert/performance/tools/eLoggingCharts/lib/eLoggingParser-1.7.5.jar:/ssw2/sabre/cert/performance/tools/eLoggingCharts/lib/spring-asm-3.0.0.RELEASE.jar:/ssw2/sabre/cert/performance/tools/eLoggingCharts/lib/spring-beans-3.0.0.RELEASE.jar:/ssw2/sabre/cert/performance/tools/eLoggingCharts/lib/spring-context-3.0.0.RELEASE.jar:/ssw2/sabre/cert/performance/tools/eLoggingCharts/lib/spring-core-3.0.0.RELEASE.jar:/ssw2/sabre/cert/performance/tools/eLoggingCharts/lib/spring-expression-3.0.0.RELEASE.jar:/ssw2/sabre/cert/performance/tools/eLoggingCharts com.eb2.elogging.EloggingParser
+Running 1.7.5
+xml config file: config/QT-t2-server.xml
+

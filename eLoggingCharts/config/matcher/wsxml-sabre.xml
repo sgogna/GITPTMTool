@@ -1,0 +1,71 @@
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	   					   http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="matcher.wsxml.sabre.intellisell" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WSXML_SABRE,SSWIntellisellPortType.sswIntellisellRQ" />
+	</bean>
+
+	<bean id="matcher.wsxml.sabre.sabreCommand" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WSXML_SABRE,SabreCommandLLSPortType.sabreCommandLLSRQ" />
+	</bean>
+
+	<bean id="matcher.wsxml.sabre.ignoreTx" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WSXML_SABRE,IgnoreTransactionPortType.ignoreTransactionRQ" />
+	</bean>
+
+	<bean id="matcher.wsxml.sabre.endTx" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WSXML_SABRE,EndTransactionPortType.endTransactionRQ" />
+	</bean>
+
+	<bean id="matcher.wsxml.sabre.changeAAA" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WSXML_SABRE,ChangeAAAPortType.changeAAARQ" />
+	</bean>
+
+	<bean id="matcher.wsxml.sabre.epsProfileRead" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WSXML_SABRE,EPSProfileReadPortType.epsProfileReadRQ" />
+	</bean>
+	<bean id="matcher.wsxml.sabre.travelItinRead" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WSXML_SABRE,TravelItineraryReadPortType.travelItineraryReadRQ" />
+	</bean>
+
+	<bean id="matcher.wsxml.sabre.imapAirSeatMap" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WSXML_SABRE,IMAPAirSeatMapPortType.imapAirSeatMapRQ" />
+	</bean>
+
+	<bean id="matcher.wsxml.sabre.mtsTravelExtrasShop" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WSXML_SABRE,MTSTravelExtrasShopPortType.mtsTravelExtrasShopRQ" />
+	</bean>
+	<bean id="matcher.wsxml.sabre.runHotelAvailabilityListQuery" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WSXML_EAN,EANHotelService.runHotelAvailabilityListQuery" />
+	</bean>
+	<bean id="matcher.wsxml.sabre.selectHotelInfoForHotel" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WSXML_EAN,EANHotelService.selectHotelInfoForHotel" />
+	</bean>
+	<bean id="matcher.wsxml.sabre.insuranceShop" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WSXML_ACCESSAMERICA,IProductPriceServiceExt.getProductPriceOffer" />
+	</bean>
+	<bean id="matcher.wsxml.sabre.priceCmdWPM" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WSXML_SABRE_CMD,WPM" />
+	</bean>
+	<bean id="matcher.wsxml.sabre.addRemark" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WSXML_SABRE,AddRemarkPortType.addRemarkRQ" />
+	</bean>
+	<bean id="matcher.wsxml.sabre.redemptionGetBalance" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WSXML_OTHER,RedemptionService.getAccountBalance" />
+	</bean>
+
+	<bean id="matcher.wsxml.sabre.otaAirBook" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WSXML_SABRE,OTAAirBookPortType.otaAirBookRQ" />
+	</bean>
+	
+	<bean id="matcher.wsxml.sabre.displayPNR" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WSXML_SABRE_CMD,displayPNR" />
+	</bean>
+	
+	<bean id="matcher.wsxml.sabre.SSSAdvShop" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WSXML_SABRE,SSSAdvShopPortType.sssAdvShopRQ" />
+	</bean>
+	
+</beans>

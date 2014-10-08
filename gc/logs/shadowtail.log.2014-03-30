@@ -1,0 +1,68 @@
+2014-03-30 20:47:59 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@16b1a9a8: startup date [Sun Mar 30 20:47:59 CDT 2014]; root of context hierarchy
+2014-03-30 20:47:59 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/appender.xml]
+2014-03-30 20:47:59 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2014-03-30 20:47:59 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4c8a7c5: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2014-03-30 20:53:34 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1cfcc426: startup date [Sun Mar 30 20:53:34 CDT 2014]; root of context hierarchy
+2014-03-30 20:53:35 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/appender.xml]
+2014-03-30 20:53:35 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2014-03-30 20:53:35 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4c8a7c5: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2014-03-30 20:59:26 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@69f9603b: startup date [Sun Mar 30 20:59:26 CDT 2014]; root of context hierarchy
+2014-03-30 20:59:27 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/appender.xml]
+2014-03-30 20:59:27 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2014-03-30 20:59:27 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@117e78f7: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2014-03-30 21:00:41 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@16b1a9a8: startup date [Sun Mar 30 21:00:41 CDT 2014]; root of context hierarchy
+2014-03-30 21:00:41 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/appender.xml]
+2014-03-30 21:00:41 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2014-03-30 21:00:41 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@117e78f7: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2014-03-30 21:03:12 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@16b1a9a8: startup date [Sun Mar 30 21:03:12 CDT 2014]; root of context hierarchy
+2014-03-30 21:03:12 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/appender.xml]
+2014-03-30 21:03:12 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2014-03-30 21:03:12 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@117e78f7: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2014-03-30 21:11:26 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@69f9603b: startup date [Sun Mar 30 21:11:26 CDT 2014]; root of context hierarchy
+2014-03-30 21:11:26 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/appender.xml]
+2014-03-30 21:11:26 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2014-03-30 21:11:26 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@117e78f7: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2014-03-30 21:15:23 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@69f9603b: startup date [Sun Mar 30 21:15:23 CDT 2014]; root of context hierarchy
+2014-03-30 21:15:23 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/appender.xml]
+2014-03-30 21:15:23 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2014-03-30 21:15:24 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@117e78f7: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2014-03-30 21:17:18 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@69f9603b: startup date [Sun Mar 30 21:17:18 CDT 2014]; root of context hierarchy
+2014-03-30 21:17:18 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/appender.xml]
+2014-03-30 21:17:18 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2014-03-30 21:17:18 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@117e78f7: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2014-03-30 21:31:19 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@69f9603b: startup date [Sun Mar 30 21:31:19 CDT 2014]; root of context hierarchy
+2014-03-30 21:31:19 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/appender.xml]
+2014-03-30 21:31:19 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2014-03-30 21:31:19 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@117e78f7: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2014-03-30 21:38:21 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@69f9603b: startup date [Sun Mar 30 21:38:21 CDT 2014]; root of context hierarchy
+2014-03-30 21:38:21 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/appender.xml]
+2014-03-30 21:38:21 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2014-03-30 21:38:21 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@117e78f7: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2014-03-30 21:42:22 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@731cf7d7: startup date [Sun Mar 30 21:42:22 CDT 2014]; root of context hierarchy
+2014-03-30 21:42:22 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/appender.xml]
+2014-03-30 21:42:22 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2014-03-30 21:42:22 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@303eed26: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2014-03-30 21:44:19 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@16b1a9a8: startup date [Sun Mar 30 21:44:19 CDT 2014]; root of context hierarchy
+2014-03-30 21:44:19 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/appender.xml]
+2014-03-30 21:44:19 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2014-03-30 21:44:19 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4c8a7c5: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2014-03-30 21:49:17 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@69f9603b: startup date [Sun Mar 30 21:49:17 CDT 2014]; root of context hierarchy
+2014-03-30 21:49:17 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/appender.xml]
+2014-03-30 21:49:17 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2014-03-30 21:49:17 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@117e78f7: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2014-03-30 21:51:21 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@69f9603b: startup date [Sun Mar 30 21:51:21 CDT 2014]; root of context hierarchy
+2014-03-30 21:51:21 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/appender.xml]
+2014-03-30 21:51:21 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2014-03-30 21:51:21 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@117e78f7: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2014-03-30 21:53:25 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@16b1a9a8: startup date [Sun Mar 30 21:53:25 CDT 2014]; root of context hierarchy
+2014-03-30 21:53:25 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/appender.xml]
+2014-03-30 21:53:25 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2014-03-30 21:53:25 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4c8a7c5: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2014-03-30 21:56:07 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@16b1a9a8: startup date [Sun Mar 30 21:56:07 CDT 2014]; root of context hierarchy
+2014-03-30 21:56:07 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/appender.xml]
+2014-03-30 21:56:07 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2014-03-30 21:56:08 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4c8a7c5: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2014-03-30 22:02:17 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@69f9603b: startup date [Sun Mar 30 22:02:17 CDT 2014]; root of context hierarchy
+2014-03-30 22:02:17 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/appender.xml]
+2014-03-30 22:02:18 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2014-03-30 22:02:18 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@117e78f7: defining beans [fileProcessor,Preparer]; root of factory hierarchy

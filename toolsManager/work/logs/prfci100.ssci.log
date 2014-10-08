@@ -1,0 +1,24 @@
+2014-04-07 16:35:01 Start executing request: work/requests/prfci100.ssci.ssci-kiosk-B6.t1.Test1.2014-04-07_16-34-16.start.shadowtail.reg
+PTM_ENV start Shadowtail :::  SSCI
+2014-04-07 16:35:01 started shadowtail ssci-kiosk-B6, pid: 25930
+PTM_ENV appendTestProperties.sh :::  SSCI
+2014-04-07 16:35:12 Completed request: work/requests/prfci100.ssci.ssci-kiosk-B6.t1.Test1.2014-04-07_16-34-16.start.shadowtail.reg
+2014-04-07 16:35:12 Start executing request: work/requests/prfci100.ssci.ssci-kiosk-B6.t1.Test1.2014-04-07_16-34-16.start.threadDumpCapture.reg
+executing start-td-capture ssci-kiosk-B6 t1 Test1 180
+started thread dump loop capture: 26025
+2014-04-07 16:35:12 Completed request: work/requests/prfci100.ssci.ssci-kiosk-B6.t1.Test1.2014-04-07_16-34-16.start.threadDumpCapture.reg
+2014-04-07 16:36:01 Start executing request: work/requests/prfci100.ssci.ssci-kiosk-B6.t1.Test1.2014-04-07_16-35-19.start.heapDumpCapture.reg
+executing start-heapDump-capture ssci-kiosk-B6 t1d Test1
+logging to logs/prfci100.ssci.ssci-kiosk-B6.t1d.Test1.20140407_163601.log
+TARGET :::  ssci-kiosk-B6
+started heap dump loop capture: 3135
+2014-04-07 16:36:01 Completed request: work/requests/prfci100.ssci.ssci-kiosk-B6.t1.Test1.2014-04-07_16-35-19.start.heapDumpCapture.reg
+2014-04-07 16:36:01 Start executing request: work/requests/prfci100.ssci.ssci-kiosk-B6.t1.Test1.2014-04-07_16-35-19.stop.shadowtail.reg
+2014-04-07 16:36:01 killing shadowtail ssci-kiosk-B6-t1, pid: 25930
+statistics generated to /project/plab/performance/newtools/shadowtail/../artifacts/SSCI/shadowtail/ssci-kiosk-B6-t1/ssci-kiosk-B6-t1-2014-04-07-0-Test1.log.report.csv
+PTM_ENV appendTestProperties.sh :::  SSCI
+2014-04-07 16:36:01 Completed request: work/requests/prfci100.ssci.ssci-kiosk-B6.t1.Test1.2014-04-07_16-35-19.stop.shadowtail.reg
+2014-04-07 16:36:01 Start executing request: work/requests/prfci100.ssci.ssci-kiosk-B6.t1.Test1.2014-04-07_16-35-19.stop.threadDumpCapture.reg
+killing thread dump loop capture: 26025
+/project/plab/performance/newtools/artifacts/SSCI/threadDumps/ssci-kiosk-B6-t1/2014-04-07_16-34-16-Test1
+2014-04-07 16:36:01 Completed request: work/requests/prfci100.ssci.ssci-kiosk-B6.t1.Test1.2014-04-07_16-35-19.stop.threadDumpCapture.reg

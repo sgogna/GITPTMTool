@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+	<import resource="threadPoolPrototypes.xml" />
+
+	<bean id="ibeStatisticsList" class="org.springframework.beans.factory.config.ListFactoryBean">
+		<property name="sourceList">
+			<list>
+				<bean parent="threadPool-Size">
+					<property name="name" value="ThreadPool-Cars-Size" />
+					<property name="objectName" value="qtrip:path=B6,function=threadPoolMonitor,name=AsyncAncillaries-Cars" />
+				</bean>
+				<bean parent="threadPool-Active">
+					<property name="name" value="ThreadPool-Cars-Active" />
+					<property name="objectName" value="qtrip:path=B6,function=threadPoolMonitor,name=AsyncAncillaries-Cars" />
+				</bean>
+				<bean parent="threadPool-Queue">
+					<property name="name" value="ThreadPool-Cars-Queue" />
+					<property name="objectName" value="qtrip:path=B6,function=threadPoolMonitor,name=AsyncAncillaries-Cars" />
+				</bean>
+				<bean parent="threadPool-Rejected">
+					<property name="name" value="ThreadPool-Cars-Rejected" />
+					<property name="objectName" value="qtrip:path=B6,function=threadPoolMonitor,name=AsyncAncillaries-Cars" />
+				</bean>
+
+				<bean parent="threadPool-Size">
+					<property name="name" value="ThreadPool-Booking-Size" />
+					<property name="objectName" value="qtrip:path=B6,function=threadPoolMonitor,name=asyncBookingAction.threadPool" />
+				</bean>
+				<bean parent="threadPool-Active">
+					<property name="name" value="ThreadPool-Booking-Active" />
+					<property name="objectName" value="qtrip:path=B6,function=threadPoolMonitor,name=asyncBookingAction.threadPool" />
+				</bean>
+				<bean parent="threadPool-Queue">
+					<property name="name" value="ThreadPool-Booking-Queue" />
+					<property name="objectName" value="qtrip:path=B6,function=threadPoolMonitor,name=asyncBookingAction.threadPool" />
+				</bean>
+				<bean parent="threadPool-Rejected">
+					<property name="name" value="ThreadPool-Booking-Rejected" />
+					<property name="objectName" value="qtrip:path=B6,function=threadPoolMonitor,name=asyncBookingAction.threadPool" />
+				</bean>
+
+				<bean parent="threadPool-Size">
+					<property name="name" value="ThreadPool-Minibooker-Size" />
+					<property name="objectName" value="qtrip:path=B6,function=threadPoolMonitor,name=asyncSearchAction.threadPool" />
+				</bean>
+				<bean parent="threadPool-Active">
+					<property name="name" value="ThreadPool-Minibooker-Active" />
+					<property name="objectName" value="qtrip:path=B6,function=threadPoolMonitor,name=asyncSearchAction.threadPool" />
+				</bean>
+				<bean parent="threadPool-Queue">
+					<property name="name" value="ThreadPool-Minibooker-Queue" />
+					<property name="objectName" value="qtrip:path=B6,function=threadPoolMonitor,name=asyncSearchAction.threadPool" />
+				</bean>
+				<bean parent="threadPool-Rejected">
+					<property name="name" value="ThreadPool-Minibooker-Rejected" />
+					<property name="objectName" value="qtrip:path=B6,function=threadPoolMonitor,name=asyncSearchAction.threadPool" />
+				</bean>
+
+
+				<bean parent="threadPool-Size">
+					<property name="name" value="ThreadPool-Profiles-Size" />
+					<property name="objectName" value="qtrip:path=B6,function=threadPoolMonitor,name=ayncProfilesRetrieval.threadPool" />
+				</bean>
+				<bean parent="threadPool-Active">
+					<property name="name" value="ThreadPool-Profiles-Active" />
+					<property name="objectName" value="qtrip:path=B6,function=threadPoolMonitor,name=ayncProfilesRetrieval.threadPool" />
+				</bean>
+				<bean parent="threadPool-Queue">
+					<property name="name" value="ThreadPool-Profiles-Queue" />
+					<property name="objectName" value="qtrip:path=B6,function=threadPoolMonitor,name=ayncProfilesRetrieval.threadPool" />
+				</bean>
+				<bean parent="threadPool-Rejected">
+					<property name="name" value="ThreadPool-Profiles-Rejected" />
+					<property name="objectName" value="qtrip:path=B6,function=threadPoolMonitor,name=ayncProfilesRetrieval.threadPool" />
+				</bean>
+
+				<bean parent="threadPool-Size">
+					<property name="name" value="ThreadPool-LFS-Size" />
+					<property name="objectName" value="qtrip:path=B6,function=threadPoolMonitor,name=searchExecutor.concurrentShoppingExecutor.threadPool" />
+				</bean>
+				<bean parent="threadPool-Active">
+					<property name="name" value="ThreadPool-LFS-Active" />
+					<property name="objectName" value="qtrip:path=B6,function=threadPoolMonitor,name=searchExecutor.concurrentShoppingExecutor.threadPool" />
+				</bean>
+				<bean parent="threadPool-Queue">
+					<property name="name" value="ThreadPool-LFS-Queue" />
+					<property name="objectName" value="qtrip:path=B6,function=threadPoolMonitor,name=searchExecutor.concurrentShoppingExecutor.threadPool" />
+				</bean>
+				<bean parent="threadPool-Rejected">
+					<property name="name" value="ThreadPool-LFS-Rejected" />
+					<property name="objectName" value="qtrip:path=B6,function=threadPoolMonitor,name=searchExecutor.concurrentShoppingExecutor.threadPool" />
+				</bean>
+
+			</list>
+		</property>
+	</bean>
+
+</beans>

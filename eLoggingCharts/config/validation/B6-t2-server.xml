@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd">
+
+	<util:properties id="validation.criteria.wsxml.sabre" location="config/validation/criteria-wsxml-sabre.properties" />
+	<util:properties id="validation.criteria.wsxml.b6" location="config/validation/criteria-wsxml-b6.properties" />
+
+	<import resource="../matcher/B6-matcher-common.xml" />
+	<import resource="sabre.xml" />
+
+	<bean id="statisticsValidator" class="com.eb2.elogging.write.statistics.validation.MatchingAggregationEventValidator">
+		<property name="validators">
+			<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="addPrefixAndSuffix">
+				<constructor-arg value="B6" />
+				<constructor-arg value="B6B6" />
+				<constructor-arg>
+					<bean class="com.eb2.util.ListMergeFactory" factory-method="mergeListsToLinkedList">
+						<constructor-arg>
+							<list>
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="Intellisell Validator" />
+									<constructor-arg ref="matcher.wsxml.sabre.intellisell" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.wsxml.b6" />
+											<constructor-arg value="validation.criteria.wsxml.sabre.SSWIntellisellPortType.sswIntellisellRQ." />
+										</bean>
+
+									</constructor-arg>
+								</bean>
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="EANHotelService.runHotelAvailabilityListQuery Validator" />
+									<constructor-arg ref="matcher.wsxml.sabre.runHotelAvailabilityListQuery" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.wsxml.b6" />
+											<constructor-arg value="validation.criteria.wsxml.ean.EANHotelService.runHotelAvailabilityListQuery." />
+										</bean>
+									</constructor-arg>
+								</bean>
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="EANHotelService.selectHotelInfoForHotel Validator" />
+									<constructor-arg ref="matcher.wsxml.sabre.selectHotelInfoForHotel" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.wsxml.b6" />
+											<constructor-arg value="validation.criteria.wsxml.ean.EANHotelService.selectHotelInfoForHotel." />
+										</bean>
+									</constructor-arg>
+								</bean>
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="IProductPriceServiceExt.getProductPriceOffer Validator" />
+									<constructor-arg ref="matcher.wsxml.sabre.insuranceShop" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.wsxml.b6" />
+											<constructor-arg value="validation.criteria.wsxml.aa.IProductPriceServiceExt.getProductPriceOffer." />
+										</bean>
+									</constructor-arg>
+								</bean>
+								<ref bean="validation.wsxml.sabre.common.validators.list" />
+							</list>
+						</constructor-arg>
+					</bean>
+				</constructor-arg>
+			</bean>
+
+		</property>
+
+	</bean>
+
+</beans>

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd">
+
+	<util:properties id="validation.criteria.b6-t1-web" location="config/validation/criteria-b6-t1-web.properties" />
+
+	<import resource="../matcher/B6-matcher-common.xml" />
+
+	<bean id="statisticsValidator" class="com.eb2.elogging.write.statistics.validation.MatchingAggregationEventValidator">
+		<property name="validators">
+			<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="addPrefixAndSuffix">
+				<constructor-arg value="B6" />
+				<constructor-arg value="B6B6" />
+				<constructor-arg>
+					<bean class="com.eb2.util.ListMergeFactory" factory-method="mergeListsToLinkedList">
+						<constructor-arg>
+							<list>
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="ShoppingApi.shopBranded Validator" />
+									<constructor-arg ref="b6.t1.matcher.ShoppingApi.shopBranded" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-web" />
+											<constructor-arg value="validation.criteria.b6.t1.web.ShoppingApi.shopBranded." />
+										</bean>
+
+									</constructor-arg>
+								</bean>
+
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="ShoppingApi.shop Validator" />
+									<constructor-arg ref="b6.t1.matcher.ShoppingApi.shop" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-web" />
+											<constructor-arg value="validation.criteria.b6.t1.web.ShoppingApi.shop." />
+										</bean>
+
+									</constructor-arg>
+								</bean>
+
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="ShoppingApi.purchase Validator" />
+									<constructor-arg ref="b6.t1.matcher.ShoppingApi.purchase" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-web" />
+											<constructor-arg value="validation.criteria.b6.t1.web.ShoppingApi.purchase." />
+										</bean>
+
+									</constructor-arg>
+								</bean>
+
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="ShoppingApi.applyEntitlementForShoppingBaskets Validator" />
+									<constructor-arg ref="b6.t1.matcher.ShoppingApi.applyEntitlementForShoppingBaskets" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-web" />
+											<constructor-arg value="validation.criteria.b6.t1.web.ShoppingApi.applyEntitlementForShoppingBaskets." />
+										</bean>
+
+									</constructor-arg>
+								</bean>
+
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="ShoppingApi.price Validator" />
+									<constructor-arg ref="b6.t1.matcher.ShoppingApi.price" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-web" />
+											<constructor-arg value="validation.criteria.b6.t1.web.ShoppingApi.price." />
+										</bean>
+
+									</constructor-arg>
+								</bean>
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="ShoppingApi.priceFeatures Validator" />
+									<constructor-arg ref="b6.t1.matcher.ShoppingApi.priceFeatures" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-web" />
+											<constructor-arg value="validation.criteria.b6.t1.web.ShoppingApi.priceFeatures." />
+										</bean>
+
+									</constructor-arg>
+								</bean>
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="ShoppingApi.combineShoppingBaskets Validator" />
+									<constructor-arg ref="b6.t1.matcher.ShoppingApi.combineShoppingBaskets" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-web" />
+											<constructor-arg value="validation.criteria.b6.t1.web.ShoppingApi.combineShoppingBaskets." />
+										</bean>
+
+									</constructor-arg>
+								</bean>
+
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="UserDetailsServiceApi.loadUserByUsername Validator" />
+									<constructor-arg ref="b6.t1.matcher.UserDetailsServiceApi.loadUserByUsername" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-web" />
+											<constructor-arg value="validation.criteria.b6.t1.web.UserDetailsServiceApi.loadUserByUsername." />
+										</bean>
+
+									</constructor-arg>
+								</bean>
+
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="SeatMapApi.withholdSeat Validator" />
+									<constructor-arg ref="b6.t1.matcher.SeatMapApi.withholdSeat" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-web" />
+											<constructor-arg value="validation.criteria.b6.t1.web.SeatMapApi.withholdSeat." />
+										</bean>
+
+									</constructor-arg>
+								</bean>
+
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="TravelExtrasApi.shopTravelExtra Validator" />
+									<constructor-arg ref="b6.t1.matcher.TravelExtrasApi.shopTravelExtra" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-web" />
+											<constructor-arg value="validation.criteria.b6.t1.web.TravelExtrasApi.shopTravelExtra." />
+										</bean>
+
+									</constructor-arg>
+								</bean>
+
+
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="HotelApi.getHotelAvailability Validator" />
+									<constructor-arg ref="b6.t1.matcher.HotelApi.getHotelAvailability" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-web" />
+											<constructor-arg value="validation.criteria.b6.t1.web.HotelApi.getHotelAvailability." />
+										</bean>
+
+									</constructor-arg>
+								</bean>
+
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="VehicleApi.shop (HERTZ) Validator" />
+									<constructor-arg ref="b6.t1.matcher.VehicleApi.shop" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-web" />
+											<constructor-arg value="validation.criteria.b6.t1.web.VehicleApi.shop." />
+										</bean>
+
+									</constructor-arg>
+								</bean>
+
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="PromotionalOfferSwitchFlyApi.getOffer Validator" />
+									<constructor-arg ref="b6.t1.matcher.PromotionalOfferSwitchFlyApi.getOffer" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-web" />
+											<constructor-arg value="validation.criteria.b6.t1.web.PromotionalOfferSwitchFlyApi.getOffer." />
+										</bean>
+
+									</constructor-arg>
+								</bean>
+
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="PromotionalOfferApi.acknowledgeOffer Validator" />
+									<constructor-arg ref="b6.t1.matcher.PromotionalOfferApi.acknowledgeOffer" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-web" />
+											<constructor-arg value="validation.criteria.b6.t1.web.PromotionalOfferApi.acknowledgeOffer." />
+										</bean>
+
+									</constructor-arg>
+								</bean>
+
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="InsuranceApi.priceInsurance Validator" />
+									<constructor-arg ref="b6.t1.matcher.InsuranceApi.priceInsurance" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-web" />
+											<constructor-arg value="validation.criteria.b6.t1.web.InsuranceApi.priceInsurance." />
+										</bean>
+
+									</constructor-arg>
+								</bean>
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="ProfileApi.retrieveProfile Validator" />
+									<constructor-arg ref="b6.t1.matcher.ProfileApi.retrieveProfile" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-web" />
+											<constructor-arg value="validation.criteria.b6.t1.web.ProfileApi.retrieveProfile." />
+										</bean>
+
+									</constructor-arg>
+								</bean>
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="CreditLimitApi.getCreditLimitInformation Validator" />
+									<constructor-arg ref="b6.t1.matcher.CreditLimitApi.getCreditLimitInformation" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-web" />
+											<constructor-arg value="validation.criteria.b6.t1.web.CreditLimitApi.getCreditLimitInformation." />
+										</bean>
+
+									</constructor-arg>
+								</bean>
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="interstitialAsync.search.validate Validator" />
+									<constructor-arg ref="b6.t1.matcher.interstitialAsync.search.validate" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-web" />
+											<constructor-arg value="validation.criteria.b6.t1.web.interstitialAsync.search.validate." />
+										</bean>
+
+									</constructor-arg>
+								</bean>
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="hasTgtCookie Validator" />
+									<constructor-arg ref="b6.t1.matcher.hasTgtCookie" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-web" />
+											<constructor-arg value="validation.criteria.b6.t1.web.hasTgtCookie." />
+										</bean>
+
+									</constructor-arg>
+								</bean>
+
+
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="viewSeats (flightsPage) Validator" />
+									<constructor-arg ref="b6.t1.matcher.viewSeatsSelectPage" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-web" />
+											<constructor-arg value="validation.criteria.b6.t1.web.viewSeats." />
+										</bean>
+
+									</constructor-arg>
+								</bean>
+
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="modifySearch (flightsPage) Validator" />
+									<constructor-arg>
+										<bean class="com.eb2.elogging.read.listener.filter.EventMatcher">
+											<constructor-arg value="WEB_FLOW,modifySearch" />
+										</bean>
+									</constructor-arg>
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-web" />
+											<constructor-arg value="validation.criteria.b6.t1.web.modifySearch." />
+										</bean>
+									</constructor-arg>
+								</bean>
+
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="noTgtCookie Validator" />
+									<constructor-arg>
+										<bean class="com.eb2.elogging.read.listener.filter.EventMatcher">
+											<constructor-arg value="WEB_FLOW,noTgtCookie" />
+										</bean>
+									</constructor-arg>
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-web" />
+											<constructor-arg value="validation.criteria.b6.t1.web.noTgtCookie." />
+										</bean>
+									</constructor-arg>
+								</bean>
+
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="start Validator" />
+									<constructor-arg>
+										<bean class="com.eb2.elogging.read.listener.filter.EventMatcher">
+											<constructor-arg value="WEB_FLOW,start" />
+										</bean>
+									</constructor-arg>
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-web" />
+											<constructor-arg value="validation.criteria.b6.t1.web.start." />
+										</bean>
+									</constructor-arg>
+								</bean>
+
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="searchPage Validator" />
+									<constructor-arg>
+										<bean class="com.eb2.elogging.read.listener.filter.EventMatcher">
+											<constructor-arg value="WEB_FLOW,searchPage" />
+										</bean>
+									</constructor-arg>
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-web" />
+											<constructor-arg value="validation.criteria.b6.t1.web.searchPage." />
+										</bean>
+									</constructor-arg>
+								</bean>
+
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="updateInboundFlightTableAndFareSummary Validator" />
+									<constructor-arg>
+										<bean class="com.eb2.elogging.read.listener.filter.EventMatcher">
+											<constructor-arg value="WEB_FLOW,updateInboundFlightTableAndFareSummary" />
+										</bean>
+									</constructor-arg>
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-web" />
+											<constructor-arg value="validation.criteria.b6.t1.web.updateInboundFlightTableAndFareSummary." />
+										</bean>
+									</constructor-arg>
+								</bean>
+
+
+
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="serializeOutSize Validator" />
+									<constructor-arg ref="b6.t1.matcher.serializeOutSize" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-web" />
+											<constructor-arg value="validation.criteria.b6.t1.web.serializeOutSize." />
+										</bean>
+
+									</constructor-arg>
+								</bean>
+
+
+							</list>
+						</constructor-arg>
+					</bean>
+				</constructor-arg>
+			</bean>
+
+		</property>
+
+	</bean>
+
+</beans>

@@ -1,0 +1,4 @@
+cd ../threadDumpCapture
+export PTM_ENV="SSCI"
+export TARGET_DIR="../artifacts/SSCI/threadDumps/ssci-kiosk-B6-t1/2014-04-07_16-34-16-Test1/"
+./start-td-capture.sh ssci-kiosk-B6 t1 Test1 180

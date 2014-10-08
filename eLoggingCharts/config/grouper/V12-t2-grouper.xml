@@ -1,0 +1,71 @@
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd">
+
+
+
+	<bean id="grouper" class="com.eb2.elogging.read.listener.aggregate.group.EventsGrouper">
+		<constructor-arg ref="perEventTypeNameAggregator" />
+		<constructor-arg ref="summaryWriter" />
+		<constructor-arg>
+			<util:list list-class="java.util.LinkedList">
+				<bean class="com.eb2.elogging.read.listener.aggregate.group.GroupDefinition">
+					<property name="eventMatcher">
+						<bean class="com.eb2.elogging.read.listener.filter.EventMatcher">
+							<constructor-arg value=".*_SERV_TP_.*,AirSearchApi.search" />
+						</bean>
+					</property>
+					<property name="typeReplacement">
+						<bean class="com.eb2.elogging.model.StringDirectReplacement">
+							<constructor-arg value="All_SERV_TP"></constructor-arg>
+						</bean>
+					</property>
+					<property name="nameReplacement">
+						<bean class="com.eb2.elogging.model.StringDirectReplacement">
+							<constructor-arg value="All.AirSearchApi.search"></constructor-arg>
+						</bean>
+					</property>
+				</bean>
+
+				<bean class="com.eb2.elogging.read.listener.aggregate.group.GroupDefinition">
+					<property name="eventMatcher">
+						<bean class="com.eb2.elogging.read.listener.filter.EventMatcher">
+							<constructor-arg value=".*_SERV_TP_.*,PricingApi.reprice" />
+						</bean>
+					</property>
+					<property name="typeReplacement">
+						<bean class="com.eb2.elogging.model.StringDirectReplacement">
+							<constructor-arg value="All_SERV_TP"></constructor-arg>
+						</bean>
+					</property>
+					<property name="nameReplacement">
+						<bean class="com.eb2.elogging.model.StringDirectReplacement">
+							<constructor-arg value="All.PricingApi.reprice"></constructor-arg>
+						</bean>
+					</property>
+				</bean>
+				
+				<bean class="com.eb2.elogging.read.listener.aggregate.group.GroupDefinition">
+					<property name="eventMatcher">
+						<bean class="com.eb2.elogging.read.listener.filter.EventMatcher">
+							<constructor-arg value=".*_WSXML_SABRE_.*,SabreCommandLLSPortType.sabreCommandLLSRQ" />
+						</bean>
+					</property>
+					<property name="typeReplacement">
+						<bean class="com.eb2.elogging.model.StringDirectReplacement">
+							<constructor-arg value="All_WSXML_SABRE"></constructor-arg>
+						</bean>
+					</property>
+					<property name="nameReplacement">
+						<bean class="com.eb2.elogging.model.StringDirectReplacement">
+							<constructor-arg value="All.SabreCommandLLSPortType.sabreCommandLLSRQ"></constructor-arg>
+						</bean>
+					</property>
+				</bean>
+				
+			</util:list>
+		</constructor-arg>
+	</bean>
+
+</beans>

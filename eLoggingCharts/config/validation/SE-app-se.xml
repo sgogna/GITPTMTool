@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd">
+
+	<util:properties id="validation.criteria.wsxml.sabre" location="config/validation-criteria-wsxml-sabre.properties" />
+
+	<import resource="../matcher/wsxml-sabre.xml" />
+	<import resource="sabre.xml" />
+
+	<bean id="statisticsValidator" class="com.eb2.elogging.write.statistics.validation.MatchingAggregationEventValidator">
+		<property name="validators">
+
+			<bean id="validation.wsxml.sabre.common.validators.list" class="com.eb2.util.ListMergeFactory" factory-method="mergeListsToLinkedList">
+				<constructor-arg>
+					<list>
+						<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="addPrefixAndSuffix">
+							<constructor-arg value="EY" />
+							<constructor-arg value="EYM0" />
+							<constructor-arg ref="validation.wsxml.sabre.common.validators.list" />
+						</bean>
+
+						<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="addPrefixAndSuffix">
+                                                        <constructor-arg value="EY" />
+                                                        <constructor-arg value="EYEY" />
+                                                        <constructor-arg ref="validation.wsxml.sabre.common.validators.list" />
+                                                </bean>
+
+						<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="addPrefixAndSuffix">
+							<constructor-arg value="3M" />
+							<constructor-arg value="3MM0" />
+							<constructor-arg ref="validation.wsxml.sabre.common.validators.list" />
+						</bean>
+						<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="addPrefixAndSuffix">
+							<constructor-arg value="PG" />
+							<constructor-arg value="PGM0" />
+							<constructor-arg ref="validation.wsxml.sabre.common.validators.list" />
+						</bean>
+
+					</list>
+				</constructor-arg>
+			</bean>
+
+		</property>
+	</bean>
+
+
+</beans>

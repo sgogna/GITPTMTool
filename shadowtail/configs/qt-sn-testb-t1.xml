@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="properties">
+			<props>
+				<prop key="config.id">qt-sn-testb-t1</prop>
+				<prop key="target.host">sswhlc1352</prop>
+				<prop key="target.port">9005</prop>
+                		<prop key="target.context">/SN</prop>
+				<prop key="target.catalina.manager.webapp.name">Catalina:type=Manager,path=/SN,host=localhost</prop>
+                                <prop key="target.catalina.threadpool.http.name">Catalina:type=ThreadPool,name=http-8158</prop>
+                                <prop key="target.catalina.threadpool.https.name">Catalina:type=ThreadPool,name=http-8195</prop>
+			</props>
+		</property>
+	</bean>
+
+	<import resource="jvm.xml" />
+	<import resource="catalina-T1-static.xml" />
+	<import resource="ibe-empty.xml" />
+	
+	<import resource="default.xml" />
+
+
+</beans>

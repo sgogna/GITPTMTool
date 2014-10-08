@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+	<import resource="threadPoolPrototypes.xml" />
+
+	<bean id="ibeStatisticsList" class="org.springframework.beans.factory.config.ListFactoryBean">
+		<property name="sourceList">
+			<list>
+
+				<bean class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+					<property name="name" value="Axsres Pool NumActive" />
+					<property name="connection" ref="clientConnector" />
+					<property name="objectName" value="qtrip:path=SN.server,airline=SN,name=axsresPool" />
+					<property name="attributeName" value="NumActive" />
+				</bean>
+
+				<bean class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+					<property name="name" value="Flight Cache CacheHitPercentage" />
+					<property name="connection" ref="clientConnector" />
+					<property name="objectName" value="qtrip:path=SN.server,name=flightCache" />
+					<property name="attributeName" value="CacheHitPercentage" />
+				</bean>
+  
+				<bean parent="threadPool-Size">
+					<property name="name" value="ThreadPool-Flight-Size" />
+					<property name="objectName" value="qtrip:path=SN.server,airline=SN,name=MultiThreadedFlightCache" />
+				</bean>
+				<bean parent="threadPool-Active">
+					<property name="name" value="ThreadPool-Flight-Active" />
+					<property name="objectName" value="qtrip:path=SN.server,airline=SN,name=MultiThreadedFlightCache" />
+				</bean>
+				<bean parent="threadPool-Queue">
+					<property name="name" value="ThreadPool-Flight-Queue" />
+					<property name="objectName" value="qtrip:path=SN.server,airline=SN,name=MultiThreadedFlightCache" />
+				</bean>
+				<bean parent="threadPool-Rejected">
+					<property name="name" value="ThreadPool-Flight-Rejected" />
+					<property name="objectName" value="qtrip:path=SN.server,airline=SN,name=MultiThreadedFlightCache" />
+				</bean>
+				<bean parent="threadPool-Cancelled">
+					<property name="name" value="ThreadPool-Flight-Cancelled" />
+					<property name="objectName" value="qtrip:path=SN.server,airline=SN,name=MultiThreadedFlightCache" />
+				</bean>
+
+				<bean parent="threadPool-Size">
+					<property name="name" value="ThreadPool-Price-Size" />
+					<property name="objectName" value="qtrip:path=SN.server,airline=SN,name=MultiThreadedShoppingBasketPricing" />
+				</bean>
+				<bean parent="threadPool-Active">
+					<property name="name" value="ThreadPool-Price-Active" />
+					<property name="objectName" value="qtrip:path=SN.server,airline=SN,name=MultiThreadedShoppingBasketPricing" />
+				</bean>
+				<bean parent="threadPool-Queue">
+					<property name="name" value="ThreadPool-Price-Queue" />
+					<property name="objectName" value="qtrip:path=SN.server,airline=SN,name=MultiThreadedShoppingBasketPricing" />
+				</bean>
+				<bean parent="threadPool-Rejected">
+					<property name="name" value="ThreadPool-Price-Rejected" />
+					<property name="objectName" value="qtrip:path=SN.server,airline=SN,name=MultiThreadedShoppingBasketPricing" />
+				</bean>
+				<bean parent="threadPool-Cancelled">
+					<property name="name" value="ThreadPool-Price-Cancelled" />
+					<property name="objectName" value="qtrip:path=SN.server,airline=SN,name=MultiThreadedShoppingBasketPricing" />
+				</bean>
+
+
+			</list>
+		</property>
+	</bean>
+
+</beans>

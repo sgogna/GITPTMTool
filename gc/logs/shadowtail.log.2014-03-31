@@ -1,0 +1,12 @@
+2014-03-31 14:04:04 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@16b1a9a8: startup date [Mon Mar 31 14:04:04 CDT 2014]; root of context hierarchy
+2014-03-31 14:04:04 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/appender.xml]
+2014-03-31 14:04:04 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2014-03-31 14:04:04 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@117e78f7: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2014-03-31 14:17:24 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@69f9603b: startup date [Mon Mar 31 14:17:24 CDT 2014]; root of context hierarchy
+2014-03-31 14:17:24 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/appender.xml]
+2014-03-31 14:17:24 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2014-03-31 14:17:24 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@117e78f7: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2014-03-31 14:31:43 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@69f9603b: startup date [Mon Mar 31 14:31:43 CDT 2014]; root of context hierarchy
+2014-03-31 14:31:43 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/appender.xml]
+2014-03-31 14:31:43 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/gcViewer/general.xml]
+2014-03-31 14:31:43 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@117e78f7: defining beans [fileProcessor,Preparer]; root of factory hierarchy

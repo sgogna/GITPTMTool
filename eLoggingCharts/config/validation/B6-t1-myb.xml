@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd">
+
+	<util:properties id="validation.criteria.b6-t1-myb" location="config/validation/criteria-b6-t1-myb.properties" />
+
+	<import resource="../matcher/B6-matcher-common.xml" />
+
+	<bean id="statisticsValidator" class="com.eb2.elogging.write.statistics.validation.MatchingAggregationEventValidator">
+		<property name="validators">
+			<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="addPrefixAndSuffix">
+				<constructor-arg value="B6" />
+				<constructor-arg value="B6B6" />
+				<constructor-arg>
+					<bean class="com.eb2.util.ListMergeFactory" factory-method="mergeListsToLinkedList">
+						<constructor-arg>
+							<list>
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="IROP Booking Details JSP Validator" />
+									<constructor-arg ref="b6.t1.myb.matcher.bookingDetailsJSP" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-myb" />
+											<constructor-arg value="validation.criteria.b6.t1.myb.irop.bookingDetailsJSP." />
+										</bean>
+
+									</constructor-arg>
+								</bean>
+
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="IROP Booking Details (AJAX) JSP Validator" />
+									<constructor-arg ref="b6.t1.myb.matcher.bookingDetailsAjaxJSP" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-myb" />
+											<constructor-arg value="validation.criteria.b6.t1.myb.irop.bookingDetailsAjax." />
+										</bean>
+
+									</constructor-arg>
+								</bean>
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="IROP ShoppingBasketApi.getShoppingBasket Validator" />
+									<constructor-arg ref="b6.t1.matcher.getShoppingBasket" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-myb" />
+											<constructor-arg value="validation.criteria.b6.t1.myb.irop.ShoppingBasketApi.getShoppingBasket." />
+										</bean>
+									</constructor-arg>
+								</bean>
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="IROP landingJSP Validator" />
+									<constructor-arg ref="b6.t1.myb.matcher.landingJSP" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-myb" />
+											<constructor-arg value="validation.criteria.b6.t1.myb.irop.landingJSP." />
+										</bean>
+									</constructor-arg>
+								</bean>
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="IROP UserDetailsServiceApi.loadUserByUsername Validator" />
+									<constructor-arg ref="b6.t1.matcher.loadUserByUsername" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-myb" />
+											<constructor-arg value="validation.criteria.b6.t1.myb.irop.UserDetailsServiceApi.loadUserByUsername." />
+										</bean>
+									</constructor-arg>
+								</bean>
+
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="IROP Change Itinerary (start) Validator" />
+									<constructor-arg ref="b6.t1.myb.matcher.changeItinerary" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-myb" />
+											<constructor-arg value="validation.criteria.b6.t1.myb.irop.changeItinerary." />
+										</bean>
+									</constructor-arg>
+								</bean>
+
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="IROP Change Itinerary (confirmation) Validator" />
+									<constructor-arg ref="b6.t1.myb.matcher.changeItinerary.confirmation" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-myb" />
+											<constructor-arg value="validation.criteria.b6.t1.myb.irop.changeItinerary-Confirmation." />
+										</bean>
+									</constructor-arg>
+								</bean>
+
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="IROP Manage Seats (start) Validator" />
+									<constructor-arg ref="b6.t1.myb.matcher.manageSeats.start" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-myb" />
+											<constructor-arg value="validation.criteria.b6.t1.myb.irop.manageSeats.start." />
+										</bean>
+									</constructor-arg>
+								</bean>
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="IROP Manage Seats (purchase) Validator" />
+									<constructor-arg ref="b6.t1.myb.matcher.manageSeats.purchase" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-myb" />
+											<constructor-arg value="validation.criteria.b6.t1.myb.irop.manageSeats.purchase." />
+										</bean>
+									</constructor-arg>
+								</bean>
+								
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="IROP Add flight upgrades (start) Validator" />
+									<constructor-arg ref="b6.t1.myb.matcher.addFlightUpgrades.start" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-myb" />
+											<constructor-arg value="validation.criteria.b6.t1.myb.irop.addFlightUpgrades.start." />
+										</bean>
+									</constructor-arg>
+								</bean>
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="IROP View Itinerary Validator" />
+									<constructor-arg ref="b6.t1.myb.matcher.viewItinerary" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-myb" />
+											<constructor-arg value="validation.criteria.b6.t1.myb.irop.viewItineraryJSP." />
+										</bean>
+									</constructor-arg>
+								</bean>
+								
+																<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="Booking Details JSP Validator" />
+									<constructor-arg ref="b6.t1.myb.matcher.bookingDetailsJSP" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-myb" />
+											<constructor-arg value="validation.criteria.b6.t1.myb.bookingDetailsJSP." />
+										</bean>
+
+									</constructor-arg>
+								</bean>
+
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="Booking Details (AJAX) JSP Validator" />
+									<constructor-arg ref="b6.t1.myb.matcher.bookingDetailsAjaxJSP" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-myb" />
+											<constructor-arg value="validation.criteria.b6.t1.myb.bookingDetailsAjax." />
+										</bean>
+
+									</constructor-arg>
+								</bean>
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="ShoppingBasketApi.getShoppingBasket Validator" />
+									<constructor-arg ref="b6.t1.matcher.getShoppingBasket" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-myb" />
+											<constructor-arg value="validation.criteria.b6.t1.myb.ShoppingBasketApi.getShoppingBasket." />
+										</bean>
+									</constructor-arg>
+								</bean>
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="landingJSP Validator" />
+									<constructor-arg ref="b6.t1.myb.matcher.landingJSP" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-myb" />
+											<constructor-arg value="validation.criteria.b6.t1.myb.landingJSP." />
+										</bean>
+									</constructor-arg>
+								</bean>
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="UserDetailsServiceApi.loadUserByUsername Validator" />
+									<constructor-arg ref="b6.t1.matcher.loadUserByUsername" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-myb" />
+											<constructor-arg value="validation.criteria.b6.t1.myb.UserDetailsServiceApi.loadUserByUsername." />
+										</bean>
+									</constructor-arg>
+								</bean>
+
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="Change Itinerary (start) Validator" />
+									<constructor-arg ref="b6.t1.myb.matcher.changeItinerary" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-myb" />
+											<constructor-arg value="validation.criteria.b6.t1.myb.changeItinerary." />
+										</bean>
+									</constructor-arg>
+								</bean>
+
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="Change Itinerary (confirmation) Validator" />
+									<constructor-arg ref="b6.t1.myb.matcher.changeItinerary.confirmation" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-myb" />
+											<constructor-arg value="validation.criteria.b6.t1.myb.changeItinerary-Confirmation." />
+										</bean>
+									</constructor-arg>
+								</bean>
+
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="Manage Seats (start) Validator" />
+									<constructor-arg ref="b6.t1.myb.matcher.manageSeats.start" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-myb" />
+											<constructor-arg value="validation.criteria.b6.t1.myb.manageSeats.start." />
+										</bean>
+									</constructor-arg>
+								</bean>
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="Manage Seats (purchase) Validator" />
+									<constructor-arg ref="b6.t1.myb.matcher.manageSeats.purchase" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-myb" />
+											<constructor-arg value="validation.criteria.b6.t1.myb.manageSeats.purchase." />
+										</bean>
+									</constructor-arg>
+								</bean>
+								
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="Add flight upgrades (start) Validator" />
+									<constructor-arg ref="b6.t1.myb.matcher.addFlightUpgrades.start" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-myb" />
+											<constructor-arg value="validation.criteria.b6.t1.myb.addFlightUpgrades.start." />
+										</bean>
+									</constructor-arg>
+								</bean>
+								<bean class="com.eb2.elogging.write.statistics.validation.EventMatcherToValidatorFactory" factory-method="propertyValidator">
+									<constructor-arg value="View Itinerary Validator" />
+									<constructor-arg ref="b6.t1.myb.matcher.viewItinerary" />
+									<constructor-arg>
+										<bean class="com.eb2.util.PropertiesFacade" factory-method="filterKeys">
+											<constructor-arg ref="validation.criteria.b6-t1-myb" />
+											<constructor-arg value="validation.criteria.b6.t1.myb.viewItineraryJSP." />
+										</bean>
+									</constructor-arg>
+								</bean>
+							</list>
+						</constructor-arg>
+					</bean>
+				</constructor-arg>
+			</bean>
+
+		</property>
+
+	</bean>
+
+</beans>

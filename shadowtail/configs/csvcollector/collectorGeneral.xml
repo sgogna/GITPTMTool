@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+	<bean id="Preparer" class="pl.com.csvcollector.Preparer">
+		<property name="leadingHeaders">
+			<set>
+				<value>Filename</value>
+				<value>Begin-time</value>
+				<value>End-time</value>
+				<value>Duration-time</value>
+			</set>
+		</property>
+
+		<property name="nameToMetricMap">
+			<map>
+				<entry key="Loaded-Class-Count" value="MAX" />
+				<entry key="Unloaded-Class-Count" value="MAX" />
+				<entry key="Heap-Memory-Used" value="50th" />
+				
+				<entry key="GC-CMS-Count" value="MAX" />
+				<entry key="GC-CMS-Time" value="MAX" />
+				<entry key="GC-ParNew-Count" value="MAX" />
+				<entry key="GC-ParNew-Time" value="MAX" />
+				
+				<entry key="GC-PS-MarkSweep-Count" value="MAX" />
+				<entry key="GC-PS-MarkSweep-Time" value="MAX" />
+				<entry key="GC-PS-Scavenge-Count" value="MAX" />
+				<entry key="GC-PS-Scavenge-Time" value="MAX" />
+				
+				<entry key="JVM-Thread-Count" value="50th" />
+				<entry key="Server-Load" value="50th" />
+				<entry key="Process-Cpu-Utilization" value="50th" />
+				<entry key="Throughput" value="MIN" />
+				<entry key="Throughput-5sec" value="50th" />
+				<entry key="http-Threads-Busy" value="50th" />
+				<entry key="http-Threads-Count" value="50th" />
+				<entry key="Active-Sessions-Count" value="50th" />
+				<entry key="Session-Create-Rate" value="50th" />
+				<entry key="Session-Expire-Rate" value="50th" />
+				<entry key="Session-AVG-Alive-Time" value="50th" />
+				<entry key="https-Threads-Busy" value="50th" />
+				<entry key="https-Threads-Count" value="50th" />
+				<entry key="GC-PS-MarkSweep-Count" value="MAX" />
+				<entry key="GC-PS-MarkSweep-Time" value="MAX" />
+				<entry key="GC-PS-Scavenge-Count" value="MAX" />
+				<entry key="GC-PS-Scavenge-Time" value="MAX" />
+			</map>
+		</property>
+
+		<property name="genericNameToMetricMap">
+			<map>
+				<entry key="GDS-Pool-NumActive" value="50th" />
+				<entry key="DB-Pool-NumActive" value="50th" />
+			</map>
+		</property>
+
+		<property name="predefinedHeaders">
+			<set>
+				<value>Process-Cpu-Utilization</value>
+				<value>Server-Load</value>
+				<value>Throughput</value>
+				<value>Throughput-5sec</value>
+				<value>JVM-Thread-Count</value>
+				<value>Heap-Memory-Used</value>
+				<value>Loaded-Class-Count</value>
+				<value>Unloaded-Class-Count</value>
+				<value>GC-CMS-Count</value>
+				<value>GC-CMS-Time</value>
+				<value>GC-ParNew-Count</value>
+				<value>GC-ParNew-Time</value>
+
+				<value>http-Threads-Busy</value>
+				<value>http-Threads-Count</value>
+			</set>
+		</property>
+
+		<property name="excludedHeaders">
+			<set>
+				<value>Timestamp</value>
+			</set>
+		</property>
+
+		<property name="csvProcessor" ref="fileProcessor" />
+	</bean>
+
+</beans>

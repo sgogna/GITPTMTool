@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	   					   http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="eventValidators" class="java.util.ArrayList">
+		<constructor-arg>
+			<list> 
+				<bean class="com.eb2.elogging.read.listener.filter.EventValidator">
+					<property name="eventMatcher">
+						<bean class="com.eb2.elogging.read.listener.filter.EventMatcher">
+							<property name="typePattern">
+								<bean class="java.util.regex.Pattern" factory-method="compile">
+									<constructor-arg value=".*THROTTLE.*" />
+								</bean>
+							</property>
+						</bean>
+					</property>
+					<property name="matchStatus" value="EXCLUDE" />
+				</bean>
+				<bean class="com.eb2.elogging.read.listener.filter.EventValidator">
+					<property name="eventMatcher">
+						<bean class="com.eb2.elogging.read.listener.filter.EventMatcher">
+							<property name="typePattern">
+								<bean class="java.util.regex.Pattern" factory-method="compile">
+									<constructor-arg value=".*BUSINESS_SSCI_LOG.*" />
+								</bean>
+							</property>
+						</bean>
+					</property>
+					<property name="matchStatus" value="EXCLUDE" />
+				</bean>
+				<!-- <bean class="com.eb2.elogging.read.listener.filter.EventValidator"> <property name="eventMatcher"> <bean class="com.eb2.elogging.read.listener.filter.EventMatcher"> <property name="typePattern"> <bean class="java.util.regex.Pattern" 
+					factory-method="compile"> <constructor-arg value=".*_SERV_TP_.*" /> </bean> </property> <property name="namePattern"> <bean class="java.util.regex.Pattern" factory-method="compile"> <constructor-arg value="TechnicalSwitchesApi.*" /> </bean> 
+					</property> </bean> </property> <property name="matchStatus" value="EXCLUDE" /> </bean> <bean class="com.eb2.elogging.read.listener.filter.EventValidator"> <property name="eventMatcher"> <bean class="com.eb2.elogging.read.listener.filter.EventMatcher"> 
+					<property name="typePattern"> <bean class="java.util.regex.Pattern" factory-method="compile"> <constructor-arg value=".*_SERV_TP_.*" /> </bean> </property> <property name="namePattern"> <bean class="java.util.regex.Pattern" factory-method="compile"> 
+					<constructor-arg value="StorefrontConfigurationApi.isNotLatestConfigurationVersion" /> </bean> </property> </bean> </property> <property name="matchStatus" value="EXCLUDE" /> </bean> -->
+
+			</list>
+		</constructor-arg>
+	</bean>
+
+</beans>

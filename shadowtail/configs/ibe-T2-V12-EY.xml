@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+	<bean id="gdsPoolNumActive" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+		<property name="name" value="GDS Pool NumActive" />
+		<property name="connection" ref="clientConnector" />
+		<property name="objectName" value="qtrip:path=SSW2010.server,name=sabrePoolOperations" />
+		<property name="attributeName" value="NumActive" />
+	</bean>
+	
+	<bean id="dbPoolNumActive-EY" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+		<property name="name" value="DB Pool NumActive EY" />
+		<property name="connection" ref="clientConnector" />
+		<property name="objectName" value="qtrip:path=SSW2010.server,name=multiAirlineDataSource" />
+		<property name="attributeName" value="NumActiveEY" />
+	</bean>
+	
+	
+	<bean id="ibeStatisticsList" class="org.springframework.beans.factory.config.ListFactoryBean" >
+		<property name="sourceList">
+			<list>
+				<ref bean="gdsPoolNumActive" />
+				<ref bean="dbPoolNumActive-EY" />
+			</list>
+		</property>
+	</bean>
+
+</beans>

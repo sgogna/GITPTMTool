@@ -1,0 +1,18 @@
+kiosk / 
+Calling wait
+/project/plab/performance/newtools/heapDumpCapture/../scripts/getTomcatPID.sh: line 2: /opt/mw/java/jdk1.7.0_06/bin/jps: No such file or directory
+/project/plab/performance/newtools/heapDumpCapture/calculateHeapSize.sh: line 2: /../config/getProperty.sh: No such file or directory
+/project/plab/performance/newtools/heapDumpCapture/calculateHeapSize.sh: line 3: /bin/jstat: No such file or directory
+ / 0
+heap smaller than 1500
+completed, iteration: 1, size: 0
+INSIDE CAPTURE METOD
+capturing PID: /ssci-kiosk-B6-t1d.20140327_175001.KKKKKK.hprof
+/project/plab/performance/newtools/heapDumpCapture/captureHeapDump.sh: line 11: /opt/mw/java/jdk1.7.0_45//bin/jmap: No such file or directory
+chmod: cannot access `sandeep.gogna.ctr@sabre.com': No such file or directory
+ls: sandeep.gogna.ctr@sabre.com: No such file or directory
+compressing ...
+gzip: sandeep.gogna.ctr@sabre.com: No such file or directory
+ls: sandeep.gogna.ctr@sabre.com.gz: No such file or directory
+heap dump capture complete
+Unable to append ssci-kiosk-B6.t1d.heapDump=/ssci-kiosk-B6-t1d.20140327_175001.KKKKKK.hprof.gz, TEST_ID=2014-03-27_17-48-13.ssci-kiosk-B6.KKKKKK does not exsit

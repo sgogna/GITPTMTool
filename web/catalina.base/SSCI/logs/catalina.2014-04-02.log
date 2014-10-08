@@ -1,0 +1,42 @@
+Apr 02, 2014 3:56:11 PM org.apache.catalina.startup.Catalina initDirs
+SEVERE: Cannot find specified temporary folder at ./catalina.base/SSCI//temp
+Apr 02, 2014 3:56:11 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /project/selfservice/zabbix/libssh2/lib:/project/selfservice/zabbix/apr-1.4.6/lib:/project/selfservice/zabbix/instantclient_11_2::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Apr 02, 2014 3:56:12 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8040"]
+Apr 02, 2014 3:56:12 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 616 ms
+Apr 02, 2014 3:56:12 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Apr 02, 2014 3:56:12 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.34
+Apr 02, 2014 3:56:13 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8040"]
+Apr 02, 2014 3:56:13 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1468 ms
+Apr 02, 2014 4:17:02 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Apr 02, 2014 4:17:02 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8040"]
+Apr 02, 2014 4:17:02 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Apr 02, 2014 4:17:02 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8040"]
+Apr 02, 2014 4:17:02 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8040"]
+Apr 02, 2014 4:17:06 PM org.apache.catalina.startup.Catalina initDirs
+SEVERE: Cannot find specified temporary folder at ./catalina.base/SSCI//temp
+Apr 02, 2014 4:17:06 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /project/selfservice/zabbix/libssh2/lib:/project/selfservice/zabbix/apr-1.4.6/lib:/project/selfservice/zabbix/instantclient_11_2::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Apr 02, 2014 4:17:06 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8040"]
+Apr 02, 2014 4:17:06 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 591 ms
+Apr 02, 2014 4:17:06 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Apr 02, 2014 4:17:06 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.34
+Apr 02, 2014 4:17:08 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8040"]
+Apr 02, 2014 4:17:08 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1466 ms

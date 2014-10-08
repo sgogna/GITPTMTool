@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="properties">
+			<props>
+				<prop key="config.id">ssci-kiosk-9W</prop>
+				<prop key="target.host">localhost</prop>
+				<prop key="target.port">7275</prop>
+				<prop key="target.context">/Kiosk/9W</prop>
+			</props>
+		</property>
+	</bean>
+
+	<import resource="jvm.xml" />
+
+	<import resource="catalina-T2.xml" />
+	<import resource="ibe-empty.xml" />
+	<import resource="default.xml" />
+
+
+</beans>

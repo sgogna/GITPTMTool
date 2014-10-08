@@ -1,0 +1,3 @@
+./stopCatalina.sh
+./startCatalina.sh
+

@@ -1,0 +1,92 @@
+.chartBox {display: inline}
+.xx	chartCanvas{width:1000px;display:inline}
+.chart_testsSelect{width:300px;margin:0 10px 10px 0;}
+.chart_EventTypeSelect{width:300px;height:90px;}
+.chart_EventNameSelect{width:500px;height:90px;}
+.selectedEvent{background-color: #678eb5 !important;color:white}
+.spacer{margin: 5px 0 5px 0;width:100%}
+.button {
+   border-top: 1px solid #96d1f8;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+   padding: 2px 4px;
+   -webkit-border-radius: 31px;
+   -moz-border-radius: 31px;
+   border-radius: 31px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 11px;
+   font-family: Verdana;
+   text-decoration: none;
+   vertical-align: middle;
+   margin: 0 2px;
+   }
+.button:hover {
+   border-top-color: #28597a;
+   background: #28597a;
+   color: #ccc;
+   }
+.button:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
+   
+.select {
+ display: inline-block;
+        border: 1px solid #bbb;
+        padding: 3px 3px 3px 3px;
+        margin: 5px;
+        font: 9px;
+        outline:none; /* delete focus ring from Webkit */
+        line-height: 1.2;
+        background: #f8f8f8;
+        
+        -webkit-appearance:none; /* delete the strong OSX influence from Webkit */
+        
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+}
+
+select:focus {
+        -webkit-box-shadow: 0 0 3px 1px #bbb;
+        -moz-box-shadow: 0 0 3px 1px #bbb;
+        box-shadow: 0 0 3px 1px #bbb;
+    }
+	
+table.jqplot-table-legend, table.jqplot-cursor-legend {margin-top: 30px}
+
+#eloggingChartsContainer {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+#correspondComments {
+    font-style: italic;
+    font-family: Georgia, Times, serif;
+    font-size: 24px;
+    color: #1B435E;
+}
+
+#correspondComments li p {
+    padding: 6px;
+    font-style: normal;
+    font-family: Arial;
+    font-size: 13px;
+    color: #000;
+    border-left: 1px solid #65a9d7;
+    margin: 0;
+}
+
+#correspondComments li p em {
+    display:block;
+}
+
+#correspondComments li a {
+    color: #28597a;
+}

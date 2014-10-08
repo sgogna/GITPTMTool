@@ -1,0 +1,207 @@
+Apr 07, 2014 11:34:57 AM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Apr 07, 2014 11:34:57 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8040"]
+Apr 07, 2014 11:34:57 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Apr 07, 2014 11:34:57 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8040"]
+Apr 07, 2014 11:34:57 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8040"]
+Apr 07, 2014 12:36:48 PM org.apache.catalina.startup.Catalina initDirs
+SEVERE: Cannot find specified temporary folder at ./catalina.base/SSCI//temp
+Apr 07, 2014 12:36:49 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /project/selfservice/zabbix/libssh2/lib:/project/selfservice/zabbix/apr-1.4.6/lib:/project/selfservice/zabbix/instantclient_11_2::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Apr 07, 2014 12:36:49 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8040"]
+Apr 07, 2014 12:36:49 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 597 ms
+Apr 07, 2014 12:36:49 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Apr 07, 2014 12:36:49 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.34
+Apr 07, 2014 12:37:01 PM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [11,481] milliseconds.
+Apr 07, 2014 12:37:02 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8040"]
+Apr 07, 2014 12:37:02 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 13074 ms
+Apr 07, 2014 1:04:35 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Apr 07, 2014 1:04:35 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8040"]
+Apr 07, 2014 1:04:35 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Apr 07, 2014 1:04:35 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8040"]
+Apr 07, 2014 1:04:35 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8040"]
+Apr 07, 2014 1:04:40 PM org.apache.catalina.startup.Catalina initDirs
+SEVERE: Cannot find specified temporary folder at ./catalina.base/SSCI//temp
+Apr 07, 2014 1:04:40 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /project/selfservice/zabbix/libssh2/lib:/project/selfservice/zabbix/apr-1.4.6/lib:/project/selfservice/zabbix/instantclient_11_2::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Apr 07, 2014 1:04:40 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8040"]
+Apr 07, 2014 1:04:40 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 551 ms
+Apr 07, 2014 1:04:40 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Apr 07, 2014 1:04:40 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.34
+Apr 07, 2014 1:04:42 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8040"]
+Apr 07, 2014 1:04:42 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1483 ms
+Apr 07, 2014 1:07:04 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Apr 07, 2014 1:07:04 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8040"]
+Apr 07, 2014 1:07:04 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Apr 07, 2014 1:07:04 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8040"]
+Apr 07, 2014 1:07:04 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8040"]
+Apr 07, 2014 1:07:08 PM org.apache.catalina.startup.Catalina initDirs
+SEVERE: Cannot find specified temporary folder at ./catalina.base/SSCI//temp
+Apr 07, 2014 1:07:08 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /project/selfservice/zabbix/libssh2/lib:/project/selfservice/zabbix/apr-1.4.6/lib:/project/selfservice/zabbix/instantclient_11_2::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Apr 07, 2014 1:07:09 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8040"]
+Apr 07, 2014 1:07:09 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 568 ms
+Apr 07, 2014 1:07:09 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Apr 07, 2014 1:07:09 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.34
+Apr 07, 2014 1:07:10 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8040"]
+Apr 07, 2014 1:07:10 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1621 ms
+Apr 07, 2014 1:57:30 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Apr 07, 2014 1:57:30 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8040"]
+Apr 07, 2014 1:57:31 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Apr 07, 2014 1:57:31 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8040"]
+Apr 07, 2014 1:57:31 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8040"]
+Apr 07, 2014 1:57:33 PM org.apache.catalina.startup.Catalina initDirs
+SEVERE: Cannot find specified temporary folder at ./catalina.base/SSCI//temp
+Apr 07, 2014 1:57:34 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /project/selfservice/zabbix/libssh2/lib:/project/selfservice/zabbix/apr-1.4.6/lib:/project/selfservice/zabbix/instantclient_11_2::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Apr 07, 2014 1:57:34 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8040"]
+Apr 07, 2014 1:57:34 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 551 ms
+Apr 07, 2014 1:57:34 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Apr 07, 2014 1:57:34 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.34
+Apr 07, 2014 1:57:55 PM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [21,050] milliseconds.
+Apr 07, 2014 1:57:57 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8040"]
+Apr 07, 2014 1:57:57 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 22549 ms
+Apr 07, 2014 1:58:40 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Apr 07, 2014 1:58:40 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8040"]
+Apr 07, 2014 1:58:40 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Apr 07, 2014 1:58:40 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8040"]
+Apr 07, 2014 1:58:40 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8040"]
+Apr 07, 2014 1:58:43 PM org.apache.catalina.startup.Catalina initDirs
+SEVERE: Cannot find specified temporary folder at ./catalina.base/SSCI//temp
+Apr 07, 2014 1:58:43 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /project/selfservice/zabbix/libssh2/lib:/project/selfservice/zabbix/apr-1.4.6/lib:/project/selfservice/zabbix/instantclient_11_2::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Apr 07, 2014 1:58:44 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8040"]
+Apr 07, 2014 1:58:44 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 584 ms
+Apr 07, 2014 1:58:44 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Apr 07, 2014 1:58:44 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.34
+Apr 07, 2014 1:58:45 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8040"]
+Apr 07, 2014 1:58:45 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1518 ms
+Apr 07, 2014 4:24:29 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Apr 07, 2014 4:24:29 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8040"]
+Apr 07, 2014 4:24:29 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Apr 07, 2014 4:24:29 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8040"]
+Apr 07, 2014 4:24:29 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8040"]
+Apr 07, 2014 4:24:40 PM org.apache.catalina.startup.Catalina initDirs
+SEVERE: Cannot find specified temporary folder at ./catalina.base/SSCI//temp
+Apr 07, 2014 4:24:41 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /project/selfservice/zabbix/libssh2/lib:/project/selfservice/zabbix/apr-1.4.6/lib:/project/selfservice/zabbix/instantclient_11_2::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Apr 07, 2014 4:24:41 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8040"]
+Apr 07, 2014 4:24:41 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 541 ms
+Apr 07, 2014 4:24:41 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Apr 07, 2014 4:24:41 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.34
+Apr 07, 2014 4:24:43 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8040"]
+Apr 07, 2014 4:24:43 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1606 ms
+Apr 07, 2014 4:32:15 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Apr 07, 2014 4:32:15 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8040"]
+Apr 07, 2014 4:32:15 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Apr 07, 2014 4:32:15 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8040"]
+Apr 07, 2014 4:32:15 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8040"]
+Apr 07, 2014 4:35:52 PM org.apache.catalina.startup.Catalina initDirs
+SEVERE: Cannot find specified temporary folder at ./catalina.base/SSCI//temp
+Apr 07, 2014 4:35:53 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /project/selfservice/zabbix/libssh2/lib:/project/selfservice/zabbix/apr-1.4.6/lib:/project/selfservice/zabbix/instantclient_11_2::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Apr 07, 2014 4:35:53 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8040"]
+Apr 07, 2014 4:35:53 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 612 ms
+Apr 07, 2014 4:35:53 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Apr 07, 2014 4:35:53 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.34
+Apr 07, 2014 4:35:54 PM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Document base /project/plab/performance/newtools/web/catalina.base/SSCI/webapp/../../../PTM does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:138)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4906)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5086)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+
+Apr 07, 2014 4:35:54 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error in resourceStart()
+Apr 07, 2014 4:35:54 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error getConfigured
+Apr 07, 2014 4:35:54 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [/PTM] startup failed due to previous errors
+Apr 07, 2014 4:35:54 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8040"]
+Apr 07, 2014 4:35:54 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1540 ms

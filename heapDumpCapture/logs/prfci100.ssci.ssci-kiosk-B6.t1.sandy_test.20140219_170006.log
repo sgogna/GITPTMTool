@@ -1,0 +1,20 @@
+kiosk / 
+Calling wait
+./../scripts/getTomcatPID.sh: line 2: /opt/mw/java/jdk1.7.0_06/bin/jps: No such file or directory
+./calculateHeapSize.sh: line 2: /opt/mw/java/jdk1.7.0_06/bin/jstat: No such file or directory
+ / 0
+heap smaller than 1500
+completed, iteration: 1, size: 0
+INSIDE CAPTURE METOD
+INSIDEEEEEEEEEEEEEEEEEE
+capturing PID: /ssci-kiosk-B6-t1.20140219_170006.sandy_test.hprof
+Attaching to remote server /ssci-kiosk-B6-t1.20140219_170006.sandy_test.hprof, please wait...
+Error attaching to remote server: java.rmi.ConnectException: Connection refused to host: 10.14.5.168; nested exception is: 
+	java.net.ConnectException: Connection refused
+chmod: cannot access `sandeep.gogna.ctr@sabre.com': No such file or directory
+ls: sandeep.gogna.ctr@sabre.com: No such file or directory
+compressing ...
+gzip: sandeep.gogna.ctr@sabre.com: No such file or directory
+ls: sandeep.gogna.ctr@sabre.com.gz: No such file or directory
+heap dump capture complete
+Unable to append ssci-kiosk-B6.t1.heapDump=/ssci-kiosk-B6-t1.20140219_170006.sandy_test.hprof.gz, TEST_ID not set

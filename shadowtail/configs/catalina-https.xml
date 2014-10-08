@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+    <bean id="MBeanFactory" class="pl.com.nameresolver.httppools.MBeanFactory" init-method="init">
+        <constructor-arg value="org.apache.catalina.mbeans.ConnectorMBean" />
+        <constructor-arg ref="clientConnector"  />
+    </bean>
+
+    <!--OLD version commented. Without logging -1 (without logging at all) when mBean not found. -->
+
+    <bean id="httpsMBean" factory-bean="MBeanFactory" factory-method="createHttpsInstance">
+        <!--<property name="httpsMBeansListWrapper">-->
+            <!--<list >-->
+                <!--<ref bean="activeSessionsCount" />-->
+                <!--<ref bean="sessionCreateRate" />-->
+                <!--<ref bean="sessionExpireRate" />-->
+                <!--<ref bean="sessionAverageAliveTime" />-->
+                <!--<ref bean="https-ThreadsBusy" />-->
+                <!--<ref bean="https-ThreadsCount" />-->
+            <!--</list>-->
+        <!--</property>-->
+        <property name="context" value="${target.context}" />
+    </bean>
+
+
+    <!--<bean id="https-ThreadsBusy" class="pl.com.nameresolver.httppools.JMXAtributeStatisticWrapper">-->
+        <!--<property name="name" value="https Threads Busy" />-->
+        <!--<property name="connection" ref="clientConnector" />-->
+        <!--<property name="attributeName" value="currentThreadsBusy" />-->
+    <!--</bean>-->
+
+    <!--<bean id="https-ThreadsCount" class="pl.com.nameresolver.httppools.JMXAtributeStatisticWrapper">-->
+        <!--<property name="name" value="https Threads Count" />-->
+        <!--<property name="connection" ref="clientConnector" />-->
+        <!--<property name="attributeName" value="currentThreadCount" />-->
+    <!--</bean>-->
+
+    <!--<bean id="activeSessionsCount" class="pl.com.nameresolver.httppools.JMXAtributeStatisticWrapper">-->
+        <!--<property name="name" value="Active Sessions Count" />-->
+        <!--<property name="connection" ref="clientConnector" />-->
+        <!--<property name="attributeName" value="activeSessions" />-->
+    <!--</bean>-->
+
+    <!--<bean id="sessionCreateRate" class="pl.com.nameresolver.httppools.JMXAtributeStatisticWrapper">-->
+        <!--<property name="name" value="Session Create Rate" />-->
+        <!--<property name="connection" ref="clientConnector" />-->
+        <!--<property name="attributeName" value="sessionCreateRate" />-->
+    <!--</bean>-->
+
+    <!--<bean id="sessionExpireRate" class="pl.com.nameresolver.httppools.JMXAtributeStatisticWrapper">-->
+        <!--<property name="name" value="Session Expire Rate" />-->
+        <!--<property name="connection" ref="clientConnector" />-->
+        <!--<property name="attributeName" value="sessionExpireRate" />-->
+    <!--</bean>-->
+
+    <!--<bean id="sessionAverageAliveTime" class="pl.com.nameresolver.httppools.JMXAtributeStatisticWrapper">-->
+        <!--<property name="name" value="Session AVG Alive Time" />-->
+        <!--<property name="connection" ref="clientConnector" />-->
+        <!--<property name="attributeName" value="sessionAverageAliveTime" />-->
+    <!--</bean>-->
+
+    <bean id="https-ThreadsBusy" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic">
+        <property name="name" value="https Threads Busy" />
+        <property name="connection" ref="clientConnector" />
+        <property name="attributeName" value="currentThreadsBusy" />
+        <property name="objectName" value="#{httpMBean.getThreadPoolBeanName('https')}" />
+
+    </bean>
+
+    <bean id="https-ThreadsCount" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic">
+        <property name="name" value="https Threads Count" />
+        <property name="connection" ref="clientConnector" />
+        <property name="attributeName" value="currentThreadCount" />
+        <property name="objectName" value="#{httpMBean.getThreadPoolBeanName('https')}" />
+    </bean>
+
+    <bean id="activeSessionsCount" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic">
+        <property name="name" value="Active Sessions Count" />
+        <property name="connection" ref="clientConnector" />
+        <property name="attributeName" value="activeSessions" />
+        <property name="objectName" value="#{httpMBean.getManagerBeanName()}" />
+    </bean>
+
+    <bean id="sessionCreateRate" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic">
+        <property name="name" value="Session Create Rate" />
+        <property name="connection" ref="clientConnector" />
+        <property name="attributeName" value="sessionCreateRate" />
+        <property name="objectName" value="#{httpMBean.getManagerBeanName()}" />
+    </bean>
+
+    <bean id="sessionExpireRate" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic">
+        <property name="name" value="Session Expire Rate" />
+        <property name="connection" ref="clientConnector" />
+        <property name="attributeName" value="sessionExpireRate" />
+        <property name="objectName" value="#{httpMBean.getManagerBeanName()}" />
+    </bean>
+
+    <bean id="sessionAverageAliveTime" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic">
+        <property name="name" value="Session AVG Alive Time" />
+        <property name="connection" ref="clientConnector" />
+        <property name="attributeName" value="sessionAverageAliveTime" />
+        <property name="objectName" value="#{httpMBean.getManagerBeanName()}" />
+    </bean>
+
+
+	<bean id="catalina-https-StatisticsList" class="org.springframework.beans.factory.config.ListFactoryBean">
+        <!--<property name="sourceList" value="#{httpsMBean.getHttpsMBeansList()}"/>-->
+        <property name="sourceList">
+            <list >
+                <ref bean="activeSessionsCount" />
+                <ref bean="sessionCreateRate" />
+                <ref bean="sessionExpireRate" />
+                <ref bean="sessionAverageAliveTime" />
+                <ref bean="https-ThreadsBusy" />
+                <ref bean="https-ThreadsCount" />
+            </list>
+        </property>
+
+	</bean>
+	
+</beans>

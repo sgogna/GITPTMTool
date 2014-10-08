@@ -1,0 +1,123 @@
+2014-03-21 01:32:01 FileSystemXmlApplicationContext [INFO] Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@16b1a9a8: startup date [Fri Mar 21 01:32:01 CDT 2014]; root of context hierarchy
+2014-03-21 01:32:01 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from file [/project/plab/performance/newtools/shadowtail/configs/ssci-kiosk-B6-t1.xml]
+2014-03-21 01:32:01 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from file [/project/plab/performance/newtools/shadowtail/configs/jvm.xml]
+2014-03-21 01:32:02 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from file [/project/plab/performance/newtools/shadowtail/configs/catalina-T2.xml]
+2014-03-21 01:32:02 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from file [/project/plab/performance/newtools/shadowtail/configs/catalina-http.xml]
+2014-03-21 01:32:02 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from file [/project/plab/performance/newtools/shadowtail/configs/ibe-empty.xml]
+2014-03-21 01:32:02 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from file [/project/plab/performance/newtools/shadowtail/configs/default.xml]
+2014-03-21 01:32:02 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2b9c47d5: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,loadedClassCount,unloadedClassCount,serverLoad,processCpuTime,AvailableProcessors,UpTime,cpuUtilizationStatistic,threadCount,heapMemoryUsed,cmsCount,cmsTime,parNewCount,parNewTime,throughput,periodicalThroughput,jvmStatisticsList,jvm_group,MBeanFactory,httpMBean,http-ThreadsBusy,http-ThreadsCount,catalina-http-StatisticsList,catalinaStatisticsList,ibeStatisticsList,JMXAttributeAspectBean,org.springframework.aop.config.internalAutoProxyCreator,jmxAttributeGetValuePointcut,jmxAttributeGetValueAsStringPointcut,org.springframework.aop.aspectj.AspectJPointcutAdvisor#0,org.springframework.aop.aspectj.AspectJPointcutAdvisor#1,credentials,clientConnector,timestamp,dateTime,date,time,timeServer,timeStatisticsList,fileFactory,baseDir,statisticsList,group,statLogger,logTask,scheduledTask,timerFactory]; root of factory hierarchy
+2014-03-21 01:32:02 CpuUtilizationStatistic [INFO] CpuUtilizationStatistic constructor
+2014-03-21 01:32:02 CpuUtilizationStatistic [INFO] CpuUtilizationStatistic constructor
+2014-03-21 01:32:02 CpuUtilizationStatistic [INFO] CpuUtilizationStatistic constructor
+2014-03-21 01:32:02 TimerFactoryBean [INFO] Initializing Timer
+2014-03-21 03:40:01 ShadowtailLogAggregator [INFO] Processing file: /project/plab/performance/newtools/shadowtail/../artifacts/shadowtail/ssci-kiosk-B6-t1/ssci-kiosk-B6-t1-2014-03-21-0-SSCI_B6KCI_Tomcat_JDK_Upgrade_LoadTest.log
+2014-03-21 03:40:01 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@284c55ff: startup date [Fri Mar 21 03:40:01 CDT 2014]; root of context hierarchy
+2014-03-21 03:40:01 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/appenderAggregator.xml]
+2014-03-21 03:40:01 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/general.xml]
+2014-03-21 03:40:01 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@75e82e1b: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2014-03-21 12:34:01 FileSystemXmlApplicationContext [INFO] Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@16b1a9a8: startup date [Fri Mar 21 12:34:01 CDT 2014]; root of context hierarchy
+2014-03-21 12:34:01 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from file [/project/plab/performance/newtools/shadowtail/configs/ssci-web-B6-t1.xml]
+2014-03-21 12:34:01 Startup [ERROR] Failed to startup shadowtail
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from file [/project/plab/performance/newtools/shadowtail/configs/ssci-web-B6-t1.xml]; nested exception is java.io.FileNotFoundException: configs/ssci-web-B6-t1.xml (No such file or directory)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:341)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:143)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:178)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:149)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:212)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:126)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:92)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:458)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:388)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.<init>(FileSystemXmlApplicationContext.java:140)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.<init>(FileSystemXmlApplicationContext.java:84)
+	at com.sabre.shadowtail.Startup.main(Startup.java:17)
+Caused by: java.io.FileNotFoundException: configs/ssci-web-B6-t1.xml (No such file or directory)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.springframework.core.io.FileSystemResource.getInputStream(FileSystemResource.java:110)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:328)
+	... 13 more
+2014-03-21 12:39:01 FileSystemXmlApplicationContext [INFO] Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@2a616095: startup date [Fri Mar 21 12:39:01 CDT 2014]; root of context hierarchy
+2014-03-21 12:39:02 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from file [/project/plab/performance/newtools/shadowtail/configs/ssci-web-B6-t1.xml]
+2014-03-21 12:39:02 Startup [ERROR] Failed to startup shadowtail
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from file [/project/plab/performance/newtools/shadowtail/configs/ssci-web-B6-t1.xml]; nested exception is java.io.FileNotFoundException: configs/ssci-web-B6-t1.xml (No such file or directory)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:341)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:143)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:178)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:149)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:212)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:126)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:92)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:458)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:388)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.<init>(FileSystemXmlApplicationContext.java:140)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.<init>(FileSystemXmlApplicationContext.java:84)
+	at com.sabre.shadowtail.Startup.main(Startup.java:17)
+Caused by: java.io.FileNotFoundException: configs/ssci-web-B6-t1.xml (No such file or directory)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.springframework.core.io.FileSystemResource.getInputStream(FileSystemResource.java:110)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:328)
+	... 13 more
+2014-03-21 12:44:01 FileSystemXmlApplicationContext [INFO] Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@16b1a9a8: startup date [Fri Mar 21 12:44:01 CDT 2014]; root of context hierarchy
+2014-03-21 12:44:01 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from file [/project/plab/performance/newtools/shadowtail/configs/ssci-web-B6-t1.xml]
+2014-03-21 12:44:01 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from file [/project/plab/performance/newtools/shadowtail/configs/jvm.xml]
+2014-03-21 12:44:01 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from file [/project/plab/performance/newtools/shadowtail/configs/catalina-T2.xml]
+2014-03-21 12:44:01 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from file [/project/plab/performance/newtools/shadowtail/configs/catalina-http.xml]
+2014-03-21 12:44:01 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from file [/project/plab/performance/newtools/shadowtail/configs/ibe-empty.xml]
+2014-03-21 12:44:01 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from file [/project/plab/performance/newtools/shadowtail/configs/default.xml]
+2014-03-21 12:44:02 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@58ba3f75: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,loadedClassCount,unloadedClassCount,serverLoad,processCpuTime,AvailableProcessors,UpTime,cpuUtilizationStatistic,threadCount,heapMemoryUsed,cmsCount,cmsTime,parNewCount,parNewTime,throughput,periodicalThroughput,jvmStatisticsList,jvm_group,MBeanFactory,httpMBean,http-ThreadsBusy,http-ThreadsCount,catalina-http-StatisticsList,catalinaStatisticsList,ibeStatisticsList,JMXAttributeAspectBean,org.springframework.aop.config.internalAutoProxyCreator,jmxAttributeGetValuePointcut,jmxAttributeGetValueAsStringPointcut,org.springframework.aop.aspectj.AspectJPointcutAdvisor#0,org.springframework.aop.aspectj.AspectJPointcutAdvisor#1,credentials,clientConnector,timestamp,dateTime,date,time,timeServer,timeStatisticsList,fileFactory,baseDir,statisticsList,group,statLogger,logTask,scheduledTask,timerFactory]; root of factory hierarchy
+2014-03-21 12:44:02 CpuUtilizationStatistic [INFO] CpuUtilizationStatistic constructor
+2014-03-21 12:44:02 CpuUtilizationStatistic [INFO] CpuUtilizationStatistic constructor
+2014-03-21 12:44:02 CpuUtilizationStatistic [INFO] CpuUtilizationStatistic constructor
+2014-03-21 12:44:02 TimerFactoryBean [INFO] Initializing Timer
+2014-03-21 12:45:21 FileSystemXmlApplicationContext [INFO] Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@59a04a1b: startup date [Fri Mar 21 12:45:21 CDT 2014]; root of context hierarchy
+2014-03-21 12:45:21 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from file [/project/plab/performance/newtools/shadowtail/configs/ssci-web-B6-t1.xml]
+2014-03-21 12:45:21 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from file [/project/plab/performance/newtools/shadowtail/configs/jvm.xml]
+2014-03-21 12:45:21 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from file [/project/plab/performance/newtools/shadowtail/configs/catalina-T2.xml]
+2014-03-21 12:45:21 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from file [/project/plab/performance/newtools/shadowtail/configs/catalina-http.xml]
+2014-03-21 12:45:21 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from file [/project/plab/performance/newtools/shadowtail/configs/ibe-empty.xml]
+2014-03-21 12:45:21 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from file [/project/plab/performance/newtools/shadowtail/configs/default.xml]
+2014-03-21 12:45:22 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@b04cb4: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,loadedClassCount,unloadedClassCount,serverLoad,processCpuTime,AvailableProcessors,UpTime,cpuUtilizationStatistic,threadCount,heapMemoryUsed,cmsCount,cmsTime,parNewCount,parNewTime,throughput,periodicalThroughput,jvmStatisticsList,jvm_group,MBeanFactory,httpMBean,http-ThreadsBusy,http-ThreadsCount,catalina-http-StatisticsList,catalinaStatisticsList,ibeStatisticsList,JMXAttributeAspectBean,org.springframework.aop.config.internalAutoProxyCreator,jmxAttributeGetValuePointcut,jmxAttributeGetValueAsStringPointcut,org.springframework.aop.aspectj.AspectJPointcutAdvisor#0,org.springframework.aop.aspectj.AspectJPointcutAdvisor#1,credentials,clientConnector,timestamp,dateTime,date,time,timeServer,timeStatisticsList,fileFactory,baseDir,statisticsList,group,statLogger,logTask,scheduledTask,timerFactory]; root of factory hierarchy
+2014-03-21 12:45:22 CpuUtilizationStatistic [INFO] CpuUtilizationStatistic constructor
+2014-03-21 12:45:22 CpuUtilizationStatistic [INFO] CpuUtilizationStatistic constructor
+2014-03-21 12:45:22 CpuUtilizationStatistic [INFO] CpuUtilizationStatistic constructor
+2014-03-21 12:45:22 TimerFactoryBean [INFO] Initializing Timer
+2014-03-21 12:48:56 FileSystemXmlApplicationContext [INFO] Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@59a04a1b: startup date [Fri Mar 21 12:48:56 CDT 2014]; root of context hierarchy
+2014-03-21 12:48:56 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from file [/project/plab/performance/newtools/shadowtail/configs/ssci-web-B6-t1.xml]
+2014-03-21 12:48:56 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from file [/project/plab/performance/newtools/shadowtail/configs/jvm.xml]
+2014-03-21 12:48:56 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from file [/project/plab/performance/newtools/shadowtail/configs/catalina-T2.xml]
+2014-03-21 12:48:56 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from file [/project/plab/performance/newtools/shadowtail/configs/catalina-http.xml]
+2014-03-21 12:48:56 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from file [/project/plab/performance/newtools/shadowtail/configs/ibe-empty.xml]
+2014-03-21 12:48:56 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from file [/project/plab/performance/newtools/shadowtail/configs/default.xml]
+2014-03-21 12:48:56 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@367bbdc6: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,loadedClassCount,unloadedClassCount,serverLoad,processCpuTime,AvailableProcessors,UpTime,cpuUtilizationStatistic,threadCount,heapMemoryUsed,cmsCount,cmsTime,parNewCount,parNewTime,throughput,periodicalThroughput,jvmStatisticsList,jvm_group,MBeanFactory,httpMBean,http-ThreadsBusy,http-ThreadsCount,catalina-http-StatisticsList,catalinaStatisticsList,ibeStatisticsList,JMXAttributeAspectBean,org.springframework.aop.config.internalAutoProxyCreator,jmxAttributeGetValuePointcut,jmxAttributeGetValueAsStringPointcut,org.springframework.aop.aspectj.AspectJPointcutAdvisor#0,org.springframework.aop.aspectj.AspectJPointcutAdvisor#1,credentials,clientConnector,timestamp,dateTime,date,time,timeServer,timeStatisticsList,fileFactory,baseDir,statisticsList,group,statLogger,logTask,scheduledTask,timerFactory]; root of factory hierarchy
+2014-03-21 12:48:57 CpuUtilizationStatistic [INFO] CpuUtilizationStatistic constructor
+2014-03-21 12:48:57 CpuUtilizationStatistic [INFO] CpuUtilizationStatistic constructor
+2014-03-21 12:48:57 CpuUtilizationStatistic [INFO] CpuUtilizationStatistic constructor
+2014-03-21 12:48:57 TimerFactoryBean [INFO] Initializing Timer
+2014-03-21 12:49:27 ShadowtailLogAggregator [INFO] Processing file: /project/plab/performance/newtools/shadowtail/../artifacts/shadowtail/ssci-web-B6-t1/ssci-web-B6-t1-2014-03-21-0-Testing_PL_IGNORE.log
+2014-03-21 12:49:27 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5bb7b7a3: startup date [Fri Mar 21 12:49:27 CDT 2014]; root of context hierarchy
+2014-03-21 12:49:27 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/appenderAggregator.xml]
+2014-03-21 12:49:27 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/general.xml]
+2014-03-21 12:49:27 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1cfe5577: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2014-03-21 12:51:01 FileSystemXmlApplicationContext [INFO] Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@16b1a9a8: startup date [Fri Mar 21 12:51:01 CDT 2014]; root of context hierarchy
+2014-03-21 12:51:02 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from file [/project/plab/performance/newtools/shadowtail/configs/ssci-web-B6-t1.xml]
+2014-03-21 12:51:02 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from file [/project/plab/performance/newtools/shadowtail/configs/jvm.xml]
+2014-03-21 12:51:02 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from file [/project/plab/performance/newtools/shadowtail/configs/catalina-T2.xml]
+2014-03-21 12:51:02 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from file [/project/plab/performance/newtools/shadowtail/configs/catalina-http.xml]
+2014-03-21 12:51:02 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from file [/project/plab/performance/newtools/shadowtail/configs/ibe-empty.xml]
+2014-03-21 12:51:02 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from file [/project/plab/performance/newtools/shadowtail/configs/default.xml]
+2014-03-21 12:51:02 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2b9c47d5: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,loadedClassCount,unloadedClassCount,serverLoad,processCpuTime,AvailableProcessors,UpTime,cpuUtilizationStatistic,threadCount,heapMemoryUsed,cmsCount,cmsTime,parNewCount,parNewTime,throughput,periodicalThroughput,jvmStatisticsList,jvm_group,MBeanFactory,httpMBean,http-ThreadsBusy,http-ThreadsCount,catalina-http-StatisticsList,catalinaStatisticsList,ibeStatisticsList,JMXAttributeAspectBean,org.springframework.aop.config.internalAutoProxyCreator,jmxAttributeGetValuePointcut,jmxAttributeGetValueAsStringPointcut,org.springframework.aop.aspectj.AspectJPointcutAdvisor#0,org.springframework.aop.aspectj.AspectJPointcutAdvisor#1,credentials,clientConnector,timestamp,dateTime,date,time,timeServer,timeStatisticsList,fileFactory,baseDir,statisticsList,group,statLogger,logTask,scheduledTask,timerFactory]; root of factory hierarchy
+2014-03-21 12:51:02 CpuUtilizationStatistic [INFO] CpuUtilizationStatistic constructor
+2014-03-21 12:51:02 CpuUtilizationStatistic [INFO] CpuUtilizationStatistic constructor
+2014-03-21 12:51:02 CpuUtilizationStatistic [INFO] CpuUtilizationStatistic constructor
+2014-03-21 12:51:03 TimerFactoryBean [INFO] Initializing Timer
+2014-03-21 12:52:02 ShadowtailLogAggregator [INFO] Processing file: /project/plab/performance/newtools/shadowtail/../artifacts/shadowtail/ssci-web-B6-t1/ssci-web-B6-t1-2014-03-21-0-testing_please_ignore.log
+2014-03-21 12:52:02 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5d39af80: startup date [Fri Mar 21 12:52:02 CDT 2014]; root of context hierarchy
+2014-03-21 12:52:02 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/appenderAggregator.xml]
+2014-03-21 12:52:02 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/general.xml]
+2014-03-21 12:52:02 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@462eab5b: defining beans [fileProcessor,Preparer]; root of factory hierarchy

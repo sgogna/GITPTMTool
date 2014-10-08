@@ -1,0 +1,4 @@
+cd ../shadowtail
+export PTM_ENV="SSCI"
+export TEST_ID="2014-04-07_16-34-16.ssci-kiosk-B6.Test1"
+./stop-shadowtail.sh ssci-kiosk-B6 t1 Test1

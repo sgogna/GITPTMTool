@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	   					   http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<import resource="../matcher/B6-matcher-common.xml" />
+
+	<bean id="b6.server.matcher.shoppingApi.purchase" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="B6_SHOPPPINGAPI_PURCHASE_B6B6,ShoppingApi.purchase" />
+	</bean>
+
+	<bean id="statisticsRatioCalculator" class="com.eb2.elogging.write.statistics.StatisticsRatioCalculator">
+		<property name="ratioMatchers">
+			<list>
+				<bean class="com.eb2.elogging.write.statistics.RatioMatcher">
+					<property name="name" value="B6 B6B6 Purchase To Eurocommerce.validate" />
+					<property name="fromMatcher" ref="b6.server.matcher.shoppingApi.purchase" />
+					<property name="toMatcher">
+						<bean class="com.eb2.elogging.read.listener.filter.EventMatcher">
+							<constructor-arg value="B6_WSXML_EUROCOMMERCE_B6B6,RequestReceiverSoap.validate" />
+						</bean>
+					</property>
+				</bean>
+				<bean class="com.eb2.elogging.write.statistics.RatioMatcher">
+					<property name="name" value="B6 B6B6 Purchase To Eurocommerce.validateVerificationResult" />
+					<property name="fromMatcher" ref="b6.server.matcher.shoppingApi.purchase" />
+					<property name="toMatcher">
+						<bean class="com.eb2.elogging.read.listener.filter.EventMatcher">
+							<constructor-arg value="B6_WSXML_EUROCOMMERCE_B6B6,RequestReceiverSoap.validateVerificationResult" />
+						</bean>
+					</property>
+				</bean>
+				<bean class="com.eb2.elogging.write.statistics.RatioMatcher">
+					<property name="name" value="B6 B6B6 Eurocommerce.validate To Eurocommerce.validateVerificationResult" />
+					<property name="fromMatcher">
+						<bean class="com.eb2.elogging.read.listener.filter.EventMatcher">
+							<constructor-arg value="B6_WSXML_EUROCOMMERCE_B6B6,RequestReceiverSoap.validate" />
+						</bean>
+					</property>
+					<property name="toMatcher">
+						<bean class="com.eb2.elogging.read.listener.filter.EventMatcher">
+							<constructor-arg value="B6_WSXML_EUROCOMMERCE_B6B6,RequestReceiverSoap.validateVerificationResult" />
+						</bean>
+					</property>
+				</bean>
+
+				<bean class="com.eb2.elogging.write.statistics.RatioMatcher">
+					<property name="name" value="B6 B6B6 Insurace get offer To Insurance purchase" />
+					<property name="fromMatcher">
+						<bean class="com.eb2.elogging.read.listener.filter.EventMatcher">
+							<constructor-arg value="B6_WSXML_ACCESSAMERICA_B6B6,IProductPriceServiceExt.getProductPriceOffer" />
+						</bean>
+					</property>
+					<property name="toMatcher">
+						<bean class="com.eb2.elogging.read.listener.filter.EventMatcher">
+							<constructor-arg value="B6_WSXML_ACCESSAMERICA_B6B6,AccessAmericaPurchasePort.sendPurchases" />
+						</bean>
+					</property>
+				</bean>
+
+				<bean class="com.eb2.elogging.write.statistics.RatioMatcher">
+					<property name="name" value="B6 B6B6 Insurace get offer To Insurance decline" />
+					<property name="fromMatcher">
+						<bean class="com.eb2.elogging.read.listener.filter.EventMatcher">
+							<constructor-arg value="B6_WSXML_ACCESSAMERICA_B6B6,IProductPriceServiceExt.getProductPriceOffer" />
+						</bean>
+					</property>
+					<property name="toMatcher">
+						<bean class="com.eb2.elogging.read.listener.filter.EventMatcher">
+							<constructor-arg value="B6_WSXML_ACCESSAMERICA_B6B6,IProductPriceServiceExt.noteDeclinedOffer" />
+						</bean>
+					</property>
+				</bean>
+
+			</list>
+		</property>
+
+	</bean>
+
+
+
+</beans>

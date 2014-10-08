@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	   					   http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<import resource="wsxml-sabre.xml" />
+
+	<bean id="b6.matcher.shop.branded" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<property name="typePattern">
+			<bean class="java.util.regex.Pattern" factory-method="compile">
+				<constructor-arg value="B6_WEB_TP_B6B6" />
+			</bean>
+		</property>
+		<property name="namePattern">
+			<bean class="java.util.regex.Pattern" factory-method="compile">
+				<constructor-arg value="ShoppingApi.shopBranded" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="b6.matcher.purchase.confirmation" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<property name="typePattern">
+			<bean class="java.util.regex.Pattern" factory-method="compile">
+				<constructor-arg value="B6_WEB_FLOW_B6B6" />
+			</bean>
+		</property>
+		<property name="namePattern">
+			<bean class="java.util.regex.Pattern" factory-method="compile">
+				<constructor-arg value="confirmation" />
+			</bean>
+		</property>
+	</bean>
+
+
+	<bean id="b6.matcher.shoppingApi.purchase" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="B6_WEB_TP_B6B6,ShoppingApi.purchase" />
+	</bean>
+
+	<bean id="b6.matcher.loadUserByUsername" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="B6_WEB_TP_B6B6,UserDetailsServiceApi.loadUserByUsername" />
+	</bean>
+
+	<bean id="b6.t1.myb.matcher.bookingDetailsJSP" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WEB_RENDER,/WEB-INF/jsp/bookingDetails.jsp" />
+	</bean>
+	<bean id="b6.t1.myb.matcher.bookingDetailsAjaxJSP" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WEB_RENDER,/WEB-INF/jsp/bookingDetailsAjax.jsp" />
+	</bean>
+	<bean id="b6.t1.matcher.getShoppingBasket" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WEB_TP,ShoppingBasketApi.getShoppingBasket" />
+	</bean>
+
+	<bean id="b6.t1.matcher.ShoppingApi.shopBranded" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WEB_TP,ShoppingApi.shopBranded" />
+	</bean>
+
+	<bean id="b6.t1.matcher.ShoppingApi.shop" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WEB_TP,ShoppingApi.shop" />
+	</bean>
+
+	<bean id="b6.t2.matcher.group.all.ShoppingApi.shop" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value=".*SHOPPPINGAPI_SHOP.*,ShoppingApi.shop.*" />
+	</bean>
+
+	<bean id="b6.t1.matcher.ShoppingApi.applyEntitlementForShoppingBaskets" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WEB_TP,ShoppingApi.applyEntitlementForShoppingBaskets" />
+	</bean>
+	<bean id="b6.t1.matcher.ShoppingApi.price" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WEB_TP,ShoppingApi.price" />
+	</bean>
+
+
+	<bean id="b6.t1.matcher.ShoppingApi.priceFeatures" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WEB_TP,ShoppingApi.priceFeatures" />
+	</bean>
+
+	<bean id="b6.t1.matcher.ShoppingApi.combineShoppingBaskets" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WEB_TP,ShoppingApi.combineShoppingBaskets" />
+	</bean>
+
+	<bean id="b6.t1.matcher.UserDetailsServiceApi.loadUserByUsername" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WEB_TP,UserDetailsServiceApi.loadUserByUsername" />
+	</bean>
+
+	<bean id="b6.t1.matcher.SeatMapApi.withholdSeat" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WEB_TP,SeatMapApi.withholdSeat" />
+	</bean>
+	<bean id="b6.t1.matcher.TravelExtrasApi.shopTravelExtra" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WEB_TP,TravelExtrasApi.shopTravelExtra" />
+	</bean>
+
+	<bean id="b6.t1.matcher.HotelApi.getHotelAvailability" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WEB_TP,HotelApi.getHotelAvailability" />
+	</bean>
+
+	<bean id="b6.t1.matcher.VehicleApi.shop" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WEB_TP,VehicleApi.shop" />
+	</bean>
+
+	<bean id="b6.t1.matcher.InsuranceApi.priceInsurance" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WEB_TP,InsuranceApi.priceInsurance" />
+	</bean>
+
+	<bean id="b6.t1.matcher.PromotionalOfferApi.acknowledgeOffer" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WEB_TP,PromotionalOfferApi.acknowledgeOffer" />
+	</bean>
+	<bean id="b6.t1.matcher.ProfileApi.retrieveProfile" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WEB_TP,ProfileApi.retrieveProfile" />
+	</bean>
+
+	<bean id="b6.t1.matcher.CreditLimitApi.getCreditLimitInformation" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WEB_TP,CreditLimitApi.getCreditLimitInformation" />
+	</bean>
+
+	<bean id="b6.t1.matcher.ShoppingApi.purchase" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WEB_TP,ShoppingApi.purchase" />
+	</bean>
+
+	<bean id="b6.t1.matcher.PromotionalOfferSwitchFlyApi.getOffer" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WEB_TP,PromotionalOfferSwitchFlyApi.getOffer" />
+	</bean>
+
+	<bean id="b6.t1.matcher.loadUserByUsername" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WEB_TP,UserDetailsServiceApi.loadUserByUsername" />
+	</bean>
+
+	<bean id="b6.t1.matcher.interstitialAsync.search.validate" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WEB_FLOW,interstitialAsync.search.validate" />
+	</bean>
+
+	<bean id="b6.t1.matcher.hasTgtCookie" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WEB_FLOW,hasTgtCookie" />
+	</bean>
+
+	<bean id="b6.t1.matcher.serializeOutSize" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WEB_FLOW,serializeOutSize" />
+	</bean>
+
+	<bean id="b6.t1.matcher.viewSeatsSelectPage" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WEB_FLOW,viewSeats" />
+	</bean>
+	
+	<bean id="b6.t1.myb.matcher.landingJSP" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WEB_RENDER,/WEB-INF/jsp/landing.jsp" />
+	</bean>
+
+
+	<bean id="b6.t1.myb.matcher.changeItinerary" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WEB_RENDER,/WEB-INF/jsp/changeItinerary.jsp" />
+	</bean>
+
+	<bean id="b6.t1.myb.matcher.changeItinerary.confirmation" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WEB_RENDER,/WEB-INF/jsp/changeItinerary/confirmation.jsp" />
+	</bean>
+
+	<bean id="b6.t1.myb.matcher.manageSeats.start" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="HTTP,/B6.myb/manageSeats.html" />
+	</bean>
+
+	<bean id="b6.t1.myb.matcher.manageSeats.purchase" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WEB_RENDER,/WEB-INF/jsp/manageSeats/purchase.jsp" />
+	</bean>
+
+	<bean id="b6.t1.myb.matcher.addFlightUpgrades.start" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WEB_FLOW,addFlightUpgradesPage" />
+	</bean>
+
+
+
+	<bean id="b6.t1.myb.matcher.viewItinerary" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="WEB_RENDER,/WEB-INF/jsp/viewItinerary.jsp" />
+	</bean>
+
+	<bean id="b6.matcher.ratio.shopbranded.to.shop" class="com.eb2.elogging.write.statistics.RatioMatcher">
+		<property name="name" value="B6 B6B6 Shop Branded To Shop" />
+		<property name="fromMatcher" ref="b6.matcher.shop.branded" />
+		<property name="toMatcher">
+			<bean class="com.eb2.elogging.read.listener.filter.EventMatcher">
+				<constructor-arg value="B6_WEB_TP_B6B6,ShoppingApi.shop" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="b6.matcher.ratio.purchase.success.to.failure" class="com.eb2.elogging.write.statistics.RatioMatcher">
+		<property name="name" value="B6 B6B6 Purchase Error Rate" />
+		<property name="fromMatcher" ref="b6.matcher.shoppingApi.purchase" />
+		<property name="toMatcher" ref="b6.matcher.shoppingApi.purchase" />
+		<property name="toProperty" value="ERR" />
+	</bean>
+
+	<bean id="b6.matcher.ratio.shopbranded.to.confirmation" class="com.eb2.elogging.write.statistics.RatioMatcher">
+		<property name="name" value="B6 B6B6 Shop Branded To Book (confirmation)" />
+		<property name="fromMatcher" ref="b6.matcher.shop.branded" />
+		<property name="toMatcher" ref="b6.matcher.purchase.confirmation" />
+	</bean>
+
+	<bean id="b6.matcher.ratio.shopbranded.to.shoppingApi.purchase" class="com.eb2.elogging.write.statistics.RatioMatcher">
+		<property name="name" value="B6 B6B6 Shop Branded To Purchase (API)" />
+		<property name="fromMatcher" ref="b6.matcher.shop.branded" />
+		<property name="toMatcher" ref="b6.matcher.shoppingApi.purchase" />
+	</bean>
+
+	<bean id="b6.matcher.ratio.shoppingApi.purchase.to.eurocommerce.redirect" class="com.eb2.elogging.write.statistics.RatioMatcher">
+		<property name="name" value="B6 B6B6 Purchase  To Eurocommerce redirect" />
+		<property name="fromMatcher" ref="b6.matcher.shoppingApi.purchase" />
+		<property name="toMatcher">
+			<bean class="com.eb2.elogging.read.listener.filter.EventMatcher">
+				<constructor-arg value="B6_WEB_FLOW_B6B6,eurocommerceRedirect" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="b6.matcher.ratio.shopbranded.to.loadUserByUsername" class="com.eb2.elogging.write.statistics.RatioMatcher">
+		<property name="name" value="B6 B6B6 Shop Branded To Load User by Username (API)" />
+		<property name="fromMatcher" ref="b6.matcher.shop.branded" />
+		<property name="toMatcher" ref="b6.matcher.loadUserByUsername" />
+	</bean>
+
+	<bean id="b6.matcher.ratio.shopbranded.to.modifySearch" class="com.eb2.elogging.write.statistics.RatioMatcher">
+		<property name="name" value="B6 B6B6 Shop Branded To Modify search" />
+		<property name="fromMatcher" ref="b6.matcher.shop.branded" />
+		<property name="toMatcher">
+			<bean class="com.eb2.elogging.read.listener.filter.EventMatcher">
+				<constructor-arg value="B6_WEB_FLOW_B6B6,modifySearch" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="b6.matcher.ratio.shopbranded.to.shop.extras" class="com.eb2.elogging.write.statistics.RatioMatcher">
+		<property name="name" value="B6 B6B6 Shop Branded To Shop Extras" />
+		<property name="fromMatcher" ref="b6.matcher.shop.branded" />
+		<property name="toMatcher">
+			<bean class="com.eb2.elogging.read.listener.filter.EventMatcher">
+				<constructor-arg value="B6_WEB_TP_B6B6,TravelExtrasApi.shopTravelExtra" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="b6.matcher.ratio.serialize.to.deserialize" class="com.eb2.elogging.write.statistics.RatioMatcher">
+		<property name="name" value="B6 B6B6 serialize To deserialize" />
+		<property name="fromMatcher">
+			<bean class="com.eb2.elogging.read.listener.filter.EventMatcher">
+				<constructor-arg value="B6_WEB_FLOW_B6B6,serializeTime" />
+			</bean>
+		</property>
+		<property name="toMatcher">
+			<bean class="com.eb2.elogging.read.listener.filter.EventMatcher">
+				<constructor-arg value="B6_WEB_FLOW_B6B6,deserializeTime" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="b6.matcher.myb.landing" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="B6_WEB_RENDER_B6B6,/WEB-INF/jsp/landing.jsp" />
+	</bean>
+</beans>

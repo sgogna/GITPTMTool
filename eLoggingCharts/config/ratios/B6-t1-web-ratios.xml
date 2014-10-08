@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	   					   http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<import resource="../matcher/B6-matcher-common.xml"/>
+
+	<bean id="statisticsRatioCalculator" class="com.eb2.elogging.write.statistics.StatisticsRatioCalculator">
+		<property name="ratioMatchers">
+			<list>
+				<ref bean="b6.matcher.ratio.shopbranded.to.shop"/>
+				<ref bean="b6.matcher.ratio.shopbranded.to.confirmation"/>
+				<ref bean="b6.matcher.ratio.shopbranded.to.shoppingApi.purchase"/>
+				<ref bean="b6.matcher.ratio.shopbranded.to.loadUserByUsername"/>
+				<ref bean="b6.matcher.ratio.shopbranded.to.modifySearch" />
+				<ref bean="b6.matcher.ratio.shopbranded.to.shop.extras" />
+				<ref bean="b6.matcher.ratio.serialize.to.deserialize" />
+				<ref bean="b6.matcher.ratio.purchase.success.to.failure" />
+				<ref bean="b6.matcher.ratio.shoppingApi.purchase.to.eurocommerce.redirect" />
+			</list>
+		</property>
+
+	</bean>
+
+
+
+</beans>

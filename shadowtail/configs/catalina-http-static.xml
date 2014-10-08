@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+	<bean id="http-ThreadsBusy" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+		<property name="name" value="http Threads Busy" />
+		<property name="connection" ref="clientConnector" />
+		<property name="objectName" value="${target.catalina.threadpool.http.name}" />
+		<property name="attributeName" value="currentThreadsBusy" />
+	</bean>
+
+	<bean id="http-ThreadsCount" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+		<property name="name" value="http Threads Count" />
+		<property name="connection" ref="clientConnector" />
+		<property name="objectName" value="${target.catalina.threadpool.http.name}" />
+		<property name="attributeName" value="currentThreadCount" />
+	</bean>
+
+
+	<bean id="catalina-http-StatisticsList" class="org.springframework.beans.factory.config.ListFactoryBean">
+		<property name="sourceList">
+			<list>
+				<ref bean="http-ThreadsBusy" />
+				<ref bean="http-ThreadsCount" />
+			</list>
+		</property>
+	</bean>
+
+</beans>

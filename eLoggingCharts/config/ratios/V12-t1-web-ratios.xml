@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	   					   http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="matcher.shop.air" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="_WEB_TP_,AirSearchApi.search" />
+	</bean>
+
+	<bean id="matcher.book.purchase" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="_WEB_TP_,BookingApi.purchase" />
+	</bean>
+
+	<bean id="matcher.shop.extrasAll" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="_WEB_TP_,TravelExtrasApi.shopTravelExtrasAll" />
+	</bean>
+
+	<bean id="matcher.shop.extras" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="_WEB_TP_,TravelExtrasApi.shopTravelExtras" />
+	</bean>
+
+	<bean id="matcher.pricing.reprice" class="com.eb2.elogging.read.listener.filter.EventMatcher">
+		<constructor-arg value="_WEB_TP_,PricingApi.reprice" />
+	</bean>
+
+
+	<bean id="matcher.ratio.shopair.to.purchase" class="com.eb2.elogging.write.statistics.RatioMatcher">
+		<property name="name" value="Shop Air to Purchase" />
+		<property name="fromMatcher" ref="matcher.shop.air" /> 
+		<property name="toMatcher" ref="matcher.book.purchase" />
+	</bean>
+
+	<bean id="matcher.ratio.shopExtras.to.purchase" class="com.eb2.elogging.write.statistics.RatioMatcher">
+		<property name="name" value="Shop Extras to Purchase" />
+		<property name="fromMatcher" ref="matcher.shop.extras" />
+		<property name="toMatcher" ref="matcher.book.purchase" />
+	</bean>
+
+	<bean id="matcher.ratio.shopExtrasAll.to.purchase" class="com.eb2.elogging.write.statistics.RatioMatcher">
+		<property name="name" value="Shop Extras(ALL) to Purchase" />
+		<property name="fromMatcher" ref="matcher.shop.extrasAll" />
+		<property name="toMatcher" ref="matcher.book.purchase" />
+	</bean>
+
+	<bean id="matcher.ratio.purchase.success.to.failure" class="com.eb2.elogging.write.statistics.RatioMatcher">
+		<property name="name" value="Purchase Error Rate" />
+		<property name="fromMatcher" ref="matcher.book.purchase" />
+		<property name="toMatcher" ref="matcher.book.purchase" />
+		<property name="toProperty" value="ERR" />
+	</bean>
+	
+	<bean id="matcher.ratio.reprice.success.to.failure" class="com.eb2.elogging.write.statistics.RatioMatcher">
+		<property name="name" value="Reprice Error Rate" />
+		<property name="fromMatcher" ref="matcher.pricing.reprice" />
+		<property name="toMatcher" ref="matcher.pricing.reprice" />
+		<property name="toProperty" value="ERR" />
+	</bean>
+	
+
+	<bean id="common.ratio.matchers" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<ref bean="matcher.ratio.shopair.to.purchase" />
+				<ref bean="matcher.ratio.shopExtras.to.purchase" />
+				<ref bean="matcher.ratio.shopExtrasAll.to.purchase" />
+				<ref bean="matcher.ratio.purchase.success.to.failure" />
+				<ref bean="matcher.ratio.reprice.success.to.failure" />
+			</list>
+		</constructor-arg>
+	</bean>
+
+
+	<bean id="statisticsRatioCalculator" class="com.eb2.elogging.write.statistics.StatisticsRatioCalculator">
+		<property name="ratioMatchers">
+			<bean class="com.eb2.util.ListMergeFactory" factory-method="mergeLists">
+				<constructor-arg>
+					<list>
+						<bean class="com.eb2.elogging.write.statistics.RatioMatcherFactory" factory-method="cloneAddTypePrefixSuffix">
+							<constructor-arg ref="common.ratio.matchers" />
+							<constructor-arg value="EY" />
+							<constructor-arg value="EYEY" />
+						</bean>
+						<bean class="com.eb2.elogging.write.statistics.RatioMatcherFactory" factory-method="cloneAddTypePrefixSuffix">
+							<constructor-arg ref="common.ratio.matchers" />
+							<constructor-arg value="VA" />
+							<constructor-arg value="VAVA" />
+						</bean>
+						<bean class="com.eb2.elogging.write.statistics.RatioMatcherFactory" factory-method="cloneAddTypePrefixSuffix">
+							<constructor-arg ref="common.ratio.matchers" />
+							<constructor-arg value="2P" />
+							<constructor-arg value="A3OE" />
+						</bean>
+						<bean class="com.eb2.elogging.write.statistics.RatioMatcherFactory" factory-method="cloneAddTypePrefixSuffix">
+							<constructor-arg ref="common.ratio.matchers" />
+							<constructor-arg value="SU" />
+							<constructor-arg value="7B47" />
+						</bean>
+						<bean class="com.eb2.elogging.write.statistics.RatioMatcherFactory" factory-method="cloneAddTypePrefixSuffix">
+							<constructor-arg ref="common.ratio.matchers" />
+							<constructor-arg value="ET" />
+							<constructor-arg value="ETET" />
+						</bean>
+						<bean class="com.eb2.elogging.write.statistics.RatioMatcherFactory" factory-method="cloneAddTypePrefixSuffix">
+							<constructor-arg ref="common.ratio.matchers" />
+							<constructor-arg value="KX" />
+							<constructor-arg value="88N7" />
+						</bean>
+						<bean class="com.eb2.elogging.write.statistics.RatioMatcherFactory" factory-method="cloneAddTypePrefixSuffix">
+							<constructor-arg ref="common.ratio.matchers" />
+							<constructor-arg value="VN" />
+							<constructor-arg value="B3QE" />
+						</bean>
+						<bean class="com.eb2.elogging.write.statistics.RatioMatcherFactory" factory-method="cloneAddTypePrefixSuffix">
+							<constructor-arg ref="common.ratio.matchers" />
+							<constructor-arg value="MN" />
+							<constructor-arg value="E6IE" />
+						</bean>
+						<bean class="com.eb2.elogging.write.statistics.RatioMatcherFactory" factory-method="cloneAddTypePrefixSuffix">
+							<constructor-arg ref="common.ratio.matchers" />
+							<constructor-arg value="WY" />
+							<constructor-arg value="WYWY" />
+						</bean>
+						<bean class="com.eb2.elogging.write.statistics.RatioMatcherFactory" factory-method="cloneAddTypePrefixSuffix">
+							<constructor-arg ref="common.ratio.matchers" />
+							<constructor-arg value="KS" />
+							<constructor-arg value="8M87" />
+						</bean>
+						<bean class="com.eb2.elogging.write.statistics.RatioMatcherFactory" factory-method="cloneAddTypePrefixSuffix">
+							<constructor-arg ref="common.ratio.matchers" />
+							<constructor-arg value="9V" />
+							<constructor-arg value="9V9V" />
+						</bean>
+						<bean class="com.eb2.elogging.write.statistics.RatioMatcherFactory" factory-method="cloneAddTypePrefixSuffix">
+							<constructor-arg ref="common.ratio.matchers" />
+							<constructor-arg value="9M" />
+							<constructor-arg value="8F77" />
+						</bean>
+						<bean class="com.eb2.elogging.write.statistics.RatioMatcherFactory" factory-method="cloneAddTypePrefixSuffix">
+							<constructor-arg ref="common.ratio.matchers" />
+							<constructor-arg value="7F" />
+							<constructor-arg value="8E97" />
+						</bean>
+						<bean class="com.eb2.elogging.write.statistics.RatioMatcherFactory" factory-method="cloneAddTypePrefixSuffix">
+							<constructor-arg ref="common.ratio.matchers" />
+							<constructor-arg value="PG" />
+							<constructor-arg value="PGPG" />
+						</bean>
+						<bean class="com.eb2.elogging.write.statistics.RatioMatcherFactory" factory-method="cloneAddTypePrefixSuffix">
+							<constructor-arg ref="common.ratio.matchers" />
+							<constructor-arg value="YV" />
+							<constructor-arg value="94N7" />
+						</bean>
+						<bean class="com.eb2.elogging.write.statistics.RatioMatcherFactory" factory-method="cloneAddTypePrefixSuffix">
+							<constructor-arg ref="common.ratio.matchers" />
+							<constructor-arg value="7H" />
+							<constructor-arg value="8M77" />
+						</bean>
+						<bean class="com.eb2.elogging.write.statistics.RatioMatcherFactory" factory-method="cloneAddTypePrefixSuffix">
+							<constructor-arg ref="common.ratio.matchers" />
+							<constructor-arg value="F7" />
+							<constructor-arg value="F7F7" />
+						</bean>
+						<bean class="com.eb2.elogging.write.statistics.RatioMatcherFactory" factory-method="cloneAddTypePrefixSuffix">
+							<constructor-arg ref="common.ratio.matchers" />
+							<constructor-arg value="CY" />
+							<constructor-arg value="CYCY" />
+						</bean>
+					</list>
+				</constructor-arg>
+			</bean>
+
+		</property>
+
+	</bean>
+
+
+
+</beans>

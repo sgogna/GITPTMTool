@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+	<!-- JMX statistics to collect, including the MBean object and attribute names -->
+	<bean id="loadedClassCount" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+		<property name="name" value="Loaded Class Count" />
+		<property name="connection" ref="clientConnector" />
+		<property name="objectName" value="java.lang:type=ClassLoading" />
+		<property name="attributeName" value="LoadedClassCount" />
+	</bean>
+
+	<bean id="unloadedClassCount" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+		<property name="name" value="Unloaded Class Count" />
+		<property name="connection" ref="clientConnector" />
+		<property name="objectName" value="java.lang:type=ClassLoading" />
+		<property name="attributeName" value="UnloadedClassCount" />
+	</bean>
+
+	<bean id="serverLoad" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+		<property name="name" value="Server Load" />
+		<property name="formatString" value="%f" />
+		<property name="connection" ref="clientConnector" />
+		<property name="objectName" value="java.lang:type=OperatingSystem" />
+		<property name="attributeName" value="SystemLoadAverage" />
+	</bean>
+
+	<bean id="processCpuTime" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+		<property name="name" value="Process Cpu Time" />
+		<!-- <property name="formatString" value="%f" /> -->
+		<property name="connection" ref="clientConnector" />
+		<property name="objectName" value="java.lang:type=OperatingSystem" />
+		<property name="attributeName" value="ProcessCpuTime" />
+	</bean>
+
+	<bean id="AvailableProcessors" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+		<property name="name" value="Available Processors" />
+		<!-- <property name="formatString" value="%s" /> -->
+		<property name="connection" ref="clientConnector" />
+		<property name="objectName" value="java.lang:type=OperatingSystem" />
+		<property name="attributeName" value="AvailableProcessors" />
+	</bean>
+
+	<bean id="UpTime" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+		<property name="name" value="Up Time" />
+		<!-- <property name="formatString" value="%s" /> -->
+		<property name="connection" ref="clientConnector" />
+		<property name="objectName" value="java.lang:type=Runtime" />
+		<property name="attributeName" value="Uptime" />
+	</bean>
+	
+	<bean id="cpuUtilizationStatistic" class="pl.com.rupert.shadowtail.CpuUtilizationStatistic" init-method="init">
+		<property name="name" value="Process Cpu Utilization" />
+		<property name="formatString" value="%f" />
+		<property name="numberOfProcessorsStatistic" ref="AvailableProcessors" />
+		<property name="processCpuTimeStatistic" ref="processCpuTime" />
+		<property name="processUpTimeStatistic" ref="UpTime" />
+	</bean>
+
+	<bean id="threadCount" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+		<property name="name" value="JVM Thread Count" />
+		<property name="connection" ref="clientConnector" />
+		<property name="objectName" value="java.lang:type=Threading" />
+		<property name="attributeName" value="ThreadCount" />
+	</bean>
+
+	<bean id="heapMemoryUsed" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+		<property name="name" value="Heap Memory Used" />
+		<property name="connection" ref="clientConnector" />
+		<property name="objectName" value="java.lang:type=Memory" />
+		<property name="attributeName" value="HeapMemoryUsage" />
+		<property name="compositeNames">
+			<list>
+				<value>used</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="cmsCount" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+		<property name="name" value="GC PS MarkSweep Count" />
+		<property name="connection" ref="clientConnector" />
+		<property name="objectName" value="java.lang:type=GarbageCollector,name=PS MarkSweep" />
+		<property name="attributeName" value="CollectionCount" />
+	</bean>
+
+	<bean id="cmsTime" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+		<property name="name" value="GC PS MarkSweep Time" />
+		<property name="connection" ref="clientConnector" />
+		<property name="objectName" value="java.lang:type=GarbageCollector,name=PS MarkSweep" />
+		<property name="attributeName" value="CollectionTime" />
+	</bean>
+
+	<bean id="parNewCount" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+		<property name="name" value="GC PS Scavenge Count" />
+		<property name="connection" ref="clientConnector" />
+		<property name="objectName" value="java.lang:type=GarbageCollector,name=PS Scavenge" />
+		<property name="attributeName" value="CollectionCount" />
+	</bean>
+
+	<bean id="parNewTime" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+		<property name="name" value="GC PS Scavenge Time" />
+		<property name="connection" ref="clientConnector" />
+		<property name="objectName" value="java.lang:type=GarbageCollector,name=PS Scavenge" />
+		<property name="attributeName" value="CollectionTime" />
+	</bean>
+
+	<bean id="throughput" class="pl.com.rupert.shadowtail.ThroughputStatistic" init-method="init">
+		<property name="name" value="Throughput" />
+		<property name="formatString" value="%f" />
+		<property name="cmsTimeStatistic" ref="cmsTime" />
+		<property name="parNewTimeStatistic" ref="parNewTime" />
+		<property name="processUpTimeStatistic" ref="UpTime" />
+	</bean>
+	
+	<bean id="periodicalThroughput" class="pl.com.rupert.shadowtail.ThroughputStatistic" init-method="init">
+		<property name="name" value="Throughput 5sec" />
+		<property name="formatString" value="%f" />
+		<property name="cmsTimeStatistic" ref="cmsTime" />
+		<property name="parNewTimeStatistic" ref="parNewTime" />
+		<property name="processUpTimeStatistic" ref="UpTime" />
+		<property name="periodicalThroughput" value="true" />
+	</bean>
+
+
+	<bean id="jvmStatisticsList" class="org.springframework.beans.factory.config.ListFactoryBean">
+		<property name="sourceList">
+			<list>
+				<ref bean="loadedClassCount" />
+				<ref bean="unloadedClassCount" />
+				<ref bean="heapMemoryUsed" />
+				<ref bean="cmsCount" />
+				<ref bean="cmsTime" />
+				<ref bean="parNewCount" />
+				<ref bean="parNewTime" />
+				<ref bean="threadCount" />
+				<ref bean="serverLoad" />
+				<ref bean="cpuUtilizationStatistic" />
+				<ref bean="throughput" />
+				<ref bean="periodicalThroughput" />
+			</list>
+		</property>
+	</bean>
+
+	<bean id="jvm_group" class="uk.co.blackpepper.shadowtail.data.support.ManagedStatisticGroup">
+		<property name="name" value="JVM-MBeans" />
+		<property name="description" value="JMX statistics" />
+		<property name="statistics" ref="jvmStatisticsList" />
+	</bean>
+
+</beans>

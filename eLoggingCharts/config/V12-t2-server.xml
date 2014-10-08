@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd">
+
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE" />
+		<property name="ignoreResourceNotFound" value="true" />
+		<property name="ignoreUnresolvablePlaceholders" value="true" />
+		<property name="location" value="config/config.properties" />
+	</bean>
+
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+                <property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE" />
+                <property name="ignoreResourceNotFound" value="true" />
+                <property name="ignoreUnresolvablePlaceholders" value="true" />
+                <property name="location" value="config/${config.target.evn}.properties" />
+        </bean>
+
+	
+	<import resource="validation/V12-t2-server.xml" />
+	<import resource="filter/V12-t2-filter.xml" />
+<!-- 	<import resource="ratios/V12-t2-server-ratios.xml" /> -->
+
+<import resource="grouper/V12-t2-grouper.xml" />
+
+
+<util:list id="aggregationEvents" list-class="java.util.LinkedList" />
+
+	<bean id="summaryWriter" class="com.eb2.elogging.write.SummaryListener">
+		<constructor-arg ref="config" />
+		<!-- <property name="ratiocalculator" ref="statisticsRatioCalculator" /> -->
+		<!-- <property name="validator" ref="statisticsValidator" /> -->
+		<property name="aggregationEvents" ref="aggregationEvents"></property>
+	</bean>
+
+	<bean id="perEventTypeNameAggregator" class="com.eb2.elogging.read.listener.PerEventTypeNameListener">
+		<constructor-arg>
+			<bean class="com.eb2.elogging.read.listener.aggregate.AggregatorToAggregationDataFactory">
+				<constructor-arg ref="config" />
+			</bean>
+		</constructor-arg>
+	</bean>
+	
+	<bean id="config" class="com.eb2.elogging.SystemConfigReader" factory-method="initialize">
+		<property name="aggregateInterval" value="${config.aggregateInterval}"></property>
+	</bean>
+
+	<bean id="compositeListeners" class="com.eb2.elogging.read.listener.CompositeListener">
+		<property name="listeners">
+			<util:list list-class="java.util.LinkedList">
+				<ref bean="summaryWriter"/>
+				<bean class="com.eb2.elogging.write.PerEventTypeNameAggregatingWriter">
+					<constructor-arg ref="config" />
+					<constructor-arg ref="grouper" />
+					<property name="aggregationEvents" ref="aggregationEvents"/>
+				</bean>
+				<bean class="com.eb2.elogging.write.ErrorWriter">
+					<constructor-arg ref="config" />
+				</bean>
+			</util:list>
+		</property>
+	</bean>
+
+	<bean id="validatingListener" class="com.eb2.elogging.read.listener.filter.CompositeFilteringListener">
+		<property name="validators" ref="eventValidators" />
+		<property name="listener" ref="compositeListeners" />
+	</bean>
+
+	<bean id="dateRangeListener" class="com.eb2.elogging.read.listener.DateRangeListener">
+		<constructor-arg ref="config" />
+		<property name="listener" ref="validatingListener" />
+	</bean>
+
+	<bean id="executionContext" class="com.eb2.elogging.model.ExecutionContenxt">
+		<property name="listener" ref="dateRangeListener" />
+		<property name="config" ref="config" />
+		<property name="aggregationEvents" ref="aggregationEvents"/>
+	</bean>
+
+
+
+</beans>

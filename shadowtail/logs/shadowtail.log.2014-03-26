@@ -1,0 +1,10 @@
+2014-03-26 04:53:01 ShadowtailLogAggregator [INFO] Processing file: /project/plab/performance/newtools/shadowtail/../artifacts/shadowtail/ssci-kiosk-B6-t1/ssci-kiosk-B6-t1-2014-03-25-0-SSCI_B6KCI_Tomcat_JDK_Upgrade_SoakTest.log
+2014-03-26 04:53:01 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@284c55ff: startup date [Wed Mar 26 04:53:01 CDT 2014]; root of context hierarchy
+2014-03-26 04:53:01 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/appenderAggregator.xml]
+2014-03-26 04:53:01 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/general.xml]
+2014-03-26 04:53:01 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@75e82e1b: defining beans [fileProcessor,Preparer]; root of factory hierarchy
+2014-03-26 04:54:01 ShadowtailLogAggregator [INFO] Processing file: /project/plab/performance/newtools/shadowtail/../artifacts/shadowtail/ssci-web-B6-t1/ssci-web-B6-t1-2014-03-25-0-SSCI_B6WCI_Tomcat_JDK_Upgrade_SoakTest.log
+2014-03-26 04:54:01 ClassPathXmlApplicationContext [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2a384d34: startup date [Wed Mar 26 04:54:01 CDT 2014]; root of context hierarchy
+2014-03-26 04:54:01 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/appenderAggregator.xml]
+2014-03-26 04:54:01 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from class path resource [configs/shadowtail/general.xml]
+2014-03-26 04:54:01 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5f2d8ca1: defining beans [fileProcessor,Preparer]; root of factory hierarchy

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+	<import resource="threadPoolPrototypes.xml" />
+
+	<bean id="ibeStatisticsList" class="org.springframework.beans.factory.config.ListFactoryBean">
+		<property name="sourceList">
+			<list>
+				<bean id="gdsPoolNumActive" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init">
+					<property name="name" value="GDS Pool NumActive" />
+					<property name="connection" ref="clientConnector" />
+					<property name="objectName" value="qtrip:path=B6.server,name=sabre" />
+					<property name="attributeName" value="NumActive" />
+				</bean>
+
+<!-- 				<bean id="dbPoolNumActive" class="uk.co.blackpepper.shadowtail.data.jmx.JMXAttributeStatistic" init-method="init"> -->
+<!-- 					<property name="name" value="DB Pool NumActive" /> -->
+<!-- 					<property name="connection" ref="clientConnector" /> -->
+<!-- 					<property name="objectName" value="qtrip:path=B6.server,name=datasourceManager" /> -->
+<!-- 					<property name="attributeName" value="NumActive" /> -->
+<!-- 				</bean> -->
+
+				<bean parent="threadPool-Size">
+					<property name="name" value="ThreadPool-Hotel-Size" />
+					<property name="objectName" value="qtrip:path=B6.server,function=threadPoolMonitor,name=AsyncAncillaries-GetHotelDetails" />
+				</bean>
+				<bean parent="threadPool-Active">
+					<property name="name" value="ThreadPool-Hotel-Active" />
+					<property name="objectName" value="qtrip:path=B6.server,function=threadPoolMonitor,name=AsyncAncillaries-GetHotelDetails" />
+				</bean>
+				<bean parent="threadPool-Queue">
+					<property name="name" value="ThreadPool-Hotel-Queue" />
+					<property name="objectName" value="qtrip:path=B6.server,function=threadPoolMonitor,name=AsyncAncillaries-GetHotelDetails" />
+				</bean>
+				<bean parent="threadPool-Rejected">
+					<property name="name" value="ThreadPool-Hotel-Rejected" />
+					<property name="objectName" value="qtrip:path=B6.server,function=threadPoolMonitor,name=AsyncAncillaries-GetHotelDetails" />
+				</bean>
+				<bean parent="threadPool-Cancelled">
+					<property name="name" value="ThreadPool-Hotel-Cancelled" />
+					<property name="objectName" value="qtrip:path=B6.server,function=threadPoolMonitor,name=AsyncAncillaries-GetHotelDetails" />
+				</bean>
+
+				<bean parent="threadPool-Size">
+					<property name="name" value="ThreadPool-Hotel-Ean-Size" />
+					<property name="objectName" value="qtrip:path=B6.server,function=threadPoolMonitor,name=AsyncAncillaries-GetHotelDetails-Ean" />
+				</bean>
+				<bean parent="threadPool-Active">
+					<property name="name" value="ThreadPool-Hotel-Ean-Active" />
+					<property name="objectName" value="qtrip:path=B6.server,function=threadPoolMonitor,name=AsyncAncillaries-GetHotelDetails-Ean" />
+				</bean>
+				<bean parent="threadPool-Queue">
+					<property name="name" value="ThreadPool-Hotel-Ean-Queue" />
+					<property name="objectName" value="qtrip:path=B6.server,function=threadPoolMonitor,name=AsyncAncillaries-GetHotelDetails-Ean" />
+				</bean>
+				<bean parent="threadPool-Rejected">
+					<property name="name" value="ThreadPool-Hotel-Ean-Rejected" />
+					<property name="objectName" value="qtrip:path=B6.server,function=threadPoolMonitor,name=AsyncAncillaries-GetHotelDetails-Ean" />
+				</bean>
+				<bean parent="threadPool-Cancelled">
+					<property name="name" value="ThreadPool-Hotel-Ean-Cancelled" />
+					<property name="objectName" value="qtrip:path=B6.server,function=threadPoolMonitor,name=AsyncAncillaries-GetHotelDetails-Ean" />
+				</bean>
+
+			</list>
+		</property>
+	</bean>
+
+</beans>

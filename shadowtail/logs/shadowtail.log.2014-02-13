@@ -1,0 +1,4 @@
+2014-02-13 08:11:02 FileSystemXmlApplicationContext [INFO] Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@5bb7b7a3: startup date [Thu Feb 13 08:11:02 CST 2014]; root of context hierarchy
+2014-02-13 08:11:02 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from file [/project/plab/performance/newtools/shadowtail/configs/csvcollector/collectorAppenderForShadowtailLogAggregator.xml]
+2014-02-13 08:11:02 XmlBeanDefinitionReader [INFO] Loading XML bean definitions from file [/project/plab/performance/newtools/shadowtail/configs/csvcollector/collectorGeneral.xml]
+2014-02-13 08:11:02 DefaultListableBeanFactory [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@66a5de12: defining beans [fileProcessor,Preparer]; root of factory hierarchy
